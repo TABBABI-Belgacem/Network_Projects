@@ -1,0 +1,16 @@
+Feb 11 16:50:08.266 HYPERVISOR: Release 0.2.14-x86/Windows (tag 2014092320)
+Feb 11 16:50:08.266 HYPERVISOR: Started on IP = 192.168.42.1, TCP port = 61725.
+Feb 11 16:50:08.619 HYPERVISOR: exec_cmd: hypervisor version 
+Feb 11 16:50:08.633 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\BELGACEM\GNS3\projects\Labs Projet configurée\Routing_confogurée\project-files\dynamips 
+Feb 11 16:50:09.044 GENERAL: working_dir=C:\Users\BELGACEM\GNS3\projects\Labs Projet configurée\Routing_confogurée\project-files\dynamips
+Feb 11 16:50:09.050 HYPERVISOR: exec_cmd: ethsw create SW-Etudiant 
+Feb 11 16:50:10.261 HYPERVISOR: exec_cmd: nio create_udp udp-516f69b7-9a2a-4a1a-af1b-8e0d87589b23 10002 192.168.42.128 10001 
+Feb 11 16:50:10.286 HYPERVISOR: exec_cmd: ethsw add_nio SW-Etudiant udp-516f69b7-9a2a-4a1a-af1b-8e0d87589b23 
+Feb 11 16:50:10.316 HYPERVISOR: exec_cmd: ethsw set_access_port SW-Etudiant udp-516f69b7-9a2a-4a1a-af1b-8e0d87589b23 1 
+Feb 11 16:50:10.407 HYPERVISOR: exec_cmd: nio create_udp udp-a7f1e858-ff8f-45f7-976e-dbfbe13cdf21 10004 192.168.42.128 10007 
+Feb 11 16:50:10.416 HYPERVISOR: exec_cmd: ethsw add_nio SW-Etudiant udp-a7f1e858-ff8f-45f7-976e-dbfbe13cdf21 
+Feb 11 16:50:10.433 HYPERVISOR: exec_cmd: ethsw set_access_port SW-Etudiant udp-a7f1e858-ff8f-45f7-976e-dbfbe13cdf21 1 
+Feb 11 16:51:14.878 HYPERVISOR: exec_cmd: ethsw delete SW-Etudiant 
+Feb 11 16:51:14.921 HYPERVISOR: exec_cmd: hypervisor stop 
+Feb 11 16:51:15.222 HYPERVISOR: Stopped.
+Feb 11 16:51:15.222 GENERAL: reset done.

@@ -1,0 +1,19 @@
+May 22 01:17:57.440 HYPERVISOR: Release 0.2.14-x86/Windows (tag 2014092320)
+May 22 01:17:57.441 HYPERVISOR: Started on IP = 192.168.81.1, TCP port = 51505.
+May 22 01:17:57.853 HYPERVISOR: exec_cmd: hypervisor version 
+May 22 01:17:57.871 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\HP\GNS3\projects\LAB de Projet\lab configuration complet\serveur+firewall\lab2\project-files\dynamips 
+May 22 01:17:58.271 GENERAL: working_dir=C:\Users\HP\GNS3\projects\LAB de Projet\lab configuration complet\serveur+firewall\lab2\project-files\dynamips
+May 22 01:17:58.286 HYPERVISOR: exec_cmd: ethsw create SW-CORE 
+May 22 01:17:58.520 HYPERVISOR: exec_cmd: nio create_udp udp-136202d7-0297-4335-8dd9-938440b47c6c 10000 192.168.81.128 10001 
+May 22 01:17:58.550 HYPERVISOR: exec_cmd: ethsw add_nio SW-CORE udp-136202d7-0297-4335-8dd9-938440b47c6c 
+May 22 01:17:58.590 HYPERVISOR: exec_cmd: ethsw set_access_port SW-CORE udp-136202d7-0297-4335-8dd9-938440b47c6c 1 
+May 22 01:17:58.640 HYPERVISOR: exec_cmd: nio create_udp udp-47282b77-4045-4295-91ba-9bda746d7078 10001 192.168.81.128 10000 
+May 22 01:17:58.676 HYPERVISOR: exec_cmd: ethsw add_nio SW-CORE udp-47282b77-4045-4295-91ba-9bda746d7078 
+May 22 01:17:58.717 HYPERVISOR: exec_cmd: ethsw set_access_port SW-CORE udp-47282b77-4045-4295-91ba-9bda746d7078 1 
+May 22 01:17:58.953 HYPERVISOR: exec_cmd: nio create_udp udp-cf68c4af-839d-4414-8064-8f1b1161d7e1 10007 192.168.81.1 10006 
+May 22 01:17:58.987 HYPERVISOR: exec_cmd: ethsw add_nio SW-CORE udp-cf68c4af-839d-4414-8064-8f1b1161d7e1 
+May 22 01:17:59.027 HYPERVISOR: exec_cmd: ethsw set_access_port SW-CORE udp-cf68c4af-839d-4414-8064-8f1b1161d7e1 1 
+May 22 01:18:24.855 HYPERVISOR: exec_cmd: ethsw delete SW-CORE 
+May 22 01:18:24.902 HYPERVISOR: exec_cmd: hypervisor stop 
+May 22 01:18:25.318 HYPERVISOR: Stopped.
+May 22 01:18:25.318 GENERAL: reset done.

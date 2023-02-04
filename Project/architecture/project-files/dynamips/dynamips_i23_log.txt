@@ -1,0 +1,38 @@
+May 20 18:27:13.264 HYPERVISOR: Release 0.2.14-x86/Windows (tag 2014092320)
+May 20 18:27:13.264 HYPERVISOR: Started on IP = 192.168.81.1, TCP port = 52413.
+May 20 18:27:13.474 HYPERVISOR: exec_cmd: hypervisor version 
+May 20 18:27:13.510 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\HP\GNS3\projects\LAB de Projet\lab configuration complet\architecture\project-files\dynamips 
+May 20 18:27:13.510 GENERAL: working_dir=C:\Users\HP\GNS3\projects\LAB de Projet\lab configuration complet\architecture\project-files\dynamips
+May 20 18:27:13.537 HYPERVISOR: exec_cmd: vm create R1-Distribution 10 c3600 
+May 20 18:27:13.541 VM: VM R1-Distribution created.
+May 20 18:27:13.564 HYPERVISOR: exec_cmd: vm set_con_tcp_port R1-Distribution 5008 
+May 20 18:27:13.598 HYPERVISOR: exec_cmd: c3600 get_mac_addr R1-Distribution 
+May 20 18:27:13.633 HYPERVISOR: exec_cmd: c3600 set_chassis R1-Distribution 3660 
+May 20 18:27:13.658 HYPERVISOR: exec_cmd: vm get_status R1-Distribution 
+May 20 18:27:13.691 HYPERVISOR: exec_cmd: vm slot_add_binding R1-Distribution 1 0 NM-4E 
+May 20 18:27:13.724 HYPERVISOR: exec_cmd: vm set_exec_area R1-Distribution 64 
+May 20 18:27:13.752 HYPERVISOR: exec_cmd: c3600 set_mac_addr R1-Distribution cc0a.2528.0000 
+May 20 18:27:13.788 HYPERVISOR: exec_cmd: vm set_ram R1-Distribution 192 
+May 20 18:27:13.824 HYPERVISOR: exec_cmd: vm set_nvram R1-Distribution 256 
+May 20 18:27:13.848 HYPERVISOR: exec_cmd: vm set_ios R1-Distribution C:/Users/HP/GNS3/images/IOS/c3660-jk9o3s-mz.124-25d.image 
+May 20 18:27:13.884 HYPERVISOR: exec_cmd: vm set_config R1-Distribution configs/i10_startup-config.cfg 
+May 20 18:27:13.931 HYPERVISOR: exec_cmd: vm set_config R1-Distribution configs/i10_startup-config.cfg configs/i10_private-config.cfg 
+May 20 18:27:14.884 HYPERVISOR: exec_cmd: nio create_udp udp-4040e461-0d23-4d55-9a30-b0d798970795 10020 192.168.81.1 10019 
+May 20 18:27:14.915 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R1-Distribution 1 1 udp-4040e461-0d23-4d55-9a30-b0d798970795 
+May 20 18:27:14.942 HYPERVISOR: exec_cmd: vm get_status R1-Distribution 
+May 20 18:27:14.989 HYPERVISOR: exec_cmd: nio create_udp udp-e9bc26d5-9195-4d88-b674-d6a3cee59cd8 10022 192.168.81.1 10021 
+May 20 18:27:15.017 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R1-Distribution 1 2 udp-e9bc26d5-9195-4d88-b674-d6a3cee59cd8 
+May 20 18:27:15.044 HYPERVISOR: exec_cmd: vm get_status R1-Distribution 
+May 20 18:27:15.088 HYPERVISOR: exec_cmd: nio create_udp udp-eb414ace-bc6e-419f-b6ed-181287a25bdf 10023 192.168.81.128 10055 
+May 20 18:27:15.113 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R1-Distribution 0 0 udp-eb414ace-bc6e-419f-b6ed-181287a25bdf 
+May 20 18:27:15.155 HYPERVISOR: exec_cmd: vm get_status R1-Distribution 
+May 20 18:28:57.521 HYPERVISOR: exec_cmd: vm extract_config R1-Distribution 
+May 20 18:28:58.990 HYPERVISOR: exec_cmd: vm extract_config R1-Distribution 
+May 20 18:55:38.942 HYPERVISOR: exec_cmd: vm extract_config R1-Distribution 
+May 20 18:55:39.083 HYPERVISOR: exec_cmd: vm get_status R1-Distribution 
+May 20 18:55:39.130 HYPERVISOR: exec_cmd: vm extract_config R1-Distribution 
+May 20 18:55:39.192 HYPERVISOR: exec_cmd: vm delete R1-Distribution 
+May 20 18:55:39.192 VM: VM R1-Distribution destroyed.
+May 20 18:55:39.255 HYPERVISOR: exec_cmd: hypervisor stop 
+May 20 18:55:39.708 HYPERVISOR: Stopped.
+May 20 18:55:39.708 GENERAL: reset done.

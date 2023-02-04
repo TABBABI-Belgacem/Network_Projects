@@ -1,0 +1,38 @@
+Apr 23 00:51:02.442 HYPERVISOR: Release 0.2.14-x86/Windows (tag 2014092320)
+Apr 23 00:51:02.444 HYPERVISOR: Started on IP = 192.168.2.10, TCP port = 59564.
+Apr 23 00:51:02.664 HYPERVISOR: exec_cmd: hypervisor version 
+Apr 23 00:51:02.693 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\user1\GNS3\projects\LAB de Projet\aechitecture\project-files\dynamips 
+Apr 23 00:51:02.829 GENERAL: working_dir=C:\Users\user1\GNS3\projects\LAB de Projet\aechitecture\project-files\dynamips
+Apr 23 00:51:02.836 HYPERVISOR: exec_cmd: vm create R-ISSAR 4 c2691 
+Apr 23 00:51:02.839 VM: VM R-ISSAR created.
+Apr 23 00:51:02.883 HYPERVISOR: exec_cmd: vm set_con_tcp_port R-ISSAR 5004 
+Apr 23 00:51:02.924 HYPERVISOR: exec_cmd: c2691 get_mac_addr R-ISSAR 
+Apr 23 00:51:02.998 HYPERVISOR: exec_cmd: vm slot_add_binding R-ISSAR 0 16 WIC-2T 
+Apr 23 00:51:03.084 HYPERVISOR: exec_cmd: vm set_exec_area R-ISSAR 64 
+Apr 23 00:51:03.165 HYPERVISOR: exec_cmd: vm set_nvram R-ISSAR 256 
+Apr 23 00:51:03.250 HYPERVISOR: exec_cmd: vm set_ios R-ISSAR C:/Users/user1/GNS3/images/IOS/c2691-gns3-entservicesk9-mz.123-16.image 
+Apr 23 00:51:03.332 HYPERVISOR: exec_cmd: vm set_ram R-ISSAR 192 
+Apr 23 00:51:03.419 HYPERVISOR: exec_cmd: c2691 set_mac_addr R-ISSAR c004.09c8.0000 
+Apr 23 00:51:03.503 HYPERVISOR: exec_cmd: vm get_status R-ISSAR 
+Apr 23 00:51:03.576 HYPERVISOR: exec_cmd: vm set_idle_pc R-ISSAR 0x607e3c28 
+Apr 23 00:51:03.710 HYPERVISOR: exec_cmd: vm set_disk0 R-ISSAR 0 
+Apr 23 00:51:03.812 HYPERVISOR: exec_cmd: vm set_config R-ISSAR configs/i4_startup-config.cfg 
+Apr 23 00:51:06.617 HYPERVISOR: exec_cmd: nio create_udp udp-ca63eed8-863a-4d1a-bbcb-5383fdda63c4 10008 192.168.2.10 10007 
+Apr 23 00:51:06.701 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R-ISSAR 0 16 udp-ca63eed8-863a-4d1a-bbcb-5383fdda63c4 
+Apr 23 00:51:06.860 HYPERVISOR: exec_cmd: vm get_status R-ISSAR 
+Apr 23 00:51:06.990 HYPERVISOR: exec_cmd: nio create_udp udp-42ec32bf-4cfc-45a7-9c6e-f0b6588b5427 10010 192.168.2.10 10009 
+Apr 23 00:51:07.054 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R-ISSAR 0 17 udp-42ec32bf-4cfc-45a7-9c6e-f0b6588b5427 
+Apr 23 00:51:07.187 HYPERVISOR: exec_cmd: vm get_status R-ISSAR 
+Apr 23 00:51:07.396 HYPERVISOR: exec_cmd: nio create_udp udp-9d9c485e-ab31-46c2-b4cf-9cf2cdeaa84a 10013 192.168.2.10 10014 
+Apr 23 00:51:07.504 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R-ISSAR 0 0 udp-9d9c485e-ab31-46c2-b4cf-9cf2cdeaa84a 
+Apr 23 00:51:07.625 HYPERVISOR: exec_cmd: vm get_status R-ISSAR 
+Apr 23 00:51:09.245 HYPERVISOR: exec_cmd: nio create_udp udp-15802157-f16e-42f8-a29d-1eb460b047a8 10026 192.168.2.10 10025 
+Apr 23 00:51:09.351 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R-ISSAR 0 1 udp-15802157-f16e-42f8-a29d-1eb460b047a8 
+Apr 23 00:51:09.467 HYPERVISOR: exec_cmd: vm get_status R-ISSAR 
+Apr 23 00:51:42.661 HYPERVISOR: exec_cmd: vm get_status R-ISSAR 
+Apr 23 00:51:42.870 HYPERVISOR: exec_cmd: vm extract_config R-ISSAR 
+Apr 23 00:51:43.071 HYPERVISOR: exec_cmd: vm delete R-ISSAR 
+Apr 23 00:51:43.071 VM: VM R-ISSAR destroyed.
+Apr 23 00:51:43.266 HYPERVISOR: exec_cmd: hypervisor stop 
+Apr 23 00:51:43.677 HYPERVISOR: Stopped.
+Apr 23 00:51:43.677 GENERAL: reset done.

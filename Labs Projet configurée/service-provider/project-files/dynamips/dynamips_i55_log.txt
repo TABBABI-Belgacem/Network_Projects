@@ -1,0 +1,39 @@
+Apr 16 15:29:56.557 HYPERVISOR: Release 0.2.14-x86/Windows (tag 2014092320)
+Apr 16 15:29:56.558 HYPERVISOR: Started on IP = 192.168.2.10, TCP port = 50428.
+Apr 16 15:29:56.881 HYPERVISOR: exec_cmd: hypervisor version 
+Apr 16 15:29:56.904 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\user1\GNS3\projects\LAB de Projet\service-provider\project-files\dynamips 
+Apr 16 15:29:57.205 GENERAL: working_dir=C:\Users\user1\GNS3\projects\LAB de Projet\service-provider\project-files\dynamips
+Apr 16 15:29:57.221 HYPERVISOR: exec_cmd: vm create R3 8 c2691 
+Apr 16 15:29:57.224 VM: VM R3 created.
+Apr 16 15:29:57.251 HYPERVISOR: exec_cmd: vm set_con_tcp_port R3 5002 
+Apr 16 15:29:57.280 HYPERVISOR: exec_cmd: c2691 get_mac_addr R3 
+Apr 16 15:29:57.314 HYPERVISOR: exec_cmd: c2691 set_mac_addr R3 c008.1b00.0000 
+Apr 16 15:29:57.348 HYPERVISOR: exec_cmd: vm slot_add_binding R3 0 16 WIC-2T 
+Apr 16 15:29:57.374 HYPERVISOR: exec_cmd: vm set_ios R3 C:/Users/user1/GNS3/images/IOS/c2691-gns3-entservicesk9-mz.123-16.image 
+Apr 16 15:29:57.408 HYPERVISOR: exec_cmd: vm set_ram R3 192 
+Apr 16 15:29:57.437 HYPERVISOR: exec_cmd: vm set_nvram R3 256 
+Apr 16 15:29:57.471 HYPERVISOR: exec_cmd: vm set_exec_area R3 64 
+Apr 16 15:29:57.494 HYPERVISOR: exec_cmd: vm get_status R3 
+Apr 16 15:29:57.520 HYPERVISOR: exec_cmd: vm set_idle_pc R3 0x607e3c28 
+Apr 16 15:29:57.533 HYPERVISOR: exec_cmd: vm set_disk0 R3 0 
+Apr 16 15:29:57.545 HYPERVISOR: exec_cmd: vm set_config R3 configs/i8_startup-config.cfg 
+Apr 16 15:29:57.946 HYPERVISOR: exec_cmd: nio create_udp udp-b55c6e07-3361-4688-8a0b-99e89b98d4b0 10007 192.168.2.10 10006 
+Apr 16 15:29:57.987 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R3 0 17 udp-b55c6e07-3361-4688-8a0b-99e89b98d4b0 
+Apr 16 15:29:58.032 HYPERVISOR: exec_cmd: vm get_status R3 
+Apr 16 15:29:58.092 HYPERVISOR: exec_cmd: nio create_udp udp-103f84be-1cd5-488d-8b21-24d8b3369f9e 10009 192.168.2.10 10008 
+Apr 16 15:29:58.132 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R3 0 16 udp-103f84be-1cd5-488d-8b21-24d8b3369f9e 
+Apr 16 15:29:58.169 HYPERVISOR: exec_cmd: vm get_status R3 
+Apr 16 15:29:58.206 HYPERVISOR: exec_cmd: nio create_udp udp-995e6e36-fffb-4bf9-a069-a95543ad73a4 10010 192.168.2.10 10011 
+Apr 16 15:29:58.222 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R3 0 0 udp-995e6e36-fffb-4bf9-a069-a95543ad73a4 
+Apr 16 15:29:58.232 HYPERVISOR: exec_cmd: vm get_status R3 
+Apr 16 15:30:22.381 HYPERVISOR: exec_cmd: vm rename R3 R-ISSAT 
+Apr 16 15:31:28.338 HYPERVISOR: exec_cmd: vm extract_config R-ISSAT 
+Apr 16 15:31:28.498 HYPERVISOR: exec_cmd: vm extract_config R-ISSAT 
+Apr 16 15:31:36.891 HYPERVISOR: exec_cmd: vm extract_config R-ISSAT 
+Apr 16 15:31:48.373 HYPERVISOR: exec_cmd: vm get_status R-ISSAT 
+Apr 16 15:31:48.396 HYPERVISOR: exec_cmd: vm extract_config R-ISSAT 
+Apr 16 15:31:48.425 HYPERVISOR: exec_cmd: vm delete R-ISSAT 
+Apr 16 15:31:48.444 VM: VM R-ISSAT destroyed.
+Apr 16 15:31:48.490 HYPERVISOR: exec_cmd: hypervisor stop 
+Apr 16 15:31:48.747 HYPERVISOR: Stopped.
+Apr 16 15:31:48.747 GENERAL: reset done.

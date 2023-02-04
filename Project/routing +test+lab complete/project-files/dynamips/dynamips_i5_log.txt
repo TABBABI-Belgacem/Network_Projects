@@ -1,0 +1,16 @@
+May 22 14:33:46.512 HYPERVISOR: Release 0.2.14-x86/Windows (tag 2014092320)
+May 22 14:33:46.512 HYPERVISOR: Started on IP = 192.168.81.1, TCP port = 54927.
+May 22 14:33:46.723 HYPERVISOR: exec_cmd: hypervisor version 
+May 22 14:33:46.735 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\HP\GNS3\projects\LAB de Projet\lab configuration complet\routing +test=!!!!!!lab complete!!!!!!!!\project-files\dynamips 
+May 22 14:33:46.989 GENERAL: working_dir=C:\Users\HP\GNS3\projects\LAB de Projet\lab configuration complet\routing +test=!!!!!!lab complete!!!!!!!!\project-files\dynamips
+May 22 14:33:46.997 HYPERVISOR: exec_cmd: ethsw create SW-Enseignant 
+May 22 14:33:47.919 HYPERVISOR: exec_cmd: nio create_udp udp-f49001b7-1082-4a30-8030-2ab35b68f333 10000 192.168.81.128 10002 
+May 22 14:33:47.955 HYPERVISOR: exec_cmd: ethsw add_nio SW-Enseignant udp-f49001b7-1082-4a30-8030-2ab35b68f333 
+May 22 14:33:48.013 HYPERVISOR: exec_cmd: ethsw set_access_port SW-Enseignant udp-f49001b7-1082-4a30-8030-2ab35b68f333 1 
+May 22 14:33:48.060 HYPERVISOR: exec_cmd: nio create_udp udp-df50ff14-95d7-427d-b497-7c92fe070689 10003 192.168.81.1 10002 
+May 22 14:33:48.087 HYPERVISOR: exec_cmd: ethsw add_nio SW-Enseignant udp-df50ff14-95d7-427d-b497-7c92fe070689 
+May 22 14:33:48.126 HYPERVISOR: exec_cmd: ethsw set_access_port SW-Enseignant udp-df50ff14-95d7-427d-b497-7c92fe070689 1 
+May 22 14:52:07.493 HYPERVISOR: exec_cmd: ethsw delete SW-Enseignant 
+May 22 14:52:07.540 HYPERVISOR: exec_cmd: hypervisor stop 
+May 22 14:52:07.786 HYPERVISOR: Stopped.
+May 22 14:52:07.787 GENERAL: reset done.

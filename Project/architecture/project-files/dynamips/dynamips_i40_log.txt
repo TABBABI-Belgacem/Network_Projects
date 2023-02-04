@@ -1,0 +1,50 @@
+May 22 01:22:41.021 HYPERVISOR: Release 0.2.14-x86/Windows (tag 2014092320)
+May 22 01:22:41.022 HYPERVISOR: Started on IP = 192.168.81.1, TCP port = 51624.
+May 22 01:22:41.219 HYPERVISOR: exec_cmd: hypervisor version 
+May 22 01:22:41.260 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\HP\GNS3\projects\LAB de Projet\lab configuration complet\architecture\project-files\dynamips 
+May 22 01:22:41.260 GENERAL: working_dir=C:\Users\HP\GNS3\projects\LAB de Projet\lab configuration complet\architecture\project-files\dynamips
+May 22 01:22:41.292 HYPERVISOR: exec_cmd: vm create R-ISSAT 4 c2691 
+May 22 01:22:41.294 VM: VM R-ISSAT created.
+May 22 01:22:41.328 HYPERVISOR: exec_cmd: vm set_con_tcp_port R-ISSAT 5004 
+May 22 01:22:41.364 HYPERVISOR: exec_cmd: c2691 get_mac_addr R-ISSAT 
+May 22 01:22:41.391 HYPERVISOR: exec_cmd: c2691 set_mac_addr R-ISSAT c004.09c8.0000 
+May 22 01:22:41.424 HYPERVISOR: exec_cmd: vm set_exec_area R-ISSAT 64 
+May 22 01:22:41.459 HYPERVISOR: exec_cmd: vm get_status R-ISSAT 
+May 22 01:22:41.487 HYPERVISOR: exec_cmd: vm set_idle_pc R-ISSAT 0x6114a604 
+May 22 01:22:41.521 HYPERVISOR: exec_cmd: vm set_ram R-ISSAT 192 
+May 22 01:22:41.554 HYPERVISOR: exec_cmd: vm set_nvram R-ISSAT 256 
+May 22 01:22:41.580 HYPERVISOR: exec_cmd: vm set_ios R-ISSAT C:/Users/HP/GNS3/images/IOS/c2691-entservicesk9-mz.124-13b.image 
+May 22 01:22:41.613 HYPERVISOR: exec_cmd: vm set_disk0 R-ISSAT 0 
+May 22 01:22:41.646 HYPERVISOR: exec_cmd: vm slot_add_binding R-ISSAT 0 16 WIC-2T 
+May 22 01:22:41.674 HYPERVISOR: exec_cmd: vm set_config R-ISSAT configs/i4_startup-config.cfg 
+May 22 01:22:41.734 HYPERVISOR: exec_cmd: vm set_config R-ISSAT configs/i4_startup-config.cfg configs/i4_private-config.cfg 
+May 22 01:22:42.787 HYPERVISOR: exec_cmd: nio create_udp udp-6bd2437f-f859-48d2-835b-84ba09518e44 10022 192.168.81.1 10021 
+May 22 01:22:42.823 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R-ISSAT 0 16 udp-6bd2437f-f859-48d2-835b-84ba09518e44 
+May 22 01:22:42.865 HYPERVISOR: exec_cmd: vm get_status R-ISSAT 
+May 22 01:22:42.916 HYPERVISOR: exec_cmd: nio create_udp udp-9d327db3-7d6e-40ea-b2ab-739de7387622 10024 192.168.81.1 10023 
+May 22 01:22:42.953 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R-ISSAT 0 17 udp-9d327db3-7d6e-40ea-b2ab-739de7387622 
+May 22 01:22:42.985 HYPERVISOR: exec_cmd: vm get_status R-ISSAT 
+May 22 01:22:43.028 HYPERVISOR: exec_cmd: nio create_udp udp-61c40ef4-8cbb-40ed-b518-3c7a30f54a30 10025 192.168.81.1 10026 
+May 22 01:22:43.055 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R-ISSAT 0 0 udp-61c40ef4-8cbb-40ed-b518-3c7a30f54a30 
+May 22 01:22:43.084 HYPERVISOR: exec_cmd: vm get_status R-ISSAT 
+May 22 01:22:43.118 HYPERVISOR: exec_cmd: nio create_udp udp-9c391f3e-6120-4f34-b444-2ab7bdb62b92 10028 192.168.81.1 10027 
+May 22 01:22:43.143 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R-ISSAT 0 1 udp-9c391f3e-6120-4f34-b444-2ab7bdb62b92 
+May 22 01:22:43.157 HYPERVISOR: exec_cmd: vm get_status R-ISSAT 
+May 22 02:10:35.502 HYPERVISOR: exec_cmd: vm set_ghost_status R-ISSAT 2 
+May 22 02:10:35.580 HYPERVISOR: exec_cmd: vm set_ghost_file R-ISSAT c2691-entservicesk9-mz.124-13b.image-192.ghost 
+May 22 02:10:35.702 HYPERVISOR: exec_cmd: vm get_status R-ISSAT 
+May 22 02:10:35.880 HYPERVISOR: exec_cmd: vm start R-ISSAT 
+May 22 02:11:00.517 HYPERVISOR: exec_cmd: vm get_status R-ISSAT 
+May 22 02:11:00.616 HYPERVISOR: exec_cmd: vm stop R-ISSAT 
+May 22 02:11:01.387 VM: VM R-ISSAT shutdown.
+May 22 02:11:01.434 HYPERVISOR: exec_cmd: vm extract_config R-ISSAT 
+May 22 02:11:34.899 HYPERVISOR: exec_cmd: vm extract_config R-ISSAT 
+May 22 02:11:34.937 HYPERVISOR: exec_cmd: vm extract_config R-ISSAT 
+May 22 02:11:34.976 HYPERVISOR: exec_cmd: vm extract_config R-ISSAT 
+May 22 02:11:56.431 HYPERVISOR: exec_cmd: vm get_status R-ISSAT 
+May 22 02:11:56.488 HYPERVISOR: exec_cmd: vm extract_config R-ISSAT 
+May 22 02:11:56.568 HYPERVISOR: exec_cmd: vm delete R-ISSAT 
+May 22 02:11:56.568 VM: VM R-ISSAT destroyed.
+May 22 02:11:56.633 HYPERVISOR: exec_cmd: hypervisor stop 
+May 22 02:11:56.738 HYPERVISOR: Stopped.
+May 22 02:11:56.739 GENERAL: reset done.

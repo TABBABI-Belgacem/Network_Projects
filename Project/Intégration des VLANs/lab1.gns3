@@ -1,0 +1,464 @@
+{
+    "auto_start": false,
+    "name": "lab1",
+    "project_id": "5664818a-1f10-469a-90f8-6828573ff0c9",
+    "revision": 4,
+    "show_port_names": true,
+    "topology": {
+        "links": [
+            {
+                "description": "Link from PC2 port Ethernet0 to sw-Etudiant port Ethernet1/0",
+                "destination_node_id": 2,
+                "destination_port_id": 7,
+                "destination_port_label": {
+                    "color": "#ff000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "e1/0",
+                    "x": 59.90860872937492,
+                    "y": 60.63362606199291
+                },
+                "id": 1,
+                "source_node_id": 10,
+                "source_port_id": 58,
+                "source_port_label": {
+                    "color": "#ff000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "e0",
+                    "x": -17.76076091171865,
+                    "y": -17.91703257749115
+                }
+            },
+            {
+                "description": "Link from PC1 port Ethernet0 to sw-Etudiant port Ethernet2/0",
+                "destination_node_id": 2,
+                "destination_port_id": 11,
+                "destination_port_label": {
+                    "color": "#ff000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "e2/0",
+                    "x": -44.745538642137916,
+                    "y": 59.05246194481029
+                },
+                "id": 2,
+                "source_node_id": 9,
+                "source_port_id": 57,
+                "source_port_label": {
+                    "color": "#ff000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "e0",
+                    "x": 68.74553864213792,
+                    "y": -12.052461944810283
+                }
+            },
+            {
+                "description": "Link from sw-Etudiant port Ethernet0/0 to R2-Distribution port FastEthernet0/0",
+                "destination_node_id": 1,
+                "destination_port_id": 1,
+                "destination_port_label": {
+                    "color": "#ff000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "f0/0",
+                    "x": 68.42035072661616,
+                    "y": 47.995799863483995
+                },
+                "id": 3,
+                "source_node_id": 2,
+                "source_port_id": 3,
+                "source_port_label": {
+                    "color": "#ff000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "e0/0",
+                    "x": 45.079649273383836,
+                    "y": -33.495799863483995
+                }
+            },
+            {
+                "description": "Link from R2-Distribution port FastEthernet0/1 to sw-Etudiant port Ethernet0/1",
+                "destination_node_id": 2,
+                "destination_port_id": 4,
+                "destination_port_label": {
+                    "color": "#ff000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "e0/1",
+                    "x": -20.555151761543385,
+                    "y": -27.703580298929324
+                },
+                "id": 4,
+                "source_node_id": 1,
+                "source_port_id": 2,
+                "source_port_label": {
+                    "color": "#ff000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "f0/1",
+                    "x": -32.95797160369071,
+                    "y": 44.691432779197754
+                }
+            }
+        ],
+        "nodes": [
+            {
+                "description": "Router c3600",
+                "dynamips_id": 1,
+                "id": 1,
+                "label": {
+                    "color": "#ff000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "R2-Distribution",
+                    "x": -20.0,
+                    "y": -25.0
+                },
+                "ports": [
+                    {
+                        "adapter_number": 0,
+                        "description": "connected to sw-Etudiant on port Ethernet0/0",
+                        "id": 1,
+                        "link_id": 3,
+                        "name": "FastEthernet0/0",
+                        "nio": "NIO_UDP",
+                        "port_number": 0
+                    },
+                    {
+                        "adapter_number": 0,
+                        "description": "connected to sw-Etudiant on port Ethernet0/1",
+                        "id": 2,
+                        "link_id": 4,
+                        "name": "FastEthernet0/1",
+                        "nio": "NIO_UDP",
+                        "port_number": 1
+                    }
+                ],
+                "properties": {
+                    "auto_delete_disks": true,
+                    "chassis": "3660",
+                    "clock_divisor": 4,
+                    "console": 5000,
+                    "disk0": 0,
+                    "disk1": 0,
+                    "exec_area": 64,
+                    "idlemax": 500,
+                    "idlesleep": 30,
+                    "image": "c3660-jk9o3s-mz.124-25d.image",
+                    "image_md5sum": "cc60bcab7574245417fb3fc4884c14e3",
+                    "iomem": 5,
+                    "mac_addr": "cc01.1708.0000",
+                    "mmap": true,
+                    "name": "R2-Distribution",
+                    "nvram": 256,
+                    "platform": "c3600",
+                    "ram": 192,
+                    "slot0": "Leopard-2FE",
+                    "sparsemem": true,
+                    "startup_config": "configs/i1_startup-config.cfg",
+                    "system_id": "FTX0945W0MY"
+                },
+                "server_id": 1,
+                "type": "C3600",
+                "vm_id": "cada456f-3d85-4c51-bfca-f50bed71b8c8",
+                "x": 178.0,
+                "y": -327.0
+            },
+            {
+                "description": "IOU device",
+                "id": 2,
+                "label": {
+                    "color": "#ff000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "sw-Etudiant",
+                    "x": 42.5,
+                    "y": 1.0
+                },
+                "ports": [
+                    {
+                        "adapter_number": 0,
+                        "description": "connected to R2-Distribution on port FastEthernet0/0",
+                        "id": 3,
+                        "link_id": 3,
+                        "name": "Ethernet0/0",
+                        "nio": "NIO_UDP",
+                        "port_number": 0
+                    },
+                    {
+                        "adapter_number": 0,
+                        "description": "connected to R2-Distribution on port FastEthernet0/1",
+                        "id": 4,
+                        "link_id": 4,
+                        "name": "Ethernet0/1",
+                        "nio": "NIO_UDP",
+                        "port_number": 1
+                    },
+                    {
+                        "adapter_number": 0,
+                        "id": 5,
+                        "name": "Ethernet0/2",
+                        "port_number": 2
+                    },
+                    {
+                        "adapter_number": 0,
+                        "id": 6,
+                        "name": "Ethernet0/3",
+                        "port_number": 3
+                    },
+                    {
+                        "adapter_number": 1,
+                        "description": "connected to PC2 on port Ethernet0",
+                        "id": 7,
+                        "link_id": 1,
+                        "name": "Ethernet1/0",
+                        "nio": "NIO_UDP",
+                        "port_number": 0
+                    },
+                    {
+                        "adapter_number": 1,
+                        "id": 8,
+                        "name": "Ethernet1/1",
+                        "port_number": 1
+                    },
+                    {
+                        "adapter_number": 1,
+                        "id": 9,
+                        "name": "Ethernet1/2",
+                        "port_number": 2
+                    },
+                    {
+                        "adapter_number": 1,
+                        "id": 10,
+                        "name": "Ethernet1/3",
+                        "port_number": 3
+                    },
+                    {
+                        "adapter_number": 2,
+                        "description": "connected to PC1 on port Ethernet0",
+                        "id": 11,
+                        "link_id": 2,
+                        "name": "Ethernet2/0",
+                        "nio": "NIO_UDP",
+                        "port_number": 0
+                    },
+                    {
+                        "adapter_number": 2,
+                        "id": 12,
+                        "name": "Ethernet2/1",
+                        "port_number": 1
+                    },
+                    {
+                        "adapter_number": 2,
+                        "id": 13,
+                        "name": "Ethernet2/2",
+                        "port_number": 2
+                    },
+                    {
+                        "adapter_number": 2,
+                        "id": 14,
+                        "name": "Ethernet2/3",
+                        "port_number": 3
+                    },
+                    {
+                        "adapter_number": 3,
+                        "id": 15,
+                        "name": "Ethernet3/0",
+                        "port_number": 0
+                    },
+                    {
+                        "adapter_number": 3,
+                        "id": 16,
+                        "name": "Ethernet3/1",
+                        "port_number": 1
+                    },
+                    {
+                        "adapter_number": 3,
+                        "id": 17,
+                        "name": "Ethernet3/2",
+                        "port_number": 2
+                    },
+                    {
+                        "adapter_number": 3,
+                        "id": 18,
+                        "name": "Ethernet3/3",
+                        "port_number": 3
+                    }
+                ],
+                "properties": {
+                    "console": 5000,
+                    "ethernet_adapters": 4,
+                    "l1_keepalives": false,
+                    "md5sum": "39d84c7979a26eed1ef0adbfbb04cf59",
+                    "name": "sw-Etudiant",
+                    "nvram": 128,
+                    "path": "i86bi-linux-l2-adventerprisek9-15.2b.bin",
+                    "ram": 256,
+                    "serial_adapters": 0,
+                    "use_default_iou_values": true
+                },
+                "server_id": 2,
+                "type": "IOUDevice",
+                "vm_id": "5302ae4a-be16-4080-81bf-c11f853794b7",
+                "x": 183.5,
+                "y": -122.5
+            },
+            {
+                "description": "VPCS device",
+                "id": 10,
+                "label": {
+                    "color": "#ff000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "PC2",
+                    "x": 16.5,
+                    "y": -25.0
+                },
+                "ports": [
+                    {
+                        "adapter_number": 0,
+                        "description": "connected to sw-Etudiant on port Ethernet1/0",
+                        "id": 58,
+                        "link_id": 1,
+                        "name": "Ethernet0",
+                        "nio": "NIO_UDP",
+                        "port_number": 0
+                    }
+                ],
+                "properties": {
+                    "console": 5002,
+                    "name": "PC2"
+                },
+                "server_id": 2,
+                "symbol": ":/symbols/vpcs_guest.svg",
+                "type": "VPCSDevice",
+                "vm_id": "60e84826-01d8-4b43-8332-f582db773da0",
+                "x": 279.5,
+                "y": 48.5
+            },
+            {
+                "description": "VPCS device",
+                "id": 9,
+                "label": {
+                    "color": "#ff000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "PC1",
+                    "x": 16.5,
+                    "y": -25.0
+                },
+                "ports": [
+                    {
+                        "adapter_number": 0,
+                        "description": "connected to sw-Etudiant on port Ethernet2/0",
+                        "id": 57,
+                        "link_id": 2,
+                        "name": "Ethernet0",
+                        "nio": "NIO_UDP",
+                        "port_number": 0
+                    }
+                ],
+                "properties": {
+                    "console": 5001,
+                    "name": "PC1"
+                },
+                "server_id": 2,
+                "symbol": ":/symbols/vpcs_guest.svg",
+                "type": "VPCSDevice",
+                "vm_id": "4e77f676-5b60-4464-966f-d7375160af4a",
+                "x": 70.5,
+                "y": 50.5
+            }
+        ],
+        "notes": [
+            {
+                "color": "#ff000000",
+                "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                "text": "VLAN-310:13 hotes\n@R:172.18.0.0/28",
+                "x": 417.0,
+                "y": -35.0,
+                "z": 1.0
+            },
+            {
+                "color": "#ff000000",
+                "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                "text": ".1",
+                "x": 223.0,
+                "y": -256.0
+            },
+            {
+                "color": "#ff000000",
+                "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                "text": ".1",
+                "x": 180.0,
+                "y": -253.0
+            },
+            {
+                "color": "#ff000000",
+                "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                "text": ".10",
+                "x": 43.0,
+                "y": 69.0
+            },
+            {
+                "color": "#ff000000",
+                "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                "text": ".10",
+                "x": 357.0,
+                "y": 62.0
+            },
+            {
+                "color": "#ff000000",
+                "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                "text": "VLAN-300:80 hotes\n@R:172.19.0.0/25",
+                "x": -131.0,
+                "y": -39.0
+            }
+        ],
+        "rectangles": [
+            {
+                "color": "#00ffff",
+                "height": 175.0,
+                "width": 163.0,
+                "x": 44.0,
+                "y": -64.0,
+                "z": -1.0
+            },
+            {
+                "color": "#55ff7f",
+                "height": 175.0,
+                "width": 163.0,
+                "x": 229.0,
+                "y": -64.0,
+                "z": -1.0
+            },
+            {
+                "color": "#00ffff",
+                "height": 56.0,
+                "width": 163.0,
+                "x": -150.0,
+                "y": -45.0,
+                "z": -1.0
+            },
+            {
+                "color": "#55ff7f",
+                "height": 52.0,
+                "width": 162.0,
+                "x": 408.0,
+                "y": -41.0,
+                "z": -1.0
+            }
+        ],
+        "servers": [
+            {
+                "host": "192.168.81.1",
+                "id": 1,
+                "local": true,
+                "port": 3080,
+                "protocol": "http",
+                "vm": false
+            },
+            {
+                "host": "192.168.81.128",
+                "id": 2,
+                "local": false,
+                "port": 3080,
+                "protocol": "http",
+                "user": "",
+                "vm": true
+            }
+        ]
+    },
+    "type": "topology",
+    "version": "1.5.2"
+}

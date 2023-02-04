@@ -1,0 +1,16 @@
+May 22 01:19:57.271 HYPERVISOR: Release 0.2.14-x86/Windows (tag 2014092320)
+May 22 01:19:57.272 HYPERVISOR: Started on IP = 192.168.81.1, TCP port = 51557.
+May 22 01:19:57.706 HYPERVISOR: exec_cmd: hypervisor version 
+May 22 01:19:57.735 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\HP\GNS3\projects\LAB de Projet\lab configuration complet\serveur+firewall\lab2\project-files\dynamips 
+May 22 01:19:58.099 GENERAL: working_dir=C:\Users\HP\GNS3\projects\LAB de Projet\lab configuration complet\serveur+firewall\lab2\project-files\dynamips
+May 22 01:19:58.134 HYPERVISOR: exec_cmd: ethsw create SW-DMZ 
+May 22 01:19:58.604 HYPERVISOR: exec_cmd: nio create_udp udp-35f2db48-08ca-4065-935d-4dbf2f4b680b 10003 192.168.81.1 10002 
+May 22 01:19:58.636 HYPERVISOR: exec_cmd: ethsw add_nio SW-DMZ udp-35f2db48-08ca-4065-935d-4dbf2f4b680b 
+May 22 01:19:58.687 HYPERVISOR: exec_cmd: ethsw set_access_port SW-DMZ udp-35f2db48-08ca-4065-935d-4dbf2f4b680b 1 
+May 22 01:19:58.912 HYPERVISOR: exec_cmd: nio create_udp udp-34056dd0-ce1a-4209-82b5-e19d317ee938 10009 192.168.81.1 10008 
+May 22 01:19:58.960 HYPERVISOR: exec_cmd: ethsw add_nio SW-DMZ udp-34056dd0-ce1a-4209-82b5-e19d317ee938 
+May 22 01:19:58.986 HYPERVISOR: exec_cmd: ethsw set_access_port SW-DMZ udp-34056dd0-ce1a-4209-82b5-e19d317ee938 1 
+May 22 01:21:29.254 HYPERVISOR: exec_cmd: ethsw delete SW-DMZ 
+May 22 01:21:29.296 HYPERVISOR: exec_cmd: hypervisor stop 
+May 22 01:21:29.754 HYPERVISOR: Stopped.
+May 22 01:21:29.754 GENERAL: reset done.

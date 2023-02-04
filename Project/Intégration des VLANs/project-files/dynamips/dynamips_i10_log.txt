@@ -1,0 +1,29 @@
+Apr 15 22:37:46.020 HYPERVISOR: Release 0.2.14-x86/Windows (tag 2014092320)
+Apr 15 22:37:46.022 HYPERVISOR: Started on IP = 192.168.2.10, TCP port = 53313.
+Apr 15 22:37:46.281 HYPERVISOR: exec_cmd: hypervisor version 
+Apr 15 22:37:46.301 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\user1\GNS3\projects\LAB de Projet\inter-vlan\project-files\dynamips 
+Apr 15 22:37:46.442 GENERAL: working_dir=C:\Users\user1\GNS3\projects\LAB de Projet\inter-vlan\project-files\dynamips
+Apr 15 22:37:46.450 HYPERVISOR: exec_cmd: vm create R1 1 c3600 
+Apr 15 22:37:46.457 VM: VM R1 created.
+Apr 15 22:37:46.469 HYPERVISOR: exec_cmd: vm set_con_tcp_port R1 5000 
+Apr 15 22:37:46.485 HYPERVISOR: exec_cmd: c3600 get_mac_addr R1 
+Apr 15 22:37:46.500 HYPERVISOR: exec_cmd: c3600 set_chassis R1 3660 
+Apr 15 22:37:46.520 HYPERVISOR: exec_cmd: vm set_ram R1 192 
+Apr 15 22:37:46.536 HYPERVISOR: exec_cmd: vm set_nvram R1 256 
+Apr 15 22:37:46.550 HYPERVISOR: exec_cmd: c3600 set_mac_addr R1 cc01.1708.0000 
+Apr 15 22:37:46.565 HYPERVISOR: exec_cmd: vm set_exec_area R1 64 
+Apr 15 22:37:46.585 HYPERVISOR: exec_cmd: vm set_ios R1 C:/Users/user1/GNS3/images/IOS/c3660-jk9o3s-mz.124-25d.image 
+Apr 15 22:37:46.600 HYPERVISOR: exec_cmd: vm set_config R1 configs/i1_startup-config.cfg 
+Apr 15 22:37:46.784 HYPERVISOR: exec_cmd: nio create_udp udp-1116c82c-9f5e-4bd4-a6f4-4ad6fdf3d4ce 10000 192.168.2.128 10004 
+Apr 15 22:37:46.823 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R1 0 0 udp-1116c82c-9f5e-4bd4-a6f4-4ad6fdf3d4ce 
+Apr 15 22:37:46.842 HYPERVISOR: exec_cmd: vm get_status R1 
+Apr 15 22:37:46.904 HYPERVISOR: exec_cmd: nio create_udp udp-e478437e-a895-43b4-a34f-913212354c21 10001 192.168.2.128 10005 
+Apr 15 22:37:46.924 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R1 0 1 udp-e478437e-a895-43b4-a34f-913212354c21 
+Apr 15 22:37:46.941 HYPERVISOR: exec_cmd: vm get_status R1 
+Apr 15 22:37:54.114 HYPERVISOR: exec_cmd: vm get_status R1 
+Apr 15 22:37:54.134 HYPERVISOR: exec_cmd: vm extract_config R1 
+Apr 15 22:37:54.171 HYPERVISOR: exec_cmd: vm delete R1 
+Apr 15 22:37:54.171 VM: VM R1 destroyed.
+Apr 15 22:37:54.206 HYPERVISOR: exec_cmd: hypervisor stop 
+Apr 15 22:37:54.283 HYPERVISOR: Stopped.
+Apr 15 22:37:54.283 GENERAL: reset done.

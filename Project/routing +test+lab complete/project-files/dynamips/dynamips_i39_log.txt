@@ -1,0 +1,39 @@
+Apr 16 15:18:10.852 HYPERVISOR: Release 0.2.14-x86/Windows (tag 2014092320)
+Apr 16 15:18:10.853 HYPERVISOR: Started on IP = 192.168.2.10, TCP port = 50333.
+Apr 16 15:18:11.129 HYPERVISOR: exec_cmd: hypervisor version 
+Apr 16 15:18:11.189 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\user1\GNS3\projects\LAB de Projet\Routing\project-files\dynamips 
+Apr 16 15:18:11.189 GENERAL: working_dir=C:\Users\user1\GNS3\projects\LAB de Projet\Routing\project-files\dynamips
+Apr 16 15:18:11.238 HYPERVISOR: exec_cmd: vm create R-CORE-ISSATE 8 c3600 
+Apr 16 15:18:11.240 VM: VM R-CORE-ISSATE created.
+Apr 16 15:18:11.292 HYPERVISOR: exec_cmd: vm set_con_tcp_port R-CORE-ISSATE 5001 
+Apr 16 15:18:11.346 HYPERVISOR: exec_cmd: c3600 get_mac_addr R-CORE-ISSATE 
+Apr 16 15:18:11.395 HYPERVISOR: exec_cmd: c3600 set_chassis R-CORE-ISSATE 3660 
+Apr 16 15:18:11.455 HYPERVISOR: exec_cmd: c3600 set_mac_addr R-CORE-ISSATE cc08.1368.0000 
+Apr 16 15:18:11.493 HYPERVISOR: exec_cmd: vm set_ios R-CORE-ISSATE C:/Users/user1/GNS3/images/IOS/c3660-jk9o3s-mz.124-25d.image 
+Apr 16 15:18:11.524 HYPERVISOR: exec_cmd: vm set_ram R-CORE-ISSATE 192 
+Apr 16 15:18:11.583 HYPERVISOR: exec_cmd: vm set_nvram R-CORE-ISSATE 256 
+Apr 16 15:18:11.646 HYPERVISOR: exec_cmd: vm set_exec_area R-CORE-ISSATE 64 
+Apr 16 15:18:11.704 HYPERVISOR: exec_cmd: vm get_status R-CORE-ISSATE 
+Apr 16 15:18:11.759 HYPERVISOR: exec_cmd: vm set_idle_pc R-CORE-ISSATE 0x0 
+Apr 16 15:18:11.799 HYPERVISOR: exec_cmd: vm get_status R-CORE-ISSATE 
+Apr 16 15:18:11.854 HYPERVISOR: exec_cmd: vm slot_add_binding R-CORE-ISSATE 1 0 NM-4E 
+Apr 16 15:18:11.914 HYPERVISOR: exec_cmd: vm set_config R-CORE-ISSATE configs/i8_startup-config.cfg 
+Apr 16 15:18:12.267 HYPERVISOR: exec_cmd: nio create_udp udp-e884a4ca-18b8-4583-b31a-8693fbcce4cc 10011 192.168.2.10 10012 
+Apr 16 15:18:12.322 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R-CORE-ISSATE 1 0 udp-e884a4ca-18b8-4583-b31a-8693fbcce4cc 
+Apr 16 15:18:12.372 HYPERVISOR: exec_cmd: vm get_status R-CORE-ISSATE 
+Apr 16 15:18:12.449 HYPERVISOR: exec_cmd: nio create_udp udp-4b043e76-e5f8-46da-a25c-e9528252195a 10013 192.168.2.10 10014 
+Apr 16 15:18:12.494 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R-CORE-ISSATE 1 1 udp-4b043e76-e5f8-46da-a25c-e9528252195a 
+Apr 16 15:18:12.533 HYPERVISOR: exec_cmd: vm get_status R-CORE-ISSATE 
+Apr 16 15:18:12.583 HYPERVISOR: exec_cmd: nio create_udp udp-02b5f37b-8f4e-45c6-8adb-c1d666d08dfb 10016 192.168.2.10 10015 
+Apr 16 15:18:12.608 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R-CORE-ISSATE 0 0 udp-02b5f37b-8f4e-45c6-8adb-c1d666d08dfb 
+Apr 16 15:18:12.634 HYPERVISOR: exec_cmd: vm get_status R-CORE-ISSATE 
+Apr 16 15:18:12.661 HYPERVISOR: exec_cmd: nio create_udp udp-be64c235-95f2-48d1-821c-c38f144ede07 10017 192.168.2.10 10018 
+Apr 16 15:18:12.675 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R-CORE-ISSATE 1 2 udp-be64c235-95f2-48d1-821c-c38f144ede07 
+Apr 16 15:18:12.685 HYPERVISOR: exec_cmd: vm get_status R-CORE-ISSATE 
+Apr 16 15:18:19.710 HYPERVISOR: exec_cmd: vm get_status R-CORE-ISSATE 
+Apr 16 15:18:19.754 HYPERVISOR: exec_cmd: vm extract_config R-CORE-ISSATE 
+Apr 16 15:18:19.800 HYPERVISOR: exec_cmd: vm delete R-CORE-ISSATE 
+Apr 16 15:18:19.800 VM: VM R-CORE-ISSATE destroyed.
+Apr 16 15:18:19.836 HYPERVISOR: exec_cmd: hypervisor stop 
+Apr 16 15:18:20.019 HYPERVISOR: Stopped.
+Apr 16 15:18:20.019 GENERAL: reset done.

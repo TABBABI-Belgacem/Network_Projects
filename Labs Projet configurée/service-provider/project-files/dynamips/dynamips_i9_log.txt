@@ -1,0 +1,47 @@
+May 16 00:58:58.631 HYPERVISOR: Release 0.2.14-x86/Windows (tag 2014092320)
+May 16 00:58:58.631 HYPERVISOR: Started on IP = 192.168.81.1, TCP port = 57423.
+May 16 00:58:58.663 HYPERVISOR: exec_cmd: hypervisor version 
+May 16 00:58:58.663 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\HP\GNS3\projects\LAB de Projet\lab vide\service-provider\project-files\dynamips 
+May 16 00:58:58.663 GENERAL: working_dir=C:\Users\HP\GNS3\projects\LAB de Projet\lab vide\service-provider\project-files\dynamips
+May 16 00:58:58.678 HYPERVISOR: exec_cmd: vm create R1 6 c2691 
+May 16 00:58:58.678 VM: VM R1 created.
+May 16 00:58:58.678 HYPERVISOR: exec_cmd: vm set_con_tcp_port R1 5000 
+May 16 00:58:58.678 HYPERVISOR: exec_cmd: c2691 get_mac_addr R1 
+May 16 00:58:58.694 HYPERVISOR: exec_cmd: vm set_nvram R1 256 
+May 16 00:58:58.694 HYPERVISOR: exec_cmd: vm set_exec_area R1 64 
+May 16 00:58:58.694 HYPERVISOR: exec_cmd: vm set_disk0 R1 0 
+May 16 00:58:58.709 HYPERVISOR: exec_cmd: vm set_ram R1 192 
+May 16 00:58:58.709 HYPERVISOR: exec_cmd: vm get_status R1 
+May 16 00:58:58.709 HYPERVISOR: exec_cmd: vm set_idle_pc R1 0x6114a604 
+May 16 00:58:58.725 HYPERVISOR: exec_cmd: vm set_ios R1 C:/Users/HP/GNS3/images/IOS/c2691-entservicesk9-mz.124-13b.image 
+May 16 00:58:58.725 HYPERVISOR: exec_cmd: vm set_config R1 configs/i6_startup-config.cfg 
+May 16 00:59:06.757 HYPERVISOR: exec_cmd: vm rename R1 R-SP 
+May 16 00:59:24.127 HYPERVISOR: exec_cmd: vm slot_add_binding R-SP 0 16 WIC-2T 
+May 16 00:59:32.238 HYPERVISOR: exec_cmd: nio create_udp udp-5a0544c3-ddb1-404d-9d51-df2856ff5591 10001 192.168.81.1 10002 
+May 16 00:59:32.269 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R-SP 0 16 udp-5a0544c3-ddb1-404d-9d51-df2856ff5591 
+May 16 00:59:32.269 HYPERVISOR: exec_cmd: vm get_status R-SP 
+May 16 00:59:39.849 HYPERVISOR: exec_cmd: nio create_udp udp-e52c1e28-684e-44a1-b129-793e224bd3e2 10011 192.168.81.1 10012 
+May 16 00:59:39.865 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R-SP 0 17 udp-e52c1e28-684e-44a1-b129-793e224bd3e2 
+May 16 00:59:39.880 HYPERVISOR: exec_cmd: vm get_status R-SP 
+May 16 01:01:10.447 HYPERVISOR: exec_cmd: vm set_ghost_status R-SP 2 
+May 16 01:01:10.447 HYPERVISOR: exec_cmd: vm set_ghost_file R-SP c2691-entservicesk9-mz.124-13b.image-192.ghost 
+May 16 01:01:10.463 HYPERVISOR: exec_cmd: vm get_status R-SP 
+May 16 01:01:10.478 HYPERVISOR: exec_cmd: vm start R-SP 
+May 16 01:13:15.245 HYPERVISOR: exec_cmd: vm get_status R-SP 
+May 16 01:13:15.264 HYPERVISOR: exec_cmd: vm stop R-SP 
+May 16 01:13:15.408 VM: VM R-SP shutdown.
+May 16 01:13:15.416 HYPERVISOR: exec_cmd: vm extract_config R-SP 
+May 16 01:13:18.298 HYPERVISOR: exec_cmd: vm get_status R-SP 
+May 16 01:13:18.325 HYPERVISOR: exec_cmd: vm start R-SP 
+May 16 01:36:34.503 HYPERVISOR: exec_cmd: vm get_status R-SP 
+May 16 01:36:34.524 HYPERVISOR: exec_cmd: vm stop R-SP 
+May 16 01:36:34.641 VM: VM R-SP shutdown.
+May 16 01:36:34.649 HYPERVISOR: exec_cmd: vm extract_config R-SP 
+May 16 01:36:53.152 HYPERVISOR: exec_cmd: vm extract_config R-SP 
+May 16 01:36:53.496 HYPERVISOR: exec_cmd: vm get_status R-SP 
+May 16 01:36:53.511 HYPERVISOR: exec_cmd: vm extract_config R-SP 
+May 16 01:36:53.542 HYPERVISOR: exec_cmd: vm delete R-SP 
+May 16 01:36:53.542 VM: VM R-SP destroyed.
+May 16 01:36:53.558 HYPERVISOR: exec_cmd: hypervisor stop 
+May 16 01:36:53.730 HYPERVISOR: Stopped.
+May 16 01:36:53.730 GENERAL: reset done.

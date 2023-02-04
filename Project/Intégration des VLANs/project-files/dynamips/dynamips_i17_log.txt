@@ -1,0 +1,52 @@
+May 03 14:47:55.101 HYPERVISOR: Release 0.2.14-x86/Windows (tag 2014092320)
+May 03 14:47:55.102 HYPERVISOR: Started on IP = 10.0.0.2, TCP port = 61403.
+May 03 14:47:55.309 HYPERVISOR: exec_cmd: hypervisor version 
+May 03 14:47:55.316 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\user1\GNS3\projects\LAB de Projet\lab vide\Intégration des VLANs\project-files\dynamips 
+May 03 14:47:55.419 GENERAL: working_dir=C:\Users\user1\GNS3\projects\LAB de Projet\lab vide\Intégration des VLANs\project-files\dynamips
+May 03 14:47:55.424 HYPERVISOR: exec_cmd: vm create R2-Distribution 1 c3600 
+May 03 14:47:55.426 VM: VM R2-Distribution created.
+May 03 14:47:55.433 HYPERVISOR: exec_cmd: vm set_con_tcp_port R2-Distribution 5000 
+May 03 14:47:55.442 HYPERVISOR: exec_cmd: c3600 get_mac_addr R2-Distribution 
+May 03 14:47:55.451 HYPERVISOR: exec_cmd: c3600 set_chassis R2-Distribution 3660 
+May 03 14:47:55.461 HYPERVISOR: exec_cmd: vm set_ios R2-Distribution C:/Users/user1/GNS3/images/IOS/c3660-jk9o3s-mz.124-25d.image 
+May 03 14:47:55.470 HYPERVISOR: exec_cmd: vm set_exec_area R2-Distribution 64 
+May 03 14:47:55.480 HYPERVISOR: exec_cmd: vm set_nvram R2-Distribution 256 
+May 03 14:47:55.488 HYPERVISOR: exec_cmd: vm set_ram R2-Distribution 192 
+May 03 14:47:55.494 HYPERVISOR: exec_cmd: c3600 set_mac_addr R2-Distribution cc01.1708.0000 
+May 03 14:47:55.502 HYPERVISOR: exec_cmd: vm set_config R2-Distribution configs/i1_startup-config.cfg 
+May 03 14:47:55.601 HYPERVISOR: exec_cmd: nio create_udp udp-b5ee5f60-1436-41ec-aeb9-c6527b123540 10001 10.0.0.129 10004 
+May 03 14:47:55.610 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R2-Distribution 0 1 udp-b5ee5f60-1436-41ec-aeb9-c6527b123540 
+May 03 14:47:55.622 HYPERVISOR: exec_cmd: vm get_status R2-Distribution 
+May 03 14:47:55.651 HYPERVISOR: exec_cmd: nio create_udp udp-2c628daf-202a-473e-9e1e-a1f30e9d4b06 10000 10.0.0.129 10005 
+May 03 14:47:55.665 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R2-Distribution 0 0 udp-2c628daf-202a-473e-9e1e-a1f30e9d4b06 
+May 03 14:47:55.676 HYPERVISOR: exec_cmd: vm get_status R2-Distribution 
+May 03 14:47:58.119 HYPERVISOR: exec_cmd: vm create Ghost 0 c3600 
+May 03 14:47:58.121 VM: VM Ghost created.
+May 03 14:47:58.126 HYPERVISOR: exec_cmd: vm set_ios Ghost C:/Users/user1/GNS3/images/IOS/c3660-jk9o3s-mz.124-25d.image 
+May 03 14:47:58.133 HYPERVISOR: exec_cmd: vm set_ghost_status Ghost 1 
+May 03 14:47:58.140 HYPERVISOR: exec_cmd: vm set_ghost_file Ghost c3660-jk9o3s-mz.124-25d.image-192.ghost 
+May 03 14:47:58.147 HYPERVISOR: exec_cmd: vm set_ram Ghost 192 
+May 03 14:47:58.154 HYPERVISOR: exec_cmd: vm get_status Ghost 
+May 03 14:47:58.165 HYPERVISOR: exec_cmd: vm start Ghost 
+May 03 14:47:58.597 HYPERVISOR: exec_cmd: vm get_status Ghost 
+May 03 14:47:58.608 HYPERVISOR: exec_cmd: vm stop Ghost 
+May 03 14:47:58.823 VM: VM Ghost shutdown.
+May 03 14:47:58.830 HYPERVISOR: exec_cmd: vm clean_delete Ghost 
+May 03 14:47:58.830 VM: VM Ghost destroyed.
+May 03 14:47:58.844 HYPERVISOR: exec_cmd: vm set_ghost_status R2-Distribution 2 
+May 03 14:47:58.868 HYPERVISOR: exec_cmd: vm set_ghost_file R2-Distribution c3660-jk9o3s-mz.124-25d.image-192.ghost 
+May 03 14:47:58.878 HYPERVISOR: exec_cmd: vm get_status R2-Distribution 
+May 03 14:47:58.885 HYPERVISOR: exec_cmd: vm start R2-Distribution 
+May 03 14:49:32.112 HYPERVISOR: exec_cmd: vm get_status R2-Distribution 
+May 03 14:49:32.122 HYPERVISOR: exec_cmd: vm stop R2-Distribution 
+May 03 14:49:32.242 VM: VM R2-Distribution shutdown.
+May 03 14:49:32.249 HYPERVISOR: exec_cmd: vm extract_config R2-Distribution 
+May 03 14:49:35.184 HYPERVISOR: exec_cmd: vm extract_config R2-Distribution 
+May 03 14:49:47.926 HYPERVISOR: exec_cmd: vm extract_config R2-Distribution 
+May 03 14:49:49.659 HYPERVISOR: exec_cmd: vm get_status R2-Distribution 
+May 03 14:49:49.668 HYPERVISOR: exec_cmd: vm extract_config R2-Distribution 
+May 03 14:49:49.679 HYPERVISOR: exec_cmd: vm delete R2-Distribution 
+May 03 14:49:49.679 VM: VM R2-Distribution destroyed.
+May 03 14:49:49.687 HYPERVISOR: exec_cmd: hypervisor stop 
+May 03 14:49:49.771 HYPERVISOR: Stopped.
+May 03 14:49:49.771 GENERAL: reset done.

@@ -1,0 +1,57 @@
+May 22 01:16:08.395 HYPERVISOR: Release 0.2.14-x86/Windows (tag 2014092320)
+May 22 01:16:08.396 HYPERVISOR: Started on IP = 192.168.81.1, TCP port = 51476.
+May 22 01:16:08.739 HYPERVISOR: exec_cmd: hypervisor version 
+May 22 01:16:08.759 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\HP\GNS3\projects\LAB de Projet\lab configuration complet\service-provider\project-files\dynamips 
+May 22 01:16:09.100 GENERAL: working_dir=C:\Users\HP\GNS3\projects\LAB de Projet\lab configuration complet\service-provider\project-files\dynamips
+May 22 01:16:09.117 HYPERVISOR: exec_cmd: vm create R-ISSAT 3 c2691 
+May 22 01:16:09.146 VM: VM R-ISSAT created.
+May 22 01:16:09.169 HYPERVISOR: exec_cmd: vm set_con_tcp_port R-ISSAT 5002 
+May 22 01:16:09.201 HYPERVISOR: exec_cmd: c2691 get_mac_addr R-ISSAT 
+May 22 01:16:09.236 HYPERVISOR: exec_cmd: c2691 set_mac_addr R-ISSAT c003.1090.0000 
+May 22 01:16:09.286 HYPERVISOR: exec_cmd: vm set_exec_area R-ISSAT 64 
+May 22 01:16:09.315 HYPERVISOR: exec_cmd: vm get_status R-ISSAT 
+May 22 01:16:09.359 HYPERVISOR: exec_cmd: vm set_idle_pc R-ISSAT 0x6114a604 
+May 22 01:16:09.394 HYPERVISOR: exec_cmd: vm set_ram R-ISSAT 192 
+May 22 01:16:09.429 HYPERVISOR: exec_cmd: vm set_nvram R-ISSAT 256 
+May 22 01:16:09.461 HYPERVISOR: exec_cmd: vm set_ios R-ISSAT C:/Users/HP/GNS3/images/IOS/c2691-entservicesk9-mz.124-13b.image 
+May 22 01:16:09.491 HYPERVISOR: exec_cmd: vm set_disk0 R-ISSAT 0 
+May 22 01:16:09.511 HYPERVISOR: exec_cmd: vm slot_add_binding R-ISSAT 0 16 WIC-2T 
+May 22 01:16:09.557 HYPERVISOR: exec_cmd: vm set_config R-ISSAT configs/i3_startup-config.cfg 
+May 22 01:16:10.011 HYPERVISOR: exec_cmd: nio create_udp udp-b1904713-c330-463d-9c75-54022f4501c3 10010 192.168.81.1 10009 
+May 22 01:16:10.028 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R-ISSAT 0 16 udp-b1904713-c330-463d-9c75-54022f4501c3 
+May 22 01:16:10.044 HYPERVISOR: exec_cmd: vm get_status R-ISSAT 
+May 22 01:16:10.107 HYPERVISOR: exec_cmd: nio create_udp udp-6456802c-c80a-45e9-aa54-a53bcd166144 10011 192.168.81.1 10012 
+May 22 01:16:10.141 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R-ISSAT 0 0 udp-6456802c-c80a-45e9-aa54-a53bcd166144 
+May 22 01:16:10.175 HYPERVISOR: exec_cmd: vm get_status R-ISSAT 
+May 22 01:16:10.219 HYPERVISOR: exec_cmd: nio create_udp udp-a40fb758-5569-473d-b6ca-d341e566d155 10014 192.168.81.1 10013 
+May 22 01:16:10.237 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R-ISSAT 0 17 udp-a40fb758-5569-473d-b6ca-d341e566d155 
+May 22 01:16:10.244 HYPERVISOR: exec_cmd: vm get_status R-ISSAT 
+May 22 01:16:12.345 HYPERVISOR: exec_cmd: vm create Ghost 0 c2691 
+May 22 01:16:12.348 VM: VM Ghost created.
+May 22 01:16:12.362 HYPERVISOR: exec_cmd: vm set_ios Ghost C:/Users/HP/GNS3/images/IOS/c2691-entservicesk9-mz.124-13b.image 
+May 22 01:16:12.369 HYPERVISOR: exec_cmd: vm set_ghost_status Ghost 1 
+May 22 01:16:12.377 HYPERVISOR: exec_cmd: vm set_ghost_file Ghost c2691-entservicesk9-mz.124-13b.image-192.ghost 
+May 22 01:16:12.386 HYPERVISOR: exec_cmd: vm set_ram Ghost 192 
+May 22 01:16:12.396 HYPERVISOR: exec_cmd: vm get_status Ghost 
+May 22 01:16:12.403 HYPERVISOR: exec_cmd: vm start Ghost 
+May 22 01:16:12.836 HYPERVISOR: exec_cmd: vm get_status Ghost 
+May 22 01:16:12.845 HYPERVISOR: exec_cmd: vm stop Ghost 
+May 22 01:16:13.063 VM: VM Ghost shutdown.
+May 22 01:16:13.070 HYPERVISOR: exec_cmd: vm clean_delete Ghost 
+May 22 01:16:13.070 VM: VM Ghost destroyed.
+May 22 01:16:13.098 HYPERVISOR: exec_cmd: vm set_ghost_status R-ISSAT 2 
+May 22 01:16:13.105 HYPERVISOR: exec_cmd: vm set_ghost_file R-ISSAT c2691-entservicesk9-mz.124-13b.image-192.ghost 
+May 22 01:16:13.112 HYPERVISOR: exec_cmd: vm get_status R-ISSAT 
+May 22 01:16:13.122 HYPERVISOR: exec_cmd: vm start R-ISSAT 
+May 22 01:17:21.916 HYPERVISOR: exec_cmd: vm extract_config R-ISSAT 
+May 22 01:17:22.986 HYPERVISOR: exec_cmd: vm get_status R-ISSAT 
+May 22 01:17:23.019 HYPERVISOR: exec_cmd: vm stop R-ISSAT 
+May 22 01:17:23.210 VM: VM R-ISSAT shutdown.
+May 22 01:17:23.217 HYPERVISOR: exec_cmd: vm extract_config R-ISSAT 
+May 22 01:17:39.872 HYPERVISOR: exec_cmd: vm get_status R-ISSAT 
+May 22 01:17:39.894 HYPERVISOR: exec_cmd: vm extract_config R-ISSAT 
+May 22 01:17:39.918 HYPERVISOR: exec_cmd: vm delete R-ISSAT 
+May 22 01:17:39.918 VM: VM R-ISSAT destroyed.
+May 22 01:17:39.936 HYPERVISOR: exec_cmd: hypervisor stop 
+May 22 01:17:40.257 HYPERVISOR: Stopped.
+May 22 01:17:40.257 GENERAL: reset done.

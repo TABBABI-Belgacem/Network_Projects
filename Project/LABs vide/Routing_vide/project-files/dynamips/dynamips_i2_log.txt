@@ -1,0 +1,45 @@
+Feb 01 16:33:11.709 HYPERVISOR: Release 0.2.14-x86/Windows (tag 2014092320)
+Feb 01 16:33:11.711 HYPERVISOR: Started on IP = 192.168.42.1, TCP port = 63277.
+Feb 01 16:33:11.864 HYPERVISOR: exec_cmd: hypervisor version 
+Feb 01 16:33:11.883 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\BELGACEM\GNS3\projects\routing +test=!!!!!!lab complete!!!!!!!!\project-files\dynamips 
+Feb 01 16:33:12.314 GENERAL: working_dir=C:\Users\BELGACEM\GNS3\projects\routing +test=!!!!!!lab complete!!!!!!!!\project-files\dynamips
+Feb 01 16:33:12.320 HYPERVISOR: exec_cmd: vm create R1-Distribution 10 c3600 
+Feb 01 16:33:12.324 VM: VM R1-Distribution created.
+Feb 01 16:33:12.336 HYPERVISOR: exec_cmd: vm set_con_tcp_port R1-Distribution 5003 
+Feb 01 16:33:12.353 HYPERVISOR: exec_cmd: c3600 get_mac_addr R1-Distribution 
+Feb 01 16:33:12.369 HYPERVISOR: exec_cmd: c3600 set_chassis R1-Distribution 3660 
+Feb 01 16:33:12.384 HYPERVISOR: exec_cmd: c3600 set_mac_addr R1-Distribution cc0a.1024.0000 
+Feb 01 16:33:12.399 HYPERVISOR: exec_cmd: vm set_exec_area R1-Distribution 64 
+Feb 01 16:33:12.420 HYPERVISOR: exec_cmd: vm get_status R1-Distribution 
+Feb 01 16:33:12.479 HYPERVISOR: exec_cmd: vm set_idle_pc R1-Distribution 0x606071f8 
+Feb 01 16:33:12.500 HYPERVISOR: exec_cmd: vm set_nvram R1-Distribution 256 
+Feb 01 16:33:12.530 HYPERVISOR: exec_cmd: vm set_ram R1-Distribution 192 
+Feb 01 16:33:12.552 HYPERVISOR: exec_cmd: vm set_ios R1-Distribution C:/Users/BELGACEM/GNS3/images/IOS/c3660-jk9o3s-mz124-6XT2 (1).image 
+Feb 01 16:33:12.576 HYPERVISOR: exec_cmd: vm get_status R1-Distribution 
+Feb 01 16:33:12.594 HYPERVISOR: exec_cmd: vm slot_add_binding R1-Distribution 1 0 NM-4E 
+Feb 01 16:33:12.618 HYPERVISOR: exec_cmd: vm set_config R1-Distribution configs/i10_startup-config.cfg 
+Feb 01 16:33:12.844 HYPERVISOR: exec_cmd: nio create_udp udp-c17514ae-e20b-4866-aa90-b41ee2b9babf 10002 192.168.42.1 10003 
+Feb 01 16:33:12.876 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R1-Distribution 0 0 udp-c17514ae-e20b-4866-aa90-b41ee2b9babf 
+Feb 01 16:33:12.896 HYPERVISOR: exec_cmd: vm get_status R1-Distribution 
+Feb 01 16:33:12.974 HYPERVISOR: exec_cmd: nio create_udp udp-b9232083-2eb9-4755-bf4d-005a2a74658d 10007 192.168.42.1 10006 
+Feb 01 16:33:12.994 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R1-Distribution 1 2 udp-b9232083-2eb9-4755-bf4d-005a2a74658d 
+Feb 01 16:33:13.013 HYPERVISOR: exec_cmd: vm get_status R1-Distribution 
+Feb 01 16:33:13.197 HYPERVISOR: exec_cmd: nio create_udp udp-8d8883c2-dc7b-4e54-8780-faaff81aaac6 10013 192.168.42.1 10012 
+Feb 01 16:33:13.216 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R1-Distribution 1 1 udp-8d8883c2-dc7b-4e54-8780-faaff81aaac6 
+Feb 01 16:33:13.229 HYPERVISOR: exec_cmd: vm get_status R1-Distribution 
+Feb 01 16:46:16.974 HYPERVISOR: exec_cmd: vm get_status R1-Distribution 
+Feb 01 16:46:16.993 HYPERVISOR: exec_cmd: vm slot_remove_nio_binding R1-Distribution 1 1 
+Feb 01 16:46:17.006 HYPERVISOR: exec_cmd: nio delete udp-8d8883c2-dc7b-4e54-8780-faaff81aaac6 
+Feb 01 16:51:45.231 HYPERVISOR: exec_cmd: vm get_status R1-Distribution 
+Feb 01 16:51:45.246 HYPERVISOR: exec_cmd: vm slot_remove_nio_binding R1-Distribution 0 0 
+Feb 01 16:51:45.254 HYPERVISOR: exec_cmd: nio delete udp-c17514ae-e20b-4866-aa90-b41ee2b9babf 
+Feb 01 16:51:45.274 HYPERVISOR: exec_cmd: vm get_status R1-Distribution 
+Feb 01 16:51:45.278 HYPERVISOR: exec_cmd: vm slot_remove_nio_binding R1-Distribution 1 2 
+Feb 01 16:51:45.281 HYPERVISOR: exec_cmd: nio delete udp-b9232083-2eb9-4755-bf4d-005a2a74658d 
+Feb 01 16:51:45.294 HYPERVISOR: exec_cmd: vm get_status R1-Distribution 
+Feb 01 16:51:45.298 HYPERVISOR: exec_cmd: vm extract_config R1-Distribution 
+Feb 01 16:51:45.303 HYPERVISOR: exec_cmd: vm delete R1-Distribution 
+Feb 01 16:51:45.303 VM: VM R1-Distribution destroyed.
+Feb 01 16:51:45.307 HYPERVISOR: exec_cmd: hypervisor stop 
+Feb 01 16:51:45.686 HYPERVISOR: Stopped.
+Feb 01 16:51:45.686 GENERAL: reset done.

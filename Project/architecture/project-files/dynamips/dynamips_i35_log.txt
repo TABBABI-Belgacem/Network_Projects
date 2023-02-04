@@ -1,0 +1,43 @@
+May 22 01:22:39.413 HYPERVISOR: Release 0.2.14-x86/Windows (tag 2014092320)
+May 22 01:22:39.414 HYPERVISOR: Started on IP = 192.168.81.1, TCP port = 51608.
+May 22 01:22:39.728 HYPERVISOR: exec_cmd: hypervisor version 
+May 22 01:22:39.749 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\HP\GNS3\projects\LAB de Projet\lab configuration complet\architecture\project-files\dynamips 
+May 22 01:22:40.356 GENERAL: working_dir=C:\Users\HP\GNS3\projects\LAB de Projet\lab configuration complet\architecture\project-files\dynamips
+May 22 01:22:40.394 HYPERVISOR: exec_cmd: vm create R-SP 5 c2691 
+May 22 01:22:40.396 VM: VM R-SP created.
+May 22 01:22:40.428 HYPERVISOR: exec_cmd: vm set_con_tcp_port R-SP 5005 
+May 22 01:22:40.477 HYPERVISOR: exec_cmd: c2691 get_mac_addr R-SP 
+May 22 01:22:40.516 HYPERVISOR: exec_cmd: c2691 set_mac_addr R-SP c005.03a4.0000 
+May 22 01:22:40.555 HYPERVISOR: exec_cmd: vm set_exec_area R-SP 64 
+May 22 01:22:40.591 HYPERVISOR: exec_cmd: vm get_status R-SP 
+May 22 01:22:40.630 HYPERVISOR: exec_cmd: vm set_idle_pc R-SP 0x6114a604 
+May 22 01:22:40.669 HYPERVISOR: exec_cmd: vm set_ram R-SP 192 
+May 22 01:22:40.703 HYPERVISOR: exec_cmd: vm set_nvram R-SP 256 
+May 22 01:22:40.735 HYPERVISOR: exec_cmd: vm set_ios R-SP C:/Users/HP/GNS3/images/IOS/c2691-entservicesk9-mz.124-13b.image 
+May 22 01:22:40.765 HYPERVISOR: exec_cmd: vm set_disk0 R-SP 0 
+May 22 01:22:40.795 HYPERVISOR: exec_cmd: vm slot_add_binding R-SP 0 16 WIC-2T 
+May 22 01:22:40.832 HYPERVISOR: exec_cmd: vm set_config R-SP configs/i5_startup-config.cfg 
+May 22 01:22:41.860 HYPERVISOR: exec_cmd: nio create_udp udp-6d83a186-c3be-4723-b1d8-0fb6b0e15903 10002 192.168.81.1 10001 
+May 22 01:22:41.907 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R-SP 0 16 udp-6d83a186-c3be-4723-b1d8-0fb6b0e15903 
+May 22 01:22:41.950 HYPERVISOR: exec_cmd: vm get_status R-SP 
+May 22 01:22:42.815 HYPERVISOR: exec_cmd: nio create_udp udp-deefffca-1a5e-4b26-a373-9cfe3e2a21e6 10023 192.168.81.1 10024 
+May 22 01:22:42.853 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R-SP 0 17 udp-deefffca-1a5e-4b26-a373-9cfe3e2a21e6 
+May 22 01:22:42.894 HYPERVISOR: exec_cmd: vm get_status R-SP 
+May 22 02:10:33.628 HYPERVISOR: exec_cmd: vm set_ghost_status R-SP 2 
+May 22 02:10:33.648 HYPERVISOR: exec_cmd: vm set_ghost_file R-SP c2691-entservicesk9-mz.124-13b.image-192.ghost 
+May 22 02:10:33.660 HYPERVISOR: exec_cmd: vm get_status R-SP 
+May 22 02:10:33.677 HYPERVISOR: exec_cmd: vm start R-SP 
+May 22 02:11:01.270 HYPERVISOR: exec_cmd: vm get_status R-SP 
+May 22 02:11:01.281 HYPERVISOR: exec_cmd: vm stop R-SP 
+May 22 02:11:01.411 VM: VM R-SP shutdown.
+May 22 02:11:01.447 HYPERVISOR: exec_cmd: vm extract_config R-SP 
+May 22 02:11:34.927 HYPERVISOR: exec_cmd: vm extract_config R-SP 
+May 22 02:11:34.965 HYPERVISOR: exec_cmd: vm extract_config R-SP 
+May 22 02:11:34.996 HYPERVISOR: exec_cmd: vm extract_config R-SP 
+May 22 02:11:56.437 HYPERVISOR: exec_cmd: vm get_status R-SP 
+May 22 02:11:56.495 HYPERVISOR: exec_cmd: vm extract_config R-SP 
+May 22 02:11:56.578 HYPERVISOR: exec_cmd: vm delete R-SP 
+May 22 02:11:56.579 VM: VM R-SP destroyed.
+May 22 02:11:56.639 HYPERVISOR: exec_cmd: hypervisor stop 
+May 22 02:11:56.734 HYPERVISOR: Stopped.
+May 22 02:11:56.734 GENERAL: reset done.

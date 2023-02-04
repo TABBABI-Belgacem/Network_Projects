@@ -1,0 +1,56 @@
+May 20 18:27:13.392 HYPERVISOR: Release 0.2.14-x86/Windows (tag 2014092320)
+May 20 18:27:13.392 HYPERVISOR: Started on IP = 192.168.81.1, TCP port = 52416.
+May 20 18:27:13.549 HYPERVISOR: exec_cmd: hypervisor version 
+May 20 18:27:13.578 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\HP\GNS3\projects\LAB de Projet\lab configuration complet\architecture\project-files\dynamips 
+May 20 18:27:13.578 GENERAL: working_dir=C:\Users\HP\GNS3\projects\LAB de Projet\lab configuration complet\architecture\project-files\dynamips
+May 20 18:27:13.611 HYPERVISOR: exec_cmd: vm create serveur 6 c1700 
+May 20 18:27:13.614 VM: VM serveur created.
+May 20 18:27:13.644 HYPERVISOR: exec_cmd: vm set_con_tcp_port serveur 5010 
+May 20 18:27:13.677 HYPERVISOR: exec_cmd: c1700 get_mac_addr serveur 
+May 20 18:27:13.702 HYPERVISOR: exec_cmd: c1700 set_mac_addr serveur d006.0674.0000 
+May 20 18:27:13.738 HYPERVISOR: exec_cmd: vm set_exec_area serveur 64 
+May 20 18:27:13.771 HYPERVISOR: exec_cmd: vm get_status serveur 
+May 20 18:27:13.804 HYPERVISOR: exec_cmd: vm set_idle_pc serveur 0x80618b54 
+May 20 18:27:13.837 HYPERVISOR: exec_cmd: vm set_ram serveur 160 
+May 20 18:27:13.870 HYPERVISOR: exec_cmd: vm set_nvram serveur 128 
+May 20 18:27:13.903 HYPERVISOR: exec_cmd: vm set_ios serveur C:/Users/HP/GNS3/images/IOS/c1700-adventerprisek9-mz.124-8.image 
+May 20 18:27:13.950 HYPERVISOR: exec_cmd: vm set_sparse_mem serveur 1 
+May 20 18:27:13.994 HYPERVISOR: exec_cmd: c1700 set_iomem serveur 5 
+May 20 18:27:14.033 HYPERVISOR: exec_cmd: vm set_config serveur configs/i6_startup-config.cfg 
+May 20 18:27:15.251 HYPERVISOR: exec_cmd: nio create_udp udp-9f9f8668-f68c-48d7-88fe-41ceda2163b7 10029 192.168.81.1 10030 
+May 20 18:27:15.295 HYPERVISOR: exec_cmd: vm slot_add_nio_binding serveur 0 0 udp-9f9f8668-f68c-48d7-88fe-41ceda2163b7 
+May 20 18:27:15.325 HYPERVISOR: exec_cmd: vm get_status serveur 
+May 20 18:28:57.490 HYPERVISOR: exec_cmd: vm extract_config serveur 
+May 20 18:28:58.959 HYPERVISOR: exec_cmd: vm extract_config serveur 
+May 20 18:29:07.628 HYPERVISOR: exec_cmd: vm create Ghost 0 c1700 
+May 20 18:29:07.630 VM: VM Ghost created.
+May 20 18:29:07.636 HYPERVISOR: exec_cmd: vm set_ios Ghost C:/Users/HP/GNS3/images/IOS/c1700-adventerprisek9-mz.124-8.image 
+May 20 18:29:07.643 HYPERVISOR: exec_cmd: vm set_ghost_status Ghost 1 
+May 20 18:29:07.649 HYPERVISOR: exec_cmd: vm set_ghost_file Ghost c1700-adventerprisek9-mz.124-8.image-160.ghost 
+May 20 18:29:07.656 HYPERVISOR: exec_cmd: vm set_ram Ghost 160 
+May 20 18:29:07.662 HYPERVISOR: exec_cmd: vm get_status Ghost 
+May 20 18:29:07.670 HYPERVISOR: exec_cmd: vm start Ghost 
+May 20 18:29:07.996 HYPERVISOR: exec_cmd: vm get_status Ghost 
+May 20 18:29:08.008 HYPERVISOR: exec_cmd: vm stop Ghost 
+May 20 18:29:08.272 VM: VM Ghost shutdown.
+May 20 18:29:08.277 HYPERVISOR: exec_cmd: vm clean_delete Ghost 
+May 20 18:29:08.277 VM: VM Ghost destroyed.
+May 20 18:29:08.304 HYPERVISOR: exec_cmd: vm set_ghost_status serveur 2 
+May 20 18:29:08.311 HYPERVISOR: exec_cmd: vm set_ghost_file serveur c1700-adventerprisek9-mz.124-8.image-160.ghost 
+May 20 18:29:08.319 HYPERVISOR: exec_cmd: vm get_status serveur 
+May 20 18:29:08.327 HYPERVISOR: exec_cmd: vm start serveur 
+May 20 18:29:08.331 GHOST: loaded ghost image c1700-adventerprisek9-mz.124-8.image-160.ghost (fd=11) at addr=0xf0a70000 (size=0xa000000)
+May 20 18:29:08.331 GHOST: loaded image c1700-adventerprisek9-mz.124-8.image-160.ghost successfully.
+May 20 18:40:21.169 HYPERVISOR: exec_cmd: vm get_status serveur 
+May 20 18:40:21.176 HYPERVISOR: exec_cmd: vm stop serveur 
+May 20 18:40:21.256 GHOST: unloaded ghost image c1700-adventerprisek9-mz.124-8.image-160.ghost (fd=11) at addr=0xf0a70000 (size=0xa000000)
+May 20 18:40:21.395 VM: VM serveur shutdown.
+May 20 18:40:21.401 HYPERVISOR: exec_cmd: vm extract_config serveur 
+May 20 18:55:38.895 HYPERVISOR: exec_cmd: vm extract_config serveur 
+May 20 18:55:39.083 HYPERVISOR: exec_cmd: vm get_status serveur 
+May 20 18:55:39.130 HYPERVISOR: exec_cmd: vm extract_config serveur 
+May 20 18:55:39.176 HYPERVISOR: exec_cmd: vm delete serveur 
+May 20 18:55:39.176 VM: VM serveur destroyed.
+May 20 18:55:39.255 HYPERVISOR: exec_cmd: hypervisor stop 
+May 20 18:55:39.755 HYPERVISOR: Stopped.
+May 20 18:55:39.755 GENERAL: reset done.

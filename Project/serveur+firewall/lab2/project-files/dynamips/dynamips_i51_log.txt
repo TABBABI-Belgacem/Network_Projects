@@ -1,0 +1,24 @@
+Apr 16 15:27:23.818 HYPERVISOR: Release 0.2.14-x86/Windows (tag 2014092320)
+Apr 16 15:27:23.819 HYPERVISOR: Started on IP = 192.168.2.10, TCP port = 50411.
+Apr 16 15:27:23.844 HYPERVISOR: exec_cmd: hypervisor version 
+Apr 16 15:27:23.853 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\user1\GNS3\projects\LAB de Projet\serveur+firewall\lab2\project-files\dynamips 
+Apr 16 15:27:23.853 GENERAL: working_dir=C:\Users\user1\GNS3\projects\LAB de Projet\serveur+firewall\lab2\project-files\dynamips
+Apr 16 15:27:23.861 HYPERVISOR: exec_cmd: vm create R1 3 c3600 
+Apr 16 15:27:23.864 VM: VM R1 created.
+Apr 16 15:27:23.872 HYPERVISOR: exec_cmd: vm set_con_tcp_port R1 5004 
+Apr 16 15:27:23.883 HYPERVISOR: exec_cmd: c3600 get_mac_addr R1 
+Apr 16 15:27:23.893 HYPERVISOR: exec_cmd: c3600 set_chassis R1 3660 
+Apr 16 15:27:23.902 HYPERVISOR: exec_cmd: vm set_nvram R1 256 
+Apr 16 15:27:23.910 HYPERVISOR: exec_cmd: vm set_exec_area R1 64 
+Apr 16 15:27:23.918 HYPERVISOR: exec_cmd: vm get_status R1 
+Apr 16 15:27:23.926 HYPERVISOR: exec_cmd: vm set_idle_pc R1 0x606071f8 
+Apr 16 15:27:23.934 HYPERVISOR: exec_cmd: vm set_ios R1 C:/Users/user1/GNS3/images/IOS/c3660-jk9o3s-mz.124-25d.image 
+Apr 16 15:27:23.942 HYPERVISOR: exec_cmd: vm set_ram R1 192 
+Apr 16 15:27:23.952 HYPERVISOR: exec_cmd: vm set_config R1 configs/i3_startup-config.cfg 
+Apr 16 15:27:29.103 HYPERVISOR: exec_cmd: vm get_status R1 
+Apr 16 15:27:29.115 HYPERVISOR: exec_cmd: vm extract_config R1 
+Apr 16 15:27:29.126 HYPERVISOR: exec_cmd: vm delete R1 
+Apr 16 15:27:29.126 VM: VM R1 destroyed.
+Apr 16 15:27:29.144 HYPERVISOR: exec_cmd: hypervisor stop 
+Apr 16 15:27:29.343 HYPERVISOR: Stopped.
+Apr 16 15:27:29.343 GENERAL: reset done.

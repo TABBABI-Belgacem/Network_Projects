@@ -1,0 +1,8 @@
+Exception: STATUS_INTEGER_DIVIDE_BY_ZERO at eip=FEAE06A6
+eax=000186A0 ebx=00000000 ecx=00000000 edx=00000000 esi=00000000 edi=20107358
+ebp=20107358 esp=FAD8CD7C program=C:\Program Files\GNS3\dynamips\dynamips.EXE, pid 3636, thread unknown (0xD5C)
+cs=0023 ds=002B es=002B fs=0053 gs=002B ss=002B
+Stack trace:
+Frame     Function  Args
+20107358  FEAE06A6 (1FFFFFFF, 00000000, 00000000, 00000000)
+End of stack trace

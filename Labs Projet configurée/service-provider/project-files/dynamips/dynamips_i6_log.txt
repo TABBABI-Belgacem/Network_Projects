@@ -1,0 +1,61 @@
+Feb 12 16:37:57.946 HYPERVISOR: Release 0.2.14-x86/Windows (tag 2014092320)
+Feb 12 16:37:57.948 HYPERVISOR: Started on IP = 192.168.42.1, TCP port = 53862.
+Feb 12 16:37:58.078 HYPERVISOR: exec_cmd: hypervisor version 
+Feb 12 16:37:58.103 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\BELGACEM\GNS3\projects\Labs Projet configurée\service-provider\project-files\dynamips 
+Feb 12 16:37:58.103 GENERAL: working_dir=C:\Users\BELGACEM\GNS3\projects\Labs Projet configurée\service-provider\project-files\dynamips
+Feb 12 16:37:58.121 HYPERVISOR: exec_cmd: vm create R-ISSAT 3 c2691 
+Feb 12 16:37:58.123 VM: VM R-ISSAT created.
+Feb 12 16:37:58.142 HYPERVISOR: exec_cmd: vm set_con_tcp_port R-ISSAT 5002 
+Feb 12 16:37:58.161 HYPERVISOR: exec_cmd: c2691 get_mac_addr R-ISSAT 
+Feb 12 16:37:59.509 HYPERVISOR: exec_cmd: vm set_disk0 R-ISSAT 0 
+Feb 12 16:37:59.527 HYPERVISOR: exec_cmd: vm get_status R-ISSAT 
+Feb 12 16:37:59.552 HYPERVISOR: exec_cmd: vm set_idle_pc R-ISSAT 0x6114a604 
+Feb 12 16:37:59.583 HYPERVISOR: exec_cmd: vm slot_add_binding R-ISSAT 0 16 WIC-2T 
+Feb 12 16:37:59.617 HYPERVISOR: exec_cmd: c2691 set_mac_addr R-ISSAT c003.1090.0000 
+Feb 12 16:37:59.642 HYPERVISOR: exec_cmd: vm set_exec_area R-ISSAT 64 
+Feb 12 16:37:59.661 HYPERVISOR: exec_cmd: vm set_nvram R-ISSAT 256 
+Feb 12 16:37:59.684 HYPERVISOR: exec_cmd: vm set_ios R-ISSAT C:/Users/BELGACEM/GNS3/images/IOS/c3725-adventerprisek9-mz.124-15.T14.image 
+Feb 12 16:37:59.709 HYPERVISOR: exec_cmd: vm set_ram R-ISSAT 192 
+Feb 12 16:37:59.727 HYPERVISOR: exec_cmd: vm set_config R-ISSAT configs/i3_startup-config.cfg 
+Feb 12 16:37:59.831 HYPERVISOR: exec_cmd: nio create_udp udp-969d9948-1707-4d9e-a8c4-877d3e2a4ce2 10010 192.168.42.1 10009 
+Feb 12 16:37:59.850 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R-ISSAT 0 16 udp-969d9948-1707-4d9e-a8c4-877d3e2a4ce2 
+Feb 12 16:37:59.869 HYPERVISOR: exec_cmd: vm get_status R-ISSAT 
+Feb 12 16:37:59.902 HYPERVISOR: exec_cmd: nio create_udp udp-0510cfea-5727-47a9-a15c-04ed31335a6d 10011 192.168.42.1 10012 
+Feb 12 16:37:59.919 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R-ISSAT 0 0 udp-0510cfea-5727-47a9-a15c-04ed31335a6d 
+Feb 12 16:37:59.931 HYPERVISOR: exec_cmd: vm get_status R-ISSAT 
+Feb 12 16:37:59.947 HYPERVISOR: exec_cmd: nio create_udp udp-277a1805-74bd-459f-8dfa-3bfc53620ebb 10014 192.168.42.1 10013 
+Feb 12 16:37:59.953 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R-ISSAT 0 17 udp-277a1805-74bd-459f-8dfa-3bfc53620ebb 
+Feb 12 16:37:59.958 HYPERVISOR: exec_cmd: vm get_status R-ISSAT 
+Feb 12 16:39:29.365 HYPERVISOR: exec_cmd: vm set_ghost_status R-ISSAT 2 
+Feb 12 16:39:29.372 HYPERVISOR: exec_cmd: vm set_ghost_file R-ISSAT c3725-adventerprisek9-mz.124-15.T14.image-192.ghost 
+Feb 12 16:39:29.379 HYPERVISOR: exec_cmd: vm get_status R-ISSAT 
+Feb 12 16:39:29.385 HYPERVISOR: exec_cmd: vm start R-ISSAT 
+Feb 12 16:42:07.427 HYPERVISOR: exec_cmd: vm get_status R-ISSAT 
+Feb 12 16:42:07.431 HYPERVISOR: exec_cmd: vm stop R-ISSAT 
+Feb 12 16:42:07.553 VM: VM R-ISSAT shutdown.
+Feb 12 16:42:07.558 HYPERVISOR: exec_cmd: vm extract_config R-ISSAT 
+Feb 12 16:43:50.228 HYPERVISOR: exec_cmd: vm get_status R-ISSAT 
+Feb 12 16:43:50.234 HYPERVISOR: exec_cmd: vm start R-ISSAT 
+Feb 12 16:44:10.869 HYPERVISOR: exec_cmd: vm get_status R-ISSAT 
+Feb 12 16:44:10.875 HYPERVISOR: exec_cmd: vm stop R-ISSAT 
+Feb 12 16:44:11.027 VM: VM R-ISSAT shutdown.
+Feb 12 16:44:11.033 HYPERVISOR: exec_cmd: vm extract_config R-ISSAT 
+Feb 12 16:53:08.444 HYPERVISOR: exec_cmd: vm get_status R-ISSAT 
+Feb 12 16:53:08.448 HYPERVISOR: exec_cmd: vm start R-ISSAT 
+Feb 12 16:58:49.869 HYPERVISOR: exec_cmd: vm get_status R-ISSAT 
+Feb 12 16:58:49.869 HYPERVISOR: exec_cmd: vm stop R-ISSAT 
+Feb 12 16:58:50.009 VM: VM R-ISSAT shutdown.
+Feb 12 16:58:50.009 HYPERVISOR: exec_cmd: vm extract_config R-ISSAT 
+Feb 12 16:59:36.375 HYPERVISOR: exec_cmd: vm get_status R-ISSAT 
+Feb 12 16:59:36.391 HYPERVISOR: exec_cmd: vm start R-ISSAT 
+Feb 12 17:00:50.892 HYPERVISOR: exec_cmd: vm get_status R-ISSAT 
+Feb 12 17:00:50.908 HYPERVISOR: exec_cmd: vm stop R-ISSAT 
+Feb 12 17:00:51.095 VM: VM R-ISSAT shutdown.
+Feb 12 17:00:51.111 HYPERVISOR: exec_cmd: vm extract_config R-ISSAT 
+Feb 12 17:01:04.865 HYPERVISOR: exec_cmd: vm get_status R-ISSAT 
+Feb 12 17:01:04.879 HYPERVISOR: exec_cmd: vm extract_config R-ISSAT 
+Feb 12 17:01:04.880 HYPERVISOR: exec_cmd: vm delete R-ISSAT 
+Feb 12 17:01:04.880 VM: VM R-ISSAT destroyed.
+Feb 12 17:01:04.909 HYPERVISOR: exec_cmd: hypervisor stop 
+Feb 12 17:01:05.208 HYPERVISOR: Stopped.
+Feb 12 17:01:05.208 GENERAL: reset done.

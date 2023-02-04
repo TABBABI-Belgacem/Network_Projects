@@ -1,0 +1,17 @@
+Feb 12 16:37:57.258 HYPERVISOR: Release 0.2.14-x86/Windows (tag 2014092320)
+Feb 12 16:37:57.259 HYPERVISOR: Started on IP = 192.168.42.1, TCP port = 53840.
+Feb 12 16:37:57.347 HYPERVISOR: exec_cmd: hypervisor version 
+Feb 12 16:37:57.371 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\BELGACEM\GNS3\projects\Labs Projet configurée\service-provider\project-files\dynamips 
+Feb 12 16:37:57.836 GENERAL: working_dir=C:\Users\BELGACEM\GNS3\projects\Labs Projet configurée\service-provider\project-files\dynamips
+Feb 12 16:37:57.861 HYPERVISOR: exec_cmd: frsw create FR1 
+Feb 12 16:37:59.601 HYPERVISOR: exec_cmd: nio create_udp udp-ad2aa2c1-f2ad-4c1c-9606-d9a083330791 10004 192.168.42.1 10003 
+Feb 12 16:37:59.636 HYPERVISOR: exec_cmd: nio create_udp udp-373ed57d-edf8-4fca-87c6-fc26c563231f 10006 192.168.42.1 10005 
+Feb 12 16:37:59.655 HYPERVISOR: exec_cmd: frsw create_vc FR1 udp-373ed57d-edf8-4fca-87c6-fc26c563231f 101 udp-ad2aa2c1-f2ad-4c1c-9606-d9a083330791 202 
+Feb 12 16:37:59.696 HYPERVISOR: exec_cmd: frsw create_vc FR1 udp-ad2aa2c1-f2ad-4c1c-9606-d9a083330791 202 udp-373ed57d-edf8-4fca-87c6-fc26c563231f 101 
+Feb 12 16:42:54.696 udp-ad2aa2c1-f2ad-4c1c-9606-d9a083330791: resynchronization with LMI sequence...
+Feb 12 16:47:52.501 udp-373ed57d-edf8-4fca-87c6-fc26c563231f: resynchronization with LMI sequence...
+Feb 12 16:55:28.805 udp-373ed57d-edf8-4fca-87c6-fc26c563231f: resynchronization with LMI sequence...
+Feb 12 17:01:04.567 HYPERVISOR: exec_cmd: frsw delete FR1 
+Feb 12 17:01:04.604 HYPERVISOR: exec_cmd: hypervisor stop 
+Feb 12 17:01:04.707 HYPERVISOR: Stopped.
+Feb 12 17:01:04.707 GENERAL: reset done.

@@ -1,0 +1,51 @@
+May 14 11:10:29.189 HYPERVISOR: Release 0.2.14-x86/Windows (tag 2014092320)
+May 14 11:10:29.189 HYPERVISOR: Started on IP = 192.168.81.1, TCP port = 52696.
+May 14 11:10:29.268 HYPERVISOR: exec_cmd: hypervisor version 
+May 14 11:10:29.283 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\HP\GNS3\projects\LAB de Projet\lab configuration complet\Router on-a-stick\project-files\dynamips 
+May 14 11:10:29.377 GENERAL: working_dir=C:\Users\HP\GNS3\projects\LAB de Projet\lab configuration complet\Router on-a-stick\project-files\dynamips
+May 14 11:10:29.393 HYPERVISOR: exec_cmd: vm create R1 1 c2691 
+May 14 11:10:29.393 VM: VM R1 created.
+May 14 11:10:29.408 HYPERVISOR: exec_cmd: vm set_con_tcp_port R1 5000 
+May 14 11:10:29.424 HYPERVISOR: exec_cmd: c2691 get_mac_addr R1 
+May 14 11:10:29.424 HYPERVISOR: exec_cmd: c2691 set_mac_addr R1 c001.0c34.0000 
+May 14 11:10:29.424 HYPERVISOR: exec_cmd: vm set_ram R1 192 
+May 14 11:10:29.439 HYPERVISOR: exec_cmd: vm set_exec_area R1 64 
+May 14 11:10:29.439 HYPERVISOR: exec_cmd: vm set_disk0 R1 0 
+May 14 11:10:29.439 HYPERVISOR: exec_cmd: vm set_nvram R1 256 
+May 14 11:10:29.455 HYPERVISOR: exec_cmd: vm set_ios R1 C:/Users/HP/GNS3/images/IOS/c2691-entservicesk9-mz.124-13b.image 
+May 14 11:10:29.455 HYPERVISOR: exec_cmd: vm get_status R1 
+May 14 11:10:29.455 HYPERVISOR: exec_cmd: vm set_idle_pc R1 0x601cd7a0 
+May 14 11:10:29.471 HYPERVISOR: exec_cmd: vm set_config R1 configs/i1_startup-config.cfg 
+May 14 11:10:29.564 HYPERVISOR: exec_cmd: nio create_udp udp-71435a47-a1f9-493d-84d4-c20415d001ae 10000 192.168.81.128 10004 
+May 14 11:10:29.580 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R1 0 0 udp-71435a47-a1f9-493d-84d4-c20415d001ae 
+May 14 11:10:29.580 HYPERVISOR: exec_cmd: vm get_status R1 
+May 14 11:11:04.971 HYPERVISOR: exec_cmd: vm create Ghost 0 c2691 
+May 14 11:11:04.971 VM: VM Ghost created.
+May 14 11:11:04.987 HYPERVISOR: exec_cmd: vm set_ios Ghost C:/Users/HP/GNS3/images/IOS/c2691-entservicesk9-mz.124-13b.image 
+May 14 11:11:04.987 HYPERVISOR: exec_cmd: vm set_ghost_status Ghost 1 
+May 14 11:11:05.002 HYPERVISOR: exec_cmd: vm set_ghost_file Ghost c2691-entservicesk9-mz.124-13b.image-192.ghost 
+May 14 11:11:05.002 HYPERVISOR: exec_cmd: vm set_ram Ghost 192 
+May 14 11:11:05.018 HYPERVISOR: exec_cmd: vm get_status Ghost 
+May 14 11:11:05.018 HYPERVISOR: exec_cmd: vm start Ghost 
+May 14 11:11:05.362 HYPERVISOR: exec_cmd: vm get_status Ghost 
+May 14 11:11:05.377 HYPERVISOR: exec_cmd: vm stop Ghost 
+May 14 11:11:05.456 VM: VM Ghost shutdown.
+May 14 11:11:05.471 HYPERVISOR: exec_cmd: vm clean_delete Ghost 
+May 14 11:11:05.471 VM: VM Ghost destroyed.
+May 14 11:11:05.487 HYPERVISOR: exec_cmd: vm set_ghost_status R1 2 
+May 14 11:11:05.487 HYPERVISOR: exec_cmd: vm set_ghost_file R1 c2691-entservicesk9-mz.124-13b.image-192.ghost 
+May 14 11:11:05.487 HYPERVISOR: exec_cmd: vm get_status R1 
+May 14 11:11:05.502 HYPERVISOR: exec_cmd: vm start R1 
+May 14 11:34:21.417 HYPERVISOR: exec_cmd: vm get_status R1 
+May 14 11:34:21.433 HYPERVISOR: exec_cmd: vm stop R1 
+May 14 11:34:21.589 VM: VM R1 shutdown.
+May 14 11:34:21.605 HYPERVISOR: exec_cmd: vm extract_config R1 
+May 14 11:34:30.587 HYPERVISOR: exec_cmd: vm extract_config R1 
+May 14 11:34:51.658 HYPERVISOR: exec_cmd: vm extract_config R1 
+May 14 11:34:51.689 HYPERVISOR: exec_cmd: vm get_status R1 
+May 14 11:34:51.705 HYPERVISOR: exec_cmd: vm extract_config R1 
+May 14 11:34:51.705 HYPERVISOR: exec_cmd: vm delete R1 
+May 14 11:34:51.705 VM: VM R1 destroyed.
+May 14 11:34:51.720 HYPERVISOR: exec_cmd: hypervisor stop 
+May 14 11:34:52.111 HYPERVISOR: Stopped.
+May 14 11:34:52.111 GENERAL: reset done.

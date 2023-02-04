@@ -1,0 +1,33 @@
+May 15 21:27:16.399 HYPERVISOR: Release 0.2.14-x86/Windows (tag 2014092320)
+May 15 21:27:16.400 HYPERVISOR: Started on IP = 192.168.81.1, TCP port = 55480.
+May 15 21:27:16.504 HYPERVISOR: exec_cmd: hypervisor version 
+May 15 21:27:16.521 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\HP\GNS3\projects\LAB de Projet\lab configuration complet\serveur+firewall\lab2\project-files\dynamips 
+May 15 21:27:16.884 GENERAL: working_dir=C:\Users\HP\GNS3\projects\LAB de Projet\lab configuration complet\serveur+firewall\lab2\project-files\dynamips
+May 15 21:27:16.908 HYPERVISOR: exec_cmd: vm create R-IS 3 c1700 
+May 15 21:27:16.912 VM: VM R-IS created.
+May 15 21:27:16.936 HYPERVISOR: exec_cmd: vm set_con_tcp_port R-IS 5003 
+May 15 21:27:16.964 HYPERVISOR: exec_cmd: c1700 get_mac_addr R-IS 
+May 15 21:27:16.994 HYPERVISOR: exec_cmd: vm set_ios R-IS C:/Users/HP/GNS3/images/IOS/c1700-adventerprisek9-mz.124-8.image 
+May 15 21:27:17.016 HYPERVISOR: exec_cmd: vm set_sparse_mem R-IS 1 
+May 15 21:27:17.044 HYPERVISOR: exec_cmd: c1700 set_mac_addr R-IS d003.10e8.0000 
+May 15 21:27:17.067 HYPERVISOR: exec_cmd: c1700 set_iomem R-IS 5 
+May 15 21:27:17.094 HYPERVISOR: exec_cmd: vm slot_add_binding R-IS 0 16 WIC-2T 
+May 15 21:27:17.121 HYPERVISOR: exec_cmd: vm set_exec_area R-IS 64 
+May 15 21:27:17.153 HYPERVISOR: exec_cmd: vm slot_add_binding R-IS 0 32 WIC-2T 
+May 15 21:27:17.188 HYPERVISOR: exec_cmd: vm set_ram R-IS 160 
+May 15 21:27:17.225 HYPERVISOR: exec_cmd: vm set_nvram R-IS 128 
+May 15 21:27:17.259 HYPERVISOR: exec_cmd: vm get_status R-IS 
+May 15 21:27:17.292 HYPERVISOR: exec_cmd: vm set_idle_pc R-IS 0x80618b54 
+May 15 21:27:17.350 HYPERVISOR: exec_cmd: vm set_config R-IS configs/i3_startup-config.cfg 
+May 15 21:27:17.757 HYPERVISOR: exec_cmd: nio create_udp udp-a7e913ff-4407-41bb-bfcf-7ad0f8e76724 10011 192.168.81.1 10010 
+May 15 21:27:17.783 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R-IS 0 0 udp-a7e913ff-4407-41bb-bfcf-7ad0f8e76724 
+May 15 21:27:17.791 HYPERVISOR: exec_cmd: vm get_status R-IS 
+May 15 21:27:35.838 HYPERVISOR: exec_cmd: vm rename R-IS R-MESRS 
+May 15 21:30:37.568 HYPERVISOR: exec_cmd: vm extract_config R-MESRS 
+May 15 21:31:10.709 HYPERVISOR: exec_cmd: vm get_status R-MESRS 
+May 15 21:31:10.724 HYPERVISOR: exec_cmd: vm extract_config R-MESRS 
+May 15 21:31:10.740 HYPERVISOR: exec_cmd: vm delete R-MESRS 
+May 15 21:31:10.740 VM: VM R-MESRS destroyed.
+May 15 21:31:10.771 HYPERVISOR: exec_cmd: hypervisor stop 
+May 15 21:31:11.084 HYPERVISOR: Stopped.
+May 15 21:31:11.084 GENERAL: reset done.

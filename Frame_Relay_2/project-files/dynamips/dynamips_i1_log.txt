@@ -1,0 +1,17 @@
+Feb 09 10:29:47.952 HYPERVISOR: Release 0.2.14-x86/Windows (tag 2014092320)
+Feb 09 10:29:47.953 HYPERVISOR: Started on IP = 192.168.42.1, TCP port = 50737.
+Feb 09 10:29:48.397 HYPERVISOR: exec_cmd: hypervisor version 
+Feb 09 10:29:48.401 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\BELGACEM\GNS3\projects\LABs\fr1\project-files\dynamips 
+Feb 09 10:29:48.556 GENERAL: working_dir=C:\Users\BELGACEM\GNS3\projects\LABs\fr1\project-files\dynamips
+Feb 09 10:29:48.558 HYPERVISOR: exec_cmd: frsw create FR1 
+Feb 09 10:29:48.940 HYPERVISOR: exec_cmd: nio create_udp udp-5d7c2c73-4d8c-4275-96e0-7adfcc6e544b 10000 192.168.42.128 10000 
+Feb 09 10:29:48.986 HYPERVISOR: exec_cmd: nio create_udp udp-c92aa22e-917a-4d04-a1e7-81e5c2375156 10001 192.168.42.128 10001 
+Feb 09 10:29:48.991 HYPERVISOR: exec_cmd: frsw create_vc FR1 udp-c92aa22e-917a-4d04-a1e7-81e5c2375156 202 udp-5d7c2c73-4d8c-4275-96e0-7adfcc6e544b 101 
+Feb 09 10:29:49.004 HYPERVISOR: exec_cmd: frsw create_vc FR1 udp-5d7c2c73-4d8c-4275-96e0-7adfcc6e544b 101 udp-c92aa22e-917a-4d04-a1e7-81e5c2375156 202 
+Feb 09 10:29:49.068 HYPERVISOR: exec_cmd: nio create_udp udp-24ad1261-48fe-4f66-8759-81db0d9f4751 10002 192.168.42.128 10002 
+Feb 09 10:29:49.073 HYPERVISOR: exec_cmd: frsw create_vc FR1 udp-24ad1261-48fe-4f66-8759-81db0d9f4751 203 udp-5d7c2c73-4d8c-4275-96e0-7adfcc6e544b 102 
+Feb 09 10:29:49.085 HYPERVISOR: exec_cmd: frsw create_vc FR1 udp-5d7c2c73-4d8c-4275-96e0-7adfcc6e544b 102 udp-24ad1261-48fe-4f66-8759-81db0d9f4751 203 
+Feb 09 10:30:33.166 HYPERVISOR: exec_cmd: frsw delete FR1 
+Feb 09 10:30:33.241 HYPERVISOR: exec_cmd: hypervisor stop 
+Feb 09 10:30:33.417 HYPERVISOR: Stopped.
+Feb 09 10:30:33.417 GENERAL: reset done.

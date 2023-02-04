@@ -1,0 +1,53 @@
+May 22 01:19:57.281 HYPERVISOR: Release 0.2.14-x86/Windows (tag 2014092320)
+May 22 01:19:57.282 HYPERVISOR: Started on IP = 192.168.81.1, TCP port = 51560.
+May 22 01:19:57.727 HYPERVISOR: exec_cmd: hypervisor version 
+May 22 01:19:57.744 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\HP\GNS3\projects\LAB de Projet\lab configuration complet\serveur+firewall\lab2\project-files\dynamips 
+May 22 01:19:58.099 GENERAL: working_dir=C:\Users\HP\GNS3\projects\LAB de Projet\lab configuration complet\serveur+firewall\lab2\project-files\dynamips
+May 22 01:19:58.122 HYPERVISOR: exec_cmd: vm create R-CORE-MESRS 1 c2691 
+May 22 01:19:58.126 VM: VM R-CORE-MESRS created.
+May 22 01:19:58.159 HYPERVISOR: exec_cmd: vm set_con_tcp_port R-CORE-MESRS 5000 
+May 22 01:19:58.196 HYPERVISOR: exec_cmd: c2691 get_mac_addr R-CORE-MESRS 
+May 22 01:19:58.256 HYPERVISOR: exec_cmd: c2691 set_mac_addr R-CORE-MESRS c001.19e8.0000 
+May 22 01:19:58.314 HYPERVISOR: exec_cmd: vm set_exec_area R-CORE-MESRS 64 
+May 22 01:19:58.348 HYPERVISOR: exec_cmd: vm set_ram R-CORE-MESRS 192 
+May 22 01:19:58.384 HYPERVISOR: exec_cmd: vm set_nvram R-CORE-MESRS 256 
+May 22 01:19:58.423 HYPERVISOR: exec_cmd: vm get_status R-CORE-MESRS 
+May 22 01:19:58.447 HYPERVISOR: exec_cmd: vm set_idle_pc R-CORE-MESRS 0x601cd7a0 
+May 22 01:19:58.470 HYPERVISOR: exec_cmd: vm set_ios R-CORE-MESRS C:/Users/HP/GNS3/images/IOS/c2691-entservicesk9-mz.124-13b.image 
+May 22 01:19:58.505 HYPERVISOR: exec_cmd: vm set_disk0 R-CORE-MESRS 0 
+May 22 01:19:58.548 HYPERVISOR: exec_cmd: vm set_config R-CORE-MESRS configs/i1_startup-config.cfg 
+May 22 01:19:58.775 HYPERVISOR: exec_cmd: nio create_udp udp-584617ee-afc5-4875-b112-cc881b7b58d1 10004 192.168.81.1 10005 
+May 22 01:19:58.819 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R-CORE-MESRS 0 0 udp-584617ee-afc5-4875-b112-cc881b7b58d1 
+May 22 01:19:58.850 HYPERVISOR: exec_cmd: vm get_status R-CORE-MESRS 
+May 22 01:19:58.898 HYPERVISOR: exec_cmd: nio create_udp udp-ced23832-7d96-4a5a-b35a-cef8c81f1e5e 10007 192.168.81.1 10006 
+May 22 01:19:58.933 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R-CORE-MESRS 0 1 udp-ced23832-7d96-4a5a-b35a-cef8c81f1e5e 
+May 22 01:19:58.979 HYPERVISOR: exec_cmd: vm get_status R-CORE-MESRS 
+May 22 01:20:02.731 HYPERVISOR: exec_cmd: vm create Ghost 0 c2691 
+May 22 01:20:02.733 VM: VM Ghost created.
+May 22 01:20:02.754 HYPERVISOR: exec_cmd: vm set_ios Ghost C:/Users/HP/GNS3/images/IOS/c2691-entservicesk9-mz.124-13b.image 
+May 22 01:20:02.768 HYPERVISOR: exec_cmd: vm set_ghost_status Ghost 1 
+May 22 01:20:02.792 HYPERVISOR: exec_cmd: vm set_ghost_file Ghost c2691-entservicesk9-mz.124-13b.image-192.ghost 
+May 22 01:20:02.833 HYPERVISOR: exec_cmd: vm set_ram Ghost 192 
+May 22 01:20:02.856 HYPERVISOR: exec_cmd: vm get_status Ghost 
+May 22 01:20:02.864 HYPERVISOR: exec_cmd: vm start Ghost 
+May 22 01:20:03.259 HYPERVISOR: exec_cmd: vm get_status Ghost 
+May 22 01:20:03.269 HYPERVISOR: exec_cmd: vm stop Ghost 
+May 22 01:20:03.481 VM: VM Ghost shutdown.
+May 22 01:20:03.485 HYPERVISOR: exec_cmd: vm clean_delete Ghost 
+May 22 01:20:03.485 VM: VM Ghost destroyed.
+May 22 01:20:03.502 HYPERVISOR: exec_cmd: vm set_ghost_status R-CORE-MESRS 2 
+May 22 01:20:03.511 HYPERVISOR: exec_cmd: vm set_ghost_file R-CORE-MESRS c2691-entservicesk9-mz.124-13b.image-192.ghost 
+May 22 01:20:03.520 HYPERVISOR: exec_cmd: vm get_status R-CORE-MESRS 
+May 22 01:20:03.533 HYPERVISOR: exec_cmd: vm start R-CORE-MESRS 
+May 22 01:20:52.974 HYPERVISOR: exec_cmd: vm get_status R-CORE-MESRS 
+May 22 01:20:53.009 HYPERVISOR: exec_cmd: vm stop R-CORE-MESRS 
+May 22 01:20:53.111 VM: VM R-CORE-MESRS shutdown.
+May 22 01:20:53.118 HYPERVISOR: exec_cmd: vm extract_config R-CORE-MESRS 
+May 22 01:21:29.277 HYPERVISOR: exec_cmd: vm extract_config R-CORE-MESRS 
+May 22 01:21:29.866 HYPERVISOR: exec_cmd: vm get_status R-CORE-MESRS 
+May 22 01:21:29.884 HYPERVISOR: exec_cmd: vm extract_config R-CORE-MESRS 
+May 22 01:21:29.909 HYPERVISOR: exec_cmd: vm delete R-CORE-MESRS 
+May 22 01:21:29.909 VM: VM R-CORE-MESRS destroyed.
+May 22 01:21:29.930 HYPERVISOR: exec_cmd: hypervisor stop 
+May 22 01:21:30.257 HYPERVISOR: Stopped.
+May 22 01:21:30.257 GENERAL: reset done.

@@ -1,0 +1,31 @@
+May 22 01:17:57.410 HYPERVISOR: Release 0.2.14-x86/Windows (tag 2014092320)
+May 22 01:17:57.411 HYPERVISOR: Started on IP = 192.168.81.1, TCP port = 51502.
+May 22 01:17:57.816 HYPERVISOR: exec_cmd: hypervisor version 
+May 22 01:17:57.841 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\HP\GNS3\projects\LAB de Projet\lab configuration complet\serveur+firewall\lab2\project-files\dynamips 
+May 22 01:17:58.178 GENERAL: working_dir=C:\Users\HP\GNS3\projects\LAB de Projet\lab configuration complet\serveur+firewall\lab2\project-files\dynamips
+May 22 01:17:58.186 HYPERVISOR: exec_cmd: vm create R-MESRS 3 c1700 
+May 22 01:17:58.190 VM: VM R-MESRS created.
+May 22 01:17:58.205 HYPERVISOR: exec_cmd: vm set_con_tcp_port R-MESRS 5003 
+May 22 01:17:58.217 HYPERVISOR: exec_cmd: c1700 get_mac_addr R-MESRS 
+May 22 01:17:58.223 HYPERVISOR: exec_cmd: c1700 set_mac_addr R-MESRS d003.10e8.0000 
+May 22 01:17:58.229 HYPERVISOR: exec_cmd: vm slot_add_binding R-MESRS 0 32 WIC-2T 
+May 22 01:17:58.235 HYPERVISOR: exec_cmd: c1700 set_iomem R-MESRS 5 
+May 22 01:17:58.242 HYPERVISOR: exec_cmd: vm set_exec_area R-MESRS 64 
+May 22 01:17:58.247 HYPERVISOR: exec_cmd: vm set_sparse_mem R-MESRS 1 
+May 22 01:17:58.253 HYPERVISOR: exec_cmd: vm set_ram R-MESRS 160 
+May 22 01:17:58.259 HYPERVISOR: exec_cmd: vm set_nvram R-MESRS 128 
+May 22 01:17:58.268 HYPERVISOR: exec_cmd: vm get_status R-MESRS 
+May 22 01:17:58.282 HYPERVISOR: exec_cmd: vm set_idle_pc R-MESRS 0x80618b54 
+May 22 01:17:58.306 HYPERVISOR: exec_cmd: vm set_ios R-MESRS C:/Users/HP/GNS3/images/IOS/c1700-adventerprisek9-mz.124-8.image 
+May 22 01:17:58.368 HYPERVISOR: exec_cmd: vm slot_add_binding R-MESRS 0 16 WIC-2T 
+May 22 01:17:58.421 HYPERVISOR: exec_cmd: vm set_config R-MESRS configs/i3_startup-config.cfg 
+May 22 01:17:58.735 HYPERVISOR: exec_cmd: nio create_udp udp-d4973aac-c582-42c9-a494-c91d83496dbd 10005 192.168.81.1 10004 
+May 22 01:17:58.769 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R-MESRS 0 0 udp-d4973aac-c582-42c9-a494-c91d83496dbd 
+May 22 01:17:58.806 HYPERVISOR: exec_cmd: vm get_status R-MESRS 
+May 22 01:18:25.353 HYPERVISOR: exec_cmd: vm get_status R-MESRS 
+May 22 01:18:25.371 HYPERVISOR: exec_cmd: vm extract_config R-MESRS 
+May 22 01:18:25.388 HYPERVISOR: exec_cmd: vm delete R-MESRS 
+May 22 01:18:25.388 VM: VM R-MESRS destroyed.
+May 22 01:18:25.406 HYPERVISOR: exec_cmd: hypervisor stop 
+May 22 01:18:25.778 HYPERVISOR: Stopped.
+May 22 01:18:25.778 GENERAL: reset done.
