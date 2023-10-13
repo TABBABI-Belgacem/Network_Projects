@@ -1,0 +1,60 @@
+May 16 00:51:41.627 HYPERVISOR: Release 0.2.14-x86/Windows (tag 2014092320)
+May 16 00:51:41.627 HYPERVISOR: Started on IP = 192.168.81.1, TCP port = 57358.
+May 16 00:51:42.002 HYPERVISOR: exec_cmd: hypervisor version 
+May 16 00:51:42.033 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\HP\GNS3\projects\LAB de Projet\lab vide\service-provider\project-files\dynamips 
+May 16 00:51:42.330 GENERAL: working_dir=C:\Users\HP\GNS3\projects\LAB de Projet\lab vide\service-provider\project-files\dynamips
+May 16 00:51:42.345 HYPERVISOR: exec_cmd: vm create R-SP 1 c2691 
+May 16 00:51:42.345 VM: VM R-SP created.
+May 16 00:51:42.345 HYPERVISOR: exec_cmd: vm set_con_tcp_port R-SP 5000 
+May 16 00:51:42.361 HYPERVISOR: exec_cmd: c2691 get_mac_addr R-SP 
+May 16 00:51:42.361 HYPERVISOR: exec_cmd: c2691 set_mac_addr R-SP c001.1624.0000 
+May 16 00:51:42.377 HYPERVISOR: exec_cmd: vm set_ram R-SP 192 
+May 16 00:51:42.408 HYPERVISOR: exec_cmd: vm set_exec_area R-SP 64 
+May 16 00:51:42.424 HYPERVISOR: exec_cmd: vm set_ios R-SP C:/Users/HP/GNS3/images/IOS/c2691-entservicesk9-mz.124-13b.image 
+May 16 00:51:42.439 HYPERVISOR: exec_cmd: vm slot_add_binding R-SP 0 16 WIC-2T 
+May 16 00:51:42.470 HYPERVISOR: exec_cmd: vm set_nvram R-SP 256 
+May 16 00:51:42.486 HYPERVISOR: exec_cmd: vm set_disk0 R-SP 0 
+May 16 00:51:42.517 HYPERVISOR: exec_cmd: vm get_status R-SP 
+May 16 00:51:42.549 HYPERVISOR: exec_cmd: vm set_idle_pc R-SP 0x6114a604 
+May 16 00:51:42.580 HYPERVISOR: exec_cmd: vm set_config R-SP configs/i1_startup-config.cfg 
+May 16 00:51:42.783 HYPERVISOR: exec_cmd: nio create_udp udp-6020bef6-cf18-4ad1-ae90-641ec5996c97 10002 192.168.81.1 10001 
+May 16 00:51:42.830 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R-SP 0 16 udp-6020bef6-cf18-4ad1-ae90-641ec5996c97 
+May 16 00:51:42.861 HYPERVISOR: exec_cmd: vm get_status R-SP 
+May 16 00:51:43.049 HYPERVISOR: exec_cmd: nio create_udp udp-2aa3282b-2554-4b0d-af51-5eda8ab6f2e9 10005 192.168.81.1 10006 
+May 16 00:51:43.096 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R-SP 0 17 udp-2aa3282b-2554-4b0d-af51-5eda8ab6f2e9 
+May 16 00:51:43.111 HYPERVISOR: exec_cmd: vm get_status R-SP 
+May 16 00:51:53.393 HYPERVISOR: exec_cmd: vm set_ghost_status R-SP 2 
+May 16 00:51:53.409 HYPERVISOR: exec_cmd: vm set_ghost_file R-SP c2691-entservicesk9-mz.124-13b.image-192.ghost 
+May 16 00:51:53.424 HYPERVISOR: exec_cmd: vm get_status R-SP 
+May 16 00:51:53.424 HYPERVISOR: exec_cmd: vm start R-SP 
+May 16 00:52:41.450 HYPERVISOR: exec_cmd: vm get_status R-SP 
+May 16 00:52:41.490 HYPERVISOR: exec_cmd: vm slot_disable_nio R-SP 0 17 
+May 16 00:52:41.525 HYPERVISOR: exec_cmd: vm slot_remove_nio_binding R-SP 0 17 
+May 16 00:52:41.563 HYPERVISOR: exec_cmd: nio delete udp-2aa3282b-2554-4b0d-af51-5eda8ab6f2e9 
+May 16 00:53:43.076 HYPERVISOR: exec_cmd: nio create_udp udp-e3877540-4704-4e39-9cb9-2577970ad078 10012 192.168.81.1 10011 
+May 16 00:53:43.088 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R-SP 0 17 udp-e3877540-4704-4e39-9cb9-2577970ad078 
+May 16 00:53:43.103 HYPERVISOR: exec_cmd: vm get_status R-SP 
+May 16 00:53:43.126 HYPERVISOR: exec_cmd: vm slot_enable_nio R-SP 0 17 
+May 16 00:56:47.094 HYPERVISOR: exec_cmd: vm get_status R-SP 
+May 16 00:56:47.111 HYPERVISOR: exec_cmd: vm stop R-SP 
+May 16 00:56:47.289 VM: VM R-SP shutdown.
+May 16 00:56:47.297 HYPERVISOR: exec_cmd: vm extract_config R-SP 
+May 16 00:57:14.181 HYPERVISOR: exec_cmd: vm get_status R-SP 
+May 16 00:57:14.212 HYPERVISOR: exec_cmd: vm start R-SP 
+May 16 00:58:46.322 HYPERVISOR: exec_cmd: vm get_status R-SP 
+May 16 00:58:46.342 HYPERVISOR: exec_cmd: vm stop R-SP 
+May 16 00:58:46.545 VM: VM R-SP shutdown.
+May 16 00:58:46.552 HYPERVISOR: exec_cmd: vm extract_config R-SP 
+May 16 00:58:54.031 HYPERVISOR: exec_cmd: vm get_status R-SP 
+May 16 00:58:54.045 HYPERVISOR: exec_cmd: vm slot_remove_nio_binding R-SP 0 16 
+May 16 00:58:54.061 HYPERVISOR: exec_cmd: nio delete udp-6020bef6-cf18-4ad1-ae90-641ec5996c97 
+May 16 00:58:54.090 HYPERVISOR: exec_cmd: vm get_status R-SP 
+May 16 00:58:54.102 HYPERVISOR: exec_cmd: vm slot_remove_nio_binding R-SP 0 17 
+May 16 00:58:54.108 HYPERVISOR: exec_cmd: nio delete udp-e3877540-4704-4e39-9cb9-2577970ad078 
+May 16 00:58:54.120 HYPERVISOR: exec_cmd: vm get_status R-SP 
+May 16 00:58:54.127 HYPERVISOR: exec_cmd: vm extract_config R-SP 
+May 16 00:58:54.135 HYPERVISOR: exec_cmd: vm delete R-SP 
+May 16 00:58:54.135 VM: VM R-SP destroyed.
+May 16 00:58:54.144 HYPERVISOR: exec_cmd: hypervisor stop 
+May 16 00:58:54.312 HYPERVISOR: Stopped.
+May 16 00:58:54.312 GENERAL: reset done.

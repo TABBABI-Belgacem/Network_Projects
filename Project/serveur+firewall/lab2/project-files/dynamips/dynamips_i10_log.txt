@@ -1,0 +1,29 @@
+May 22 01:17:57.461 HYPERVISOR: Release 0.2.14-x86/Windows (tag 2014092320)
+May 22 01:17:57.461 HYPERVISOR: Started on IP = 192.168.81.1, TCP port = 51504.
+May 22 01:17:57.849 HYPERVISOR: exec_cmd: hypervisor version 
+May 22 01:17:57.867 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\HP\GNS3\projects\LAB de Projet\lab configuration complet\serveur+firewall\lab2\project-files\dynamips 
+May 22 01:17:58.315 GENERAL: working_dir=C:\Users\HP\GNS3\projects\LAB de Projet\lab configuration complet\serveur+firewall\lab2\project-files\dynamips
+May 22 01:17:58.374 HYPERVISOR: exec_cmd: vm create serveur 2 c1700 
+May 22 01:17:58.376 VM: VM serveur created.
+May 22 01:17:58.426 HYPERVISOR: exec_cmd: vm set_con_tcp_port serveur 5002 
+May 22 01:17:58.468 HYPERVISOR: exec_cmd: c1700 get_mac_addr serveur 
+May 22 01:17:58.502 HYPERVISOR: exec_cmd: c1700 set_mac_addr serveur d002.0fe8.0000 
+May 22 01:17:58.541 HYPERVISOR: exec_cmd: c1700 set_iomem serveur 5 
+May 22 01:17:58.561 HYPERVISOR: exec_cmd: vm set_exec_area serveur 64 
+May 22 01:17:58.586 HYPERVISOR: exec_cmd: vm set_sparse_mem serveur 1 
+May 22 01:17:58.621 HYPERVISOR: exec_cmd: vm set_ram serveur 160 
+May 22 01:17:58.654 HYPERVISOR: exec_cmd: vm set_nvram serveur 128 
+May 22 01:17:58.703 HYPERVISOR: exec_cmd: vm get_status serveur 
+May 22 01:17:58.739 HYPERVISOR: exec_cmd: vm set_idle_pc serveur 0x80618b54 
+May 22 01:17:58.773 HYPERVISOR: exec_cmd: vm set_ios serveur C:/Users/HP/GNS3/images/IOS/c1700-adventerprisek9-mz.124-8.image 
+May 22 01:17:58.814 HYPERVISOR: exec_cmd: vm set_config serveur configs/i2_startup-config.cfg 
+May 22 01:17:59.005 HYPERVISOR: exec_cmd: nio create_udp udp-fd68eac1-40d9-4979-9c2d-a0ab0ef6ff08 10010 192.168.81.1 10011 
+May 22 01:17:59.035 HYPERVISOR: exec_cmd: vm slot_add_nio_binding serveur 0 0 udp-fd68eac1-40d9-4979-9c2d-a0ab0ef6ff08 
+May 22 01:17:59.077 HYPERVISOR: exec_cmd: vm get_status serveur 
+May 22 01:18:25.346 HYPERVISOR: exec_cmd: vm get_status serveur 
+May 22 01:18:25.364 HYPERVISOR: exec_cmd: vm extract_config serveur 
+May 22 01:18:25.382 HYPERVISOR: exec_cmd: vm delete serveur 
+May 22 01:18:25.382 VM: VM serveur destroyed.
+May 22 01:18:25.399 HYPERVISOR: exec_cmd: hypervisor stop 
+May 22 01:18:25.819 HYPERVISOR: Stopped.
+May 22 01:18:25.819 GENERAL: reset done.

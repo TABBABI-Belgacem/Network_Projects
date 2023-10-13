@@ -1,0 +1,65 @@
+Feb 12 16:37:57.206 HYPERVISOR: Release 0.2.14-x86/Windows (tag 2014092320)
+Feb 12 16:37:57.208 HYPERVISOR: Started on IP = 192.168.42.1, TCP port = 53836.
+Feb 12 16:37:57.345 HYPERVISOR: exec_cmd: hypervisor version 
+Feb 12 16:37:57.368 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\BELGACEM\GNS3\projects\Labs Projet configurée\service-provider\project-files\dynamips 
+Feb 12 16:37:57.786 GENERAL: working_dir=C:\Users\BELGACEM\GNS3\projects\Labs Projet configurée\service-provider\project-files\dynamips
+Feb 12 16:37:57.824 HYPERVISOR: exec_cmd: vm create R-SP 6 c2691 
+Feb 12 16:37:57.826 VM: VM R-SP created.
+Feb 12 16:37:57.845 HYPERVISOR: exec_cmd: vm set_con_tcp_port R-SP 5000 
+Feb 12 16:37:57.872 HYPERVISOR: exec_cmd: c2691 get_mac_addr R-SP 
+Feb 12 16:37:57.944 HYPERVISOR: exec_cmd: vm set_disk0 R-SP 0 
+Feb 12 16:37:57.970 HYPERVISOR: exec_cmd: vm get_status R-SP 
+Feb 12 16:37:57.989 HYPERVISOR: exec_cmd: vm set_idle_pc R-SP 0x6114a604 
+Feb 12 16:37:58.023 HYPERVISOR: exec_cmd: vm slot_add_binding R-SP 0 16 WIC-2T 
+Feb 12 16:37:58.045 HYPERVISOR: exec_cmd: c2691 set_mac_addr R-SP c006.0b20.0000 
+Feb 12 16:37:58.059 HYPERVISOR: exec_cmd: vm set_exec_area R-SP 64 
+Feb 12 16:37:58.083 HYPERVISOR: exec_cmd: vm set_nvram R-SP 256 
+Feb 12 16:37:58.109 HYPERVISOR: exec_cmd: vm set_ios R-SP C:/Users/BELGACEM/GNS3/images/IOS/c3725-adventerprisek9-mz.124-15.T14.image 
+Feb 12 16:37:58.127 HYPERVISOR: exec_cmd: vm set_ram R-SP 192 
+Feb 12 16:37:58.151 HYPERVISOR: exec_cmd: vm set_config R-SP configs/i6_startup-config.cfg 
+Feb 12 16:37:59.594 HYPERVISOR: exec_cmd: nio create_udp udp-feb9eb6b-3f57-4fc2-b5b9-e533a7345816 10003 192.168.42.1 10004 
+Feb 12 16:37:59.623 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R-SP 0 16 udp-feb9eb6b-3f57-4fc2-b5b9-e533a7345816 
+Feb 12 16:37:59.648 HYPERVISOR: exec_cmd: vm get_status R-SP 
+Feb 12 16:37:59.862 HYPERVISOR: exec_cmd: nio create_udp udp-6ee5d71a-2ae0-4203-a846-77b7f4cbf9b5 10013 192.168.42.1 10014 
+Feb 12 16:37:59.874 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R-SP 0 17 udp-6ee5d71a-2ae0-4203-a846-77b7f4cbf9b5 
+Feb 12 16:37:59.909 HYPERVISOR: exec_cmd: vm get_status R-SP 
+Feb 12 16:38:06.931 HYPERVISOR: exec_cmd: vm create Ghost 0 c2691 
+Feb 12 16:38:06.932 VM: VM Ghost created.
+Feb 12 16:38:06.936 HYPERVISOR: exec_cmd: vm set_ios Ghost C:/Users/BELGACEM/GNS3/images/IOS/c3725-adventerprisek9-mz.124-15.T14.image 
+Feb 12 16:38:06.941 HYPERVISOR: exec_cmd: vm set_ghost_status Ghost 1 
+Feb 12 16:38:06.946 HYPERVISOR: exec_cmd: vm set_ghost_file Ghost c3725-adventerprisek9-mz.124-15.T14.image-192.ghost 
+Feb 12 16:38:06.951 HYPERVISOR: exec_cmd: vm set_ram Ghost 192 
+Feb 12 16:38:06.959 HYPERVISOR: exec_cmd: vm get_status Ghost 
+Feb 12 16:38:06.963 HYPERVISOR: exec_cmd: vm start Ghost 
+Feb 12 16:38:07.357 HYPERVISOR: exec_cmd: vm get_status Ghost 
+Feb 12 16:38:07.362 HYPERVISOR: exec_cmd: vm stop Ghost 
+Feb 12 16:38:07.426 VM: VM Ghost shutdown.
+Feb 12 16:38:07.430 HYPERVISOR: exec_cmd: vm clean_delete Ghost 
+Feb 12 16:38:07.430 VM: VM Ghost destroyed.
+Feb 12 16:38:07.443 HYPERVISOR: exec_cmd: vm set_ghost_status R-SP 2 
+Feb 12 16:38:07.448 HYPERVISOR: exec_cmd: vm set_ghost_file R-SP c3725-adventerprisek9-mz.124-15.T14.image-192.ghost 
+Feb 12 16:38:07.453 HYPERVISOR: exec_cmd: vm get_status R-SP 
+Feb 12 16:38:07.458 HYPERVISOR: exec_cmd: vm start R-SP 
+Feb 12 16:42:05.572 HYPERVISOR: exec_cmd: vm get_status R-SP 
+Feb 12 16:42:05.579 HYPERVISOR: exec_cmd: vm stop R-SP 
+Feb 12 16:42:05.708 VM: VM R-SP shutdown.
+Feb 12 16:42:05.713 HYPERVISOR: exec_cmd: vm extract_config R-SP 
+Feb 12 16:42:10.395 HYPERVISOR: exec_cmd: vm get_status R-SP 
+Feb 12 16:42:10.405 HYPERVISOR: exec_cmd: vm start R-SP 
+Feb 12 16:56:20.098 HYPERVISOR: exec_cmd: vm get_status R-SP 
+Feb 12 16:56:20.104 HYPERVISOR: exec_cmd: vm stop R-SP 
+Feb 12 16:56:20.238 VM: VM R-SP shutdown.
+Feb 12 16:56:20.243 HYPERVISOR: exec_cmd: vm extract_config R-SP 
+Feb 12 17:00:15.029 HYPERVISOR: exec_cmd: vm get_status R-SP 
+Feb 12 17:00:15.029 HYPERVISOR: exec_cmd: vm start R-SP 
+Feb 12 17:00:50.908 HYPERVISOR: exec_cmd: vm get_status R-SP 
+Feb 12 17:00:50.923 HYPERVISOR: exec_cmd: vm stop R-SP 
+Feb 12 17:00:51.080 VM: VM R-SP shutdown.
+Feb 12 17:00:51.080 HYPERVISOR: exec_cmd: vm extract_config R-SP 
+Feb 12 17:01:04.868 HYPERVISOR: exec_cmd: vm get_status R-SP 
+Feb 12 17:01:04.880 HYPERVISOR: exec_cmd: vm extract_config R-SP 
+Feb 12 17:01:04.897 HYPERVISOR: exec_cmd: vm delete R-SP 
+Feb 12 17:01:04.898 VM: VM R-SP destroyed.
+Feb 12 17:01:04.912 HYPERVISOR: exec_cmd: hypervisor stop 
+Feb 12 17:01:05.207 HYPERVISOR: Stopped.
+Feb 12 17:01:05.208 GENERAL: reset done.

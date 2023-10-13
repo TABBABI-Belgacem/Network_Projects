@@ -1,0 +1,10 @@
+Feb 01 11:22:50.319 HYPERVISOR: Release 0.2.14-x86/Windows (tag 2014092320)
+Feb 01 11:22:50.321 HYPERVISOR: Started on IP = 192.168.42.1, TCP port = 57689.
+Feb 01 11:22:50.327 HYPERVISOR: exec_cmd: hypervisor version 
+Feb 01 11:22:50.331 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\BELGACEM\GNS3\projects\routing +test=!!!!!!lab complete!!!!!!!!\project-files\dynamips 
+Feb 01 11:22:50.331 GENERAL: working_dir=C:\Users\BELGACEM\GNS3\projects\routing +test=!!!!!!lab complete!!!!!!!!\project-files\dynamips
+Feb 01 11:22:50.336 HYPERVISOR: exec_cmd: ethsw create SW1 
+Feb 01 11:22:58.958 HYPERVISOR: exec_cmd: ethsw delete SW1 
+Feb 01 11:22:58.958 HYPERVISOR: exec_cmd: hypervisor stop 
+Feb 01 11:22:59.347 HYPERVISOR: Stopped.
+Feb 01 11:22:59.347 GENERAL: reset done.

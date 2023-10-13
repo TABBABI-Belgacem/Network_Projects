@@ -1,0 +1,40 @@
+May 16 01:38:06.254 HYPERVISOR: Release 0.2.14-x86/Windows (tag 2014092320)
+May 16 01:38:06.254 HYPERVISOR: Started on IP = 192.168.81.1, TCP port = 57669.
+May 16 01:38:06.504 HYPERVISOR: exec_cmd: hypervisor version 
+May 16 01:38:06.536 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\HP\GNS3\projects\LAB de Projet\lab vide\service-provider\project-files\dynamips 
+May 16 01:38:06.786 GENERAL: working_dir=C:\Users\HP\GNS3\projects\LAB de Projet\lab vide\service-provider\project-files\dynamips
+May 16 01:38:06.801 HYPERVISOR: exec_cmd: vm create R-SP 6 c2691 
+May 16 01:38:06.801 VM: VM R-SP created.
+May 16 01:38:06.817 HYPERVISOR: exec_cmd: vm set_con_tcp_port R-SP 5000 
+May 16 01:38:06.833 HYPERVISOR: exec_cmd: c2691 get_mac_addr R-SP 
+May 16 01:38:06.848 HYPERVISOR: exec_cmd: c2691 set_mac_addr R-SP c006.0b20.0000 
+May 16 01:38:06.879 HYPERVISOR: exec_cmd: vm set_ram R-SP 192 
+May 16 01:38:06.942 HYPERVISOR: exec_cmd: vm set_exec_area R-SP 64 
+May 16 01:38:06.973 HYPERVISOR: exec_cmd: vm set_ios R-SP C:/Users/HP/GNS3/images/IOS/c2691-entservicesk9-mz.124-13b.image 
+May 16 01:38:07.004 HYPERVISOR: exec_cmd: vm slot_add_binding R-SP 0 16 WIC-2T 
+May 16 01:38:07.036 HYPERVISOR: exec_cmd: vm set_nvram R-SP 256 
+May 16 01:38:07.067 HYPERVISOR: exec_cmd: vm set_disk0 R-SP 0 
+May 16 01:38:07.114 HYPERVISOR: exec_cmd: vm get_status R-SP 
+May 16 01:38:07.129 HYPERVISOR: exec_cmd: vm set_idle_pc R-SP 0x6114a604 
+May 16 01:38:07.145 HYPERVISOR: exec_cmd: vm set_config R-SP configs/i6_startup-config.cfg 
+May 16 01:38:07.395 HYPERVISOR: exec_cmd: nio create_udp udp-204cd08d-604e-4ba0-91c8-bfbf2951a295 10001 192.168.81.1 10002 
+May 16 01:38:07.442 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R-SP 0 16 udp-204cd08d-604e-4ba0-91c8-bfbf2951a295 
+May 16 01:38:07.458 HYPERVISOR: exec_cmd: vm get_status R-SP 
+May 16 01:38:07.504 HYPERVISOR: exec_cmd: nio create_udp udp-cdcac3cf-3323-4a04-b6ec-e247114ed759 10003 192.168.81.1 10004 
+May 16 01:38:07.536 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R-SP 0 17 udp-cdcac3cf-3323-4a04-b6ec-e247114ed759 
+May 16 01:38:07.567 HYPERVISOR: exec_cmd: vm get_status R-SP 
+May 16 01:38:13.114 HYPERVISOR: exec_cmd: vm set_ghost_status R-SP 2 
+May 16 01:38:13.130 HYPERVISOR: exec_cmd: vm set_ghost_file R-SP c2691-entservicesk9-mz.124-13b.image-192.ghost 
+May 16 01:38:13.130 HYPERVISOR: exec_cmd: vm get_status R-SP 
+May 16 01:38:13.130 HYPERVISOR: exec_cmd: vm start R-SP 
+May 16 01:39:01.027 HYPERVISOR: exec_cmd: vm get_status R-SP 
+May 16 01:39:01.048 HYPERVISOR: exec_cmd: vm stop R-SP 
+May 16 01:39:01.136 VM: VM R-SP shutdown.
+May 16 01:39:01.143 HYPERVISOR: exec_cmd: vm extract_config R-SP 
+May 16 01:39:11.238 HYPERVISOR: exec_cmd: vm get_status R-SP 
+May 16 01:39:11.269 HYPERVISOR: exec_cmd: vm extract_config R-SP 
+May 16 01:39:11.284 HYPERVISOR: exec_cmd: vm delete R-SP 
+May 16 01:39:11.300 VM: VM R-SP destroyed.
+May 16 01:39:11.316 HYPERVISOR: exec_cmd: hypervisor stop 
+May 16 01:39:11.519 HYPERVISOR: Stopped.
+May 16 01:39:11.519 GENERAL: reset done.

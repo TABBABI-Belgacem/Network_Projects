@@ -1,0 +1,30 @@
+May 17 09:55:37.776 HYPERVISOR: Release 0.2.14-x86/Windows (tag 2014092320)
+May 17 09:55:37.776 HYPERVISOR: Started on IP = 192.168.81.1, TCP port = 61642.
+May 17 09:55:37.868 HYPERVISOR: exec_cmd: hypervisor version 
+May 17 09:55:37.884 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\HP\GNS3\projects\LAB de Projet\lab configuration complet\Intégration des VLANs\project-files\dynamips 
+May 17 09:55:37.968 GENERAL: working_dir=C:\Users\HP\GNS3\projects\LAB de Projet\lab configuration complet\Intégration des VLANs\project-files\dynamips
+May 17 09:55:37.976 HYPERVISOR: exec_cmd: vm create R2-Distribution 1 c3600 
+May 17 09:55:37.980 VM: VM R2-Distribution created.
+May 17 09:55:37.988 HYPERVISOR: exec_cmd: vm set_con_tcp_port R2-Distribution 5000 
+May 17 09:55:38.004 HYPERVISOR: exec_cmd: c3600 get_mac_addr R2-Distribution 
+May 17 09:55:38.012 HYPERVISOR: exec_cmd: c3600 set_chassis R2-Distribution 3660 
+May 17 09:55:38.020 HYPERVISOR: exec_cmd: vm set_nvram R2-Distribution 256 
+May 17 09:55:38.028 HYPERVISOR: exec_cmd: c3600 set_mac_addr R2-Distribution cc01.1708.0000 
+May 17 09:55:38.036 HYPERVISOR: exec_cmd: vm set_ram R2-Distribution 192 
+May 17 09:55:38.044 HYPERVISOR: exec_cmd: vm set_ios R2-Distribution C:/Users/HP/GNS3/images/IOS/c3660-jk9o3s-mz.124-25d.image 
+May 17 09:55:38.048 HYPERVISOR: exec_cmd: vm set_exec_area R2-Distribution 64 
+May 17 09:55:38.056 HYPERVISOR: exec_cmd: vm set_config R2-Distribution configs/i1_startup-config.cfg 
+May 17 09:55:38.136 HYPERVISOR: exec_cmd: nio create_udp udp-3ebc9eda-af3a-4303-adeb-203303eb61fb 10000 192.168.81.128 10004 
+May 17 09:55:38.144 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R2-Distribution 0 0 udp-3ebc9eda-af3a-4303-adeb-203303eb61fb 
+May 17 09:55:38.152 HYPERVISOR: exec_cmd: vm get_status R2-Distribution 
+May 17 09:55:38.172 HYPERVISOR: exec_cmd: nio create_udp udp-78cb7ddb-ea61-4f39-b4ee-3b333627066a 10001 192.168.81.128 10005 
+May 17 09:55:38.180 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R2-Distribution 0 1 udp-78cb7ddb-ea61-4f39-b4ee-3b333627066a 
+May 17 09:55:38.188 HYPERVISOR: exec_cmd: vm get_status R2-Distribution 
+May 17 09:56:14.125 HYPERVISOR: exec_cmd: vm extract_config R2-Distribution 
+May 17 09:57:32.652 HYPERVISOR: exec_cmd: vm get_status R2-Distribution 
+May 17 09:57:32.656 HYPERVISOR: exec_cmd: vm extract_config R2-Distribution 
+May 17 09:57:32.664 HYPERVISOR: exec_cmd: vm delete R2-Distribution 
+May 17 09:57:32.664 VM: VM R2-Distribution destroyed.
+May 17 09:57:32.672 HYPERVISOR: exec_cmd: hypervisor stop 
+May 17 09:57:33.092 HYPERVISOR: Stopped.
+May 17 09:57:33.092 GENERAL: reset done.

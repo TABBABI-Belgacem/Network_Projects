@@ -1,0 +1,21 @@
+Feb 19 18:49:44.996 HYPERVISOR: Release 0.2.14-x86/Windows (tag 2014092320)
+Feb 19 18:49:45.015 HYPERVISOR: Started on IP = 192.168.42.1, TCP port = 56065.
+Feb 19 18:49:45.459 HYPERVISOR: exec_cmd: hypervisor version 
+Feb 19 18:49:45.463 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\BELGACEM\GNS3\projects\eb3310fd-7ef7-491b-a010-2ef51cfe1b53\project-files\dynamips 
+Feb 19 18:49:45.754 GENERAL: working_dir=C:\Users\BELGACEM\GNS3\projects\eb3310fd-7ef7-491b-a010-2ef51cfe1b53\project-files\dynamips
+Feb 19 18:49:45.756 HYPERVISOR: exec_cmd: ethsw create SW1 
+Feb 19 18:58:46.562 HYPERVISOR: exec_cmd: nio create_udp udp-b65a5974-ffee-4ed2-9e9a-4c558751b56d 10000 192.168.42.128 10000 
+Feb 19 18:58:46.566 HYPERVISOR: exec_cmd: ethsw add_nio SW1 udp-b65a5974-ffee-4ed2-9e9a-4c558751b56d 
+Feb 19 18:58:46.587 HYPERVISOR: exec_cmd: ethsw set_access_port SW1 udp-b65a5974-ffee-4ed2-9e9a-4c558751b56d 1 
+Feb 19 18:58:51.161 HYPERVISOR: exec_cmd: nio create_udp udp-3dee709c-9d5b-418b-90b6-5910c61b31ab 10001 192.168.42.128 10001 
+Feb 19 18:58:51.165 HYPERVISOR: exec_cmd: ethsw add_nio SW1 udp-3dee709c-9d5b-418b-90b6-5910c61b31ab 
+Feb 19 18:58:51.172 HYPERVISOR: exec_cmd: ethsw set_access_port SW1 udp-3dee709c-9d5b-418b-90b6-5910c61b31ab 1 
+Feb 19 18:59:33.637 HYPERVISOR: exec_cmd: nio create_udp udp-33d0e81b-f0b9-4a2f-b129-65f26219d171 10003 192.168.42.128 10003 
+Feb 19 18:59:33.642 HYPERVISOR: exec_cmd: ethsw add_nio SW1 udp-33d0e81b-f0b9-4a2f-b129-65f26219d171 
+Feb 19 18:59:33.661 HYPERVISOR: exec_cmd: ethsw set_access_port SW1 udp-33d0e81b-f0b9-4a2f-b129-65f26219d171 1 
+Feb 19 19:15:29.436 HYPERVISOR: exec_cmd: hypervisor working_dir C:/Users/BELGACEM/GNS3/projects/Labs Projet vide/IPV6/OSPF_Anycast\project-files\dynamips 
+Feb 19 19:15:29.436 GENERAL: working_dir=C:/Users/BELGACEM/GNS3/projects/Labs Projet vide/IPV6/OSPF_Anycast\project-files\dynamips
+Feb 19 19:15:44.250 HYPERVISOR: exec_cmd: ethsw delete SW1 
+Feb 19 19:15:44.299 HYPERVISOR: exec_cmd: hypervisor stop 
+Feb 19 19:15:44.622 HYPERVISOR: Stopped.
+Feb 19 19:15:44.623 GENERAL: reset done.

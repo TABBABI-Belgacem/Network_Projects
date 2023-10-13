@@ -1,0 +1,15 @@
+On va appliquer le routage statique dans cette architecture.
+Nous allons configurer en premier partie les interfaces de chaque routeur
+Nous avons configurée le routeur R3
+Nous avons configurée le routeur R2
+Nous avons configurée le routeur R1
+Maintenant on va configurer les 3 hosts vpc
+le ping ne marche pas car le routeur est fermé
+lorsqu'on faire un ping au pc 2 :le paquet est echouée car le 2 pc appartiennent aux 2 reseaux differents
+pour que les equipements peuvent connecter entre eux il  faut ajouter un protocole de routage qui va acheminer les informations 
+dans tous le reseau .
+on utilise le routage statique .
+Nous allons configurer maintenant .
+le routeur R3 connait le 2 reseaux qu'il connecte , 11.0.0.0 et 10.0.0.0donc il faut ajouter a la table de routage de ce routeur les autres reseaux distants 
+une autre methode pour eliminer l'ecriture de chaque route separement ,on utilise le route par défaut
+On dit a chaque routeur accepte tous les reseaux qui tu reçoit d'une adresse 0.0.0.0 et masque 0.0.0.0 

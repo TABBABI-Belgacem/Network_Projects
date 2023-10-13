@@ -1,0 +1,14 @@
+May 22 01:16:08.321 HYPERVISOR: Release 0.2.14-x86/Windows (tag 2014092320)
+May 22 01:16:08.322 HYPERVISOR: Started on IP = 192.168.81.1, TCP port = 51478.
+May 22 01:16:08.771 HYPERVISOR: exec_cmd: hypervisor version 
+May 22 01:16:08.784 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\HP\GNS3\projects\LAB de Projet\lab configuration complet\service-provider\project-files\dynamips 
+May 22 01:16:09.145 GENERAL: working_dir=C:\Users\HP\GNS3\projects\LAB de Projet\lab configuration complet\service-provider\project-files\dynamips
+May 22 01:16:09.166 HYPERVISOR: exec_cmd: nio_bridge create HUB1 
+May 22 01:16:09.334 HYPERVISOR: exec_cmd: nio create_udp udp-836396d4-5df4-4b88-adeb-54a0b98ce30d 10000 192.168.81.128 10000 
+May 22 01:16:09.379 HYPERVISOR: exec_cmd: nio_bridge add_nio HUB1 udp-836396d4-5df4-4b88-adeb-54a0b98ce30d 
+May 22 01:16:09.750 HYPERVISOR: exec_cmd: nio create_udp udp-0b36637e-b797-45b3-ad1e-c546fae35682 10006 192.168.81.1 10005 
+May 22 01:16:09.797 HYPERVISOR: exec_cmd: nio_bridge add_nio HUB1 udp-0b36637e-b797-45b3-ad1e-c546fae35682 
+May 22 01:17:39.258 HYPERVISOR: exec_cmd: nio_bridge delete HUB1 
+May 22 01:17:39.284 HYPERVISOR: exec_cmd: hypervisor stop 
+May 22 01:17:39.301 HYPERVISOR: Stopped.
+May 22 01:17:39.301 GENERAL: reset done.

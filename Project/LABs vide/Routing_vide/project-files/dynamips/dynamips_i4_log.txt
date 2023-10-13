@@ -1,0 +1,21 @@
+Feb 01 16:33:11.631 HYPERVISOR: Release 0.2.14-x86/Windows (tag 2014092320)
+Feb 01 16:33:11.632 HYPERVISOR: Started on IP = 192.168.42.1, TCP port = 63283.
+Feb 01 16:33:11.872 HYPERVISOR: exec_cmd: hypervisor version 
+Feb 01 16:33:11.892 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\BELGACEM\GNS3\projects\routing +test=!!!!!!lab complete!!!!!!!!\project-files\dynamips 
+Feb 01 16:33:12.372 GENERAL: working_dir=C:\Users\BELGACEM\GNS3\projects\routing +test=!!!!!!lab complete!!!!!!!!\project-files\dynamips
+Feb 01 16:33:12.388 HYPERVISOR: exec_cmd: ethsw create SW-Etudiant 
+Feb 01 16:33:12.608 HYPERVISOR: exec_cmd: nio create_udp udp-933ea798-5c04-4c45-aeb0-eb81fc4f8324 10000 192.168.42.128 10002 
+Feb 01 16:33:12.628 HYPERVISOR: exec_cmd: ethsw add_nio SW-Etudiant udp-933ea798-5c04-4c45-aeb0-eb81fc4f8324 
+Feb 01 16:33:12.655 HYPERVISOR: exec_cmd: ethsw set_access_port SW-Etudiant udp-933ea798-5c04-4c45-aeb0-eb81fc4f8324 1 
+Feb 01 16:33:13.063 HYPERVISOR: exec_cmd: nio create_udp udp-8bde8466-4643-43f3-bcc0-86de42d54e98 10009 192.168.42.1 10008 
+Feb 01 16:33:13.076 HYPERVISOR: exec_cmd: ethsw add_nio SW-Etudiant udp-8bde8466-4643-43f3-bcc0-86de42d54e98 
+Feb 01 16:33:13.124 HYPERVISOR: exec_cmd: ethsw set_access_port SW-Etudiant udp-8bde8466-4643-43f3-bcc0-86de42d54e98 1 
+Feb 01 16:51:49.998 HYPERVISOR: exec_cmd: ethsw remove_nio SW-Etudiant udp-8bde8466-4643-43f3-bcc0-86de42d54e98 
+Feb 01 16:51:50.029 HYPERVISOR: exec_cmd: nio delete udp-8bde8466-4643-43f3-bcc0-86de42d54e98 
+Feb 01 17:01:28.627 HYPERVISOR: exec_cmd: nio create_udp udp-fbb4f85f-104e-4fd2-b788-953bc171f93e 10002 192.168.42.128 10008 
+Feb 01 17:01:28.631 HYPERVISOR: exec_cmd: ethsw add_nio SW-Etudiant udp-fbb4f85f-104e-4fd2-b788-953bc171f93e 
+Feb 01 17:01:28.651 HYPERVISOR: exec_cmd: ethsw set_access_port SW-Etudiant udp-fbb4f85f-104e-4fd2-b788-953bc171f93e 1 
+Feb 01 17:11:05.454 HYPERVISOR: exec_cmd: ethsw delete SW-Etudiant 
+Feb 01 17:11:05.487 HYPERVISOR: exec_cmd: hypervisor stop 
+Feb 01 17:11:05.858 HYPERVISOR: Stopped.
+Feb 01 17:11:05.858 GENERAL: reset done.

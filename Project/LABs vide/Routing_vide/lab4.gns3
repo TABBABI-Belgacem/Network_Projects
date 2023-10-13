@@ -1,0 +1,2054 @@
+{
+    "auto_start": false,
+    "name": "lab4",
+    "project_id": "7eca8325-620f-42dd-b6a4-fbf14e6b96dd",
+    "revision": 4,
+    "show_port_names": true,
+    "topology": {
+        "ellipses": [
+            {
+                "border_style": 2,
+                "color": "#aa00ff",
+                "height": 242.0,
+                "width": 150.0,
+                "x": -89.0,
+                "y": 19.0,
+                "z": -1.0
+            },
+            {
+                "border_style": 2,
+                "color": "#aa00ff",
+                "height": 242.0,
+                "width": 150.0,
+                "x": -348.0,
+                "y": 14.0,
+                "z": -1.0
+            },
+            {
+                "border_style": 2,
+                "color": "#aa00ff",
+                "height": 68.0,
+                "width": 150.0,
+                "x": -219.0,
+                "y": -48.0,
+                "z": -1.0
+            },
+            {
+                "border_style": 2,
+                "color": "#aa00ff",
+                "height": 68.0,
+                "width": 129.0,
+                "x": -585.0,
+                "y": -19.0,
+                "z": -1.0
+            }
+        ],
+        "links": [
+            {
+                "description": "Link from SW-Etudiant port 2 to PC10 port Ethernet0",
+                "destination_node_id": 8,
+                "destination_port_id": 27,
+                "destination_port_label": {
+                    "color": "#ff000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "e0",
+                    "x": 48.97592409373027,
+                    "y": -21.972299237975022
+                },
+                "id": 2,
+                "source_node_id": 6,
+                "source_port_id": 12,
+                "source_port_label": {
+                    "color": "#ff000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "2",
+                    "x": 29.02407590626973,
+                    "y": 55.47229923797502
+                }
+            },
+            {
+                "description": "Link from SW-Enseignant port 2 to PC11 port Ethernet0",
+                "destination_node_id": 9,
+                "destination_port_id": 28,
+                "destination_port_label": {
+                    "color": "#ff000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "e0",
+                    "x": 36.73823341451312,
+                    "y": -16.4927457380615
+                },
+                "id": 3,
+                "source_node_id": 7,
+                "source_port_id": 20,
+                "source_port_label": {
+                    "color": "#ff000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "2",
+                    "x": 42.26176658548688,
+                    "y": 48.9927457380615
+                }
+            },
+            {
+                "description": "Link from R_CORE_ISSAT port FastEthernet0/0 to R-ISSAT port FastEthernet0/0",
+                "destination_node_id": 27,
+                "destination_port_id": 128,
+                "destination_port_label": {
+                    "color": "#ff000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "f0/0",
+                    "x": -39.61171887573724,
+                    "y": 46.85031469070418
+                },
+                "id": 13,
+                "source_node_id": 36,
+                "source_port_id": 156,
+                "source_port_label": {
+                    "color": "#ff000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "f0/0",
+                    "x": 74.11171887573721,
+                    "y": -32.35031469070418
+                }
+            },
+            {
+                "description": "Link from R1_Distribution port FastEthernet0/0 to R_CORE_ISSAT port FastEthernet0/1",
+                "destination_node_id": 36,
+                "destination_port_id": 157,
+                "destination_port_label": {
+                    "color": "#ff000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "f0/1",
+                    "x": -17.715341106392174,
+                    "y": 38.84198098876581
+                },
+                "id": 14,
+                "source_node_id": 38,
+                "source_port_id": 177,
+                "source_port_label": {
+                    "color": "#ff000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "f0/0",
+                    "x": 49.715341106392174,
+                    "y": -31.841980988765812
+                }
+            },
+            {
+                "description": "Link from R1_Distribution port FastEthernet0/1 to SW-Etudiant port 3",
+                "destination_node_id": 6,
+                "destination_port_id": 13,
+                "destination_port_label": {
+                    "color": "#ff000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "3",
+                    "x": 36.17217398114241,
+                    "y": -23.994351877972406
+                },
+                "id": 15,
+                "source_node_id": 38,
+                "source_port_id": 178,
+                "source_port_label": {
+                    "color": "#ff000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "f0/1",
+                    "x": 18.327826018857593,
+                    "y": 64.9943518779724
+                }
+            },
+            {
+                "description": "Link from R2_Distribution port FastEthernet0/0 to R1_Distribution port FastEthernet1/0",
+                "destination_node_id": 38,
+                "destination_port_id": 193,
+                "destination_port_label": {
+                    "color": "#ff000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "f1/0",
+                    "x": 81.99718819196491,
+                    "y": 8.474274958798006
+                },
+                "id": 16,
+                "source_node_id": 35,
+                "source_port_id": 154,
+                "source_port_label": {
+                    "color": "#ff000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "f0/0",
+                    "x": -44.99718819196491,
+                    "y": 11.525725041201994
+                }
+            },
+            {
+                "description": "Link from R2_Distribution port FastEthernet1/0 to SW-Enseignant port 1",
+                "destination_node_id": 7,
+                "destination_port_id": 19,
+                "destination_port_label": {
+                    "color": "#ff000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "1",
+                    "x": 36.86672287311418,
+                    "y": -23.97664403858967
+                },
+                "id": 17,
+                "source_node_id": 35,
+                "source_port_id": 220,
+                "source_port_label": {
+                    "color": "#ff000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "f1/0",
+                    "x": 15.633277126885822,
+                    "y": 60.976644038589654
+                }
+            },
+            {
+                "description": "Link from R-ISSAT port FastEthernet0/1 to R_ANNEXE port FastEthernet0/0",
+                "destination_node_id": 37,
+                "destination_port_id": 175,
+                "destination_port_label": {
+                    "color": "#ff000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "f0/0",
+                    "x": -40.83620807141949,
+                    "y": -29.842579527943997
+                },
+                "id": 18,
+                "source_node_id": 27,
+                "source_port_id": 129,
+                "source_port_label": {
+                    "color": "#ff000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "f0/1",
+                    "x": 65.83620807141949,
+                    "y": 44.842579527944
+                }
+            },
+            {
+                "description": "Link from R_CORE_ISSAT port FastEthernet1/0 to R_ANNEXE port FastEthernet0/1",
+                "destination_node_id": 37,
+                "destination_port_id": 176,
+                "destination_port_label": {
+                    "color": "#ff000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "f0/1",
+                    "x": -52.991212808104706,
+                    "y": 8.161609794379359
+                },
+                "id": 19,
+                "source_node_id": 36,
+                "source_port_id": 174,
+                "source_port_label": {
+                    "color": "#ff000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "f1/0",
+                    "x": 92.99121280810473,
+                    "y": 6.838390205620641
+                }
+            },
+            {
+                "description": "Link from R_ANNEXE port FastEthernet1/0 to SW1 port 1",
+                "destination_node_id": 40,
+                "destination_port_id": 317,
+                "destination_port_label": {
+                    "color": "#ff000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "1",
+                    "x": 32.57209553962366,
+                    "y": -23.89269827262764
+                },
+                "id": 21,
+                "source_node_id": 37,
+                "source_port_id": 229,
+                "source_port_label": {
+                    "color": "#ff000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "f1/0",
+                    "x": 35.92790446037634,
+                    "y": 61.89269827262764
+                }
+            },
+            {
+                "description": "Link from SW1 port 2 to PC15 port Ethernet0",
+                "destination_node_id": 12,
+                "destination_port_id": 47,
+                "destination_port_label": {
+                    "color": "#ff000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "e0",
+                    "x": 32.5,
+                    "y": -10.5
+                },
+                "id": 22,
+                "source_node_id": 40,
+                "source_port_id": 318,
+                "source_port_label": {
+                    "color": "#ff000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "2",
+                    "x": 35.5,
+                    "y": 56.0
+                }
+            },
+            {
+                "description": "Link from R_CORE_ISSAT port FastEthernet4/0 to R2_Distribution port FastEthernet4/0",
+                "destination_node_id": 35,
+                "destination_port_id": 272,
+                "destination_port_label": {
+                    "color": "#ff000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "f4/0",
+                    "x": -12.17569558662781,
+                    "y": -22.39243170652493
+                },
+                "id": 23,
+                "source_node_id": 36,
+                "source_port_id": 247,
+                "source_port_label": {
+                    "color": "#ff000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "f4/0",
+                    "x": 47.175695586627825,
+                    "y": 36.39243170652493
+                }
+            }
+        ],
+        "nodes": [
+            {
+                "description": "Router c3600",
+                "dynamips_id": 1,
+                "id": 27,
+                "label": {
+                    "color": "#ff000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "R-ISSAT",
+                    "x": 2.5,
+                    "y": -25.0
+                },
+                "ports": [
+                    {
+                        "adapter_number": 0,
+                        "description": "connected to R_CORE_ISSAT on port FastEthernet0/0",
+                        "id": 128,
+                        "link_id": 13,
+                        "name": "FastEthernet0/0",
+                        "nio": "NIO_UDP",
+                        "port_number": 0
+                    },
+                    {
+                        "adapter_number": 0,
+                        "description": "connected to R_ANNEXE on port FastEthernet0/0",
+                        "id": 129,
+                        "link_id": 18,
+                        "name": "FastEthernet0/1",
+                        "nio": "NIO_UDP",
+                        "port_number": 1
+                    },
+                    {
+                        "adapter_number": 2,
+                        "id": 194,
+                        "name": "FastEthernet2/0",
+                        "port_number": 0
+                    },
+                    {
+                        "adapter_number": 3,
+                        "id": 195,
+                        "name": "Serial3/0",
+                        "port_number": 0
+                    },
+                    {
+                        "adapter_number": 3,
+                        "id": 196,
+                        "name": "Serial3/1",
+                        "port_number": 1
+                    },
+                    {
+                        "adapter_number": 3,
+                        "id": 197,
+                        "name": "Serial3/2",
+                        "port_number": 2
+                    },
+                    {
+                        "adapter_number": 3,
+                        "id": 198,
+                        "name": "Serial3/3",
+                        "port_number": 3
+                    },
+                    {
+                        "adapter_number": 1,
+                        "id": 199,
+                        "name": "Ethernet1/0",
+                        "port_number": 0
+                    },
+                    {
+                        "adapter_number": 4,
+                        "id": 297,
+                        "name": "Ethernet4/0",
+                        "port_number": 0
+                    },
+                    {
+                        "adapter_number": 4,
+                        "id": 298,
+                        "name": "Ethernet4/1",
+                        "port_number": 1
+                    },
+                    {
+                        "adapter_number": 4,
+                        "id": 299,
+                        "name": "Ethernet4/2",
+                        "port_number": 2
+                    },
+                    {
+                        "adapter_number": 4,
+                        "id": 300,
+                        "name": "Ethernet4/3",
+                        "port_number": 3
+                    },
+                    {
+                        "adapter_number": 5,
+                        "id": 301,
+                        "name": "FastEthernet5/0",
+                        "port_number": 0
+                    },
+                    {
+                        "adapter_number": 5,
+                        "id": 302,
+                        "name": "FastEthernet5/1",
+                        "port_number": 1
+                    },
+                    {
+                        "adapter_number": 5,
+                        "id": 303,
+                        "name": "FastEthernet5/2",
+                        "port_number": 2
+                    },
+                    {
+                        "adapter_number": 5,
+                        "id": 304,
+                        "name": "FastEthernet5/3",
+                        "port_number": 3
+                    },
+                    {
+                        "adapter_number": 5,
+                        "id": 305,
+                        "name": "FastEthernet5/4",
+                        "port_number": 4
+                    },
+                    {
+                        "adapter_number": 5,
+                        "id": 306,
+                        "name": "FastEthernet5/5",
+                        "port_number": 5
+                    },
+                    {
+                        "adapter_number": 5,
+                        "id": 307,
+                        "name": "FastEthernet5/6",
+                        "port_number": 6
+                    },
+                    {
+                        "adapter_number": 5,
+                        "id": 308,
+                        "name": "FastEthernet5/7",
+                        "port_number": 7
+                    },
+                    {
+                        "adapter_number": 5,
+                        "id": 309,
+                        "name": "FastEthernet5/8",
+                        "port_number": 8
+                    },
+                    {
+                        "adapter_number": 5,
+                        "id": 310,
+                        "name": "FastEthernet5/9",
+                        "port_number": 9
+                    },
+                    {
+                        "adapter_number": 5,
+                        "id": 311,
+                        "name": "FastEthernet5/10",
+                        "port_number": 10
+                    },
+                    {
+                        "adapter_number": 5,
+                        "id": 312,
+                        "name": "FastEthernet5/11",
+                        "port_number": 11
+                    },
+                    {
+                        "adapter_number": 5,
+                        "id": 313,
+                        "name": "FastEthernet5/12",
+                        "port_number": 12
+                    },
+                    {
+                        "adapter_number": 5,
+                        "id": 314,
+                        "name": "FastEthernet5/13",
+                        "port_number": 13
+                    },
+                    {
+                        "adapter_number": 5,
+                        "id": 315,
+                        "name": "FastEthernet5/14",
+                        "port_number": 14
+                    },
+                    {
+                        "adapter_number": 5,
+                        "id": 316,
+                        "name": "FastEthernet5/15",
+                        "port_number": 15
+                    }
+                ],
+                "properties": {
+                    "auto_delete_disks": true,
+                    "chassis": "3660",
+                    "clock_divisor": 4,
+                    "console": 5004,
+                    "disk0": 0,
+                    "disk1": 0,
+                    "exec_area": 64,
+                    "idlemax": 500,
+                    "idlepc": "0x6057f268",
+                    "idlesleep": 30,
+                    "image": "c3660-a3jk9s-mz.124-25d.image",
+                    "image_md5sum": "b88ee1b2ed182737395db2df27f34a33",
+                    "iomem": 5,
+                    "mac_addr": "cc01.06dc.0000",
+                    "mmap": true,
+                    "name": "R-ISSAT",
+                    "nvram": 256,
+                    "platform": "c3600",
+                    "ram": 192,
+                    "slot0": "Leopard-2FE",
+                    "slot1": "NM-1E",
+                    "slot2": "NM-1FE-TX",
+                    "slot3": "NM-4T",
+                    "slot4": "NM-4E",
+                    "slot5": "NM-16ESW",
+                    "sparsemem": true,
+                    "startup_config": "configs/i1_startup-config.cfg",
+                    "system_id": "FTX0945W0MY"
+                },
+                "server_id": 2,
+                "type": "C3600",
+                "vm_id": "a1992dbf-a5bc-4513-ac2c-580029072e40",
+                "x": 47.0,
+                "y": -330.0
+            },
+            {
+                "description": "Ethernet switch",
+                "device_id": "44a25b5a-255e-483b-a67f-aabf007b9972",
+                "id": 6,
+                "label": {
+                    "color": "#ff000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "SW-Etudiant",
+                    "x": -81.0,
+                    "y": 3.0
+                },
+                "ports": [
+                    {
+                        "id": 11,
+                        "name": "1",
+                        "port_number": 1,
+                        "type": "access",
+                        "vlan": 1
+                    },
+                    {
+                        "description": "connected to PC10 on port Ethernet0",
+                        "id": 12,
+                        "link_id": 2,
+                        "name": "2",
+                        "nio": "NIO_UDP",
+                        "port_number": 2,
+                        "type": "access",
+                        "vlan": 1
+                    },
+                    {
+                        "description": "connected to R1_Distribution on port FastEthernet0/1",
+                        "id": 13,
+                        "link_id": 15,
+                        "name": "3",
+                        "nio": "NIO_UDP",
+                        "port_number": 3,
+                        "type": "access",
+                        "vlan": 1
+                    },
+                    {
+                        "id": 14,
+                        "name": "4",
+                        "port_number": 4,
+                        "type": "access",
+                        "vlan": 1
+                    },
+                    {
+                        "id": 15,
+                        "name": "5",
+                        "port_number": 5,
+                        "type": "access",
+                        "vlan": 1
+                    },
+                    {
+                        "id": 16,
+                        "name": "6",
+                        "port_number": 6,
+                        "type": "access",
+                        "vlan": 1
+                    },
+                    {
+                        "id": 17,
+                        "name": "7",
+                        "port_number": 7,
+                        "type": "access",
+                        "vlan": 1
+                    },
+                    {
+                        "id": 18,
+                        "name": "8",
+                        "port_number": 8,
+                        "type": "access",
+                        "vlan": 1
+                    }
+                ],
+                "properties": {
+                    "name": "SW-Etudiant"
+                },
+                "server_id": 1,
+                "type": "EthernetSwitch",
+                "x": -304.5,
+                "y": 89.0
+            },
+            {
+                "description": "Ethernet switch",
+                "device_id": "8811141f-b447-4afc-9199-d997d24c6289",
+                "id": 7,
+                "label": {
+                    "color": "#ff000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "SW-Enseignant",
+                    "x": 65.5,
+                    "y": 1.0
+                },
+                "ports": [
+                    {
+                        "description": "connected to R2_Distribution on port FastEthernet1/0",
+                        "id": 19,
+                        "link_id": 17,
+                        "name": "1",
+                        "nio": "NIO_UDP",
+                        "port_number": 1,
+                        "type": "access",
+                        "vlan": 1
+                    },
+                    {
+                        "description": "connected to PC11 on port Ethernet0",
+                        "id": 20,
+                        "link_id": 3,
+                        "name": "2",
+                        "nio": "NIO_UDP",
+                        "port_number": 2,
+                        "type": "access",
+                        "vlan": 1
+                    },
+                    {
+                        "id": 21,
+                        "name": "3",
+                        "port_number": 3,
+                        "type": "access",
+                        "vlan": 1
+                    },
+                    {
+                        "id": 22,
+                        "name": "4",
+                        "port_number": 4,
+                        "type": "access",
+                        "vlan": 1
+                    },
+                    {
+                        "id": 23,
+                        "name": "5",
+                        "port_number": 5,
+                        "type": "access",
+                        "vlan": 1
+                    },
+                    {
+                        "id": 24,
+                        "name": "6",
+                        "port_number": 6,
+                        "type": "access",
+                        "vlan": 1
+                    },
+                    {
+                        "id": 25,
+                        "name": "7",
+                        "port_number": 7,
+                        "type": "access",
+                        "vlan": 1
+                    },
+                    {
+                        "id": 26,
+                        "name": "8",
+                        "port_number": 8,
+                        "type": "access",
+                        "vlan": 1
+                    }
+                ],
+                "properties": {
+                    "name": "SW-Enseignant"
+                },
+                "server_id": 1,
+                "type": "EthernetSwitch",
+                "x": -53.5,
+                "y": 90.0
+            },
+            {
+                "description": "VPCS device",
+                "id": 8,
+                "label": {
+                    "color": "#ff000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "PC10",
+                    "x": 10.5,
+                    "y": 33.0
+                },
+                "ports": [
+                    {
+                        "adapter_number": 0,
+                        "description": "connected to SW-Etudiant on port 2",
+                        "id": 27,
+                        "link_id": 2,
+                        "name": "Ethernet0",
+                        "nio": "NIO_UDP",
+                        "port_number": 0
+                    }
+                ],
+                "properties": {
+                    "console": 5000,
+                    "name": "PC10"
+                },
+                "server_id": 2,
+                "symbol": ":/symbols/vpcs_guest.svg",
+                "type": "VPCSDevice",
+                "vm_id": "5444bdaf-544d-4521-a563-4b1421162403",
+                "x": -310.5,
+                "y": 189.5
+            },
+            {
+                "description": "VPCS device",
+                "id": 9,
+                "label": {
+                    "color": "#ff000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "PC11",
+                    "x": 12.5,
+                    "y": 34.0
+                },
+                "ports": [
+                    {
+                        "adapter_number": 0,
+                        "description": "connected to SW-Enseignant on port 2",
+                        "id": 28,
+                        "link_id": 3,
+                        "name": "Ethernet0",
+                        "nio": "NIO_UDP",
+                        "port_number": 0
+                    }
+                ],
+                "properties": {
+                    "console": 5001,
+                    "name": "PC11"
+                },
+                "server_id": 2,
+                "symbol": ":/symbols/vpcs_guest.svg",
+                "type": "VPCSDevice",
+                "vm_id": "fbbc0f97-714f-420b-b51e-c2d6772deef3",
+                "x": -51.5,
+                "y": 184.5
+            },
+            {
+                "description": "VPCS device",
+                "id": 12,
+                "label": {
+                    "color": "#ff000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "PC15",
+                    "x": 13.5,
+                    "y": 33.0
+                },
+                "ports": [
+                    {
+                        "adapter_number": 0,
+                        "description": "connected to SW1 on port 2",
+                        "id": 47,
+                        "link_id": 22,
+                        "name": "Ethernet0",
+                        "nio": "NIO_UDP",
+                        "port_number": 0
+                    }
+                ],
+                "properties": {
+                    "console": 5003,
+                    "name": "PC15"
+                },
+                "server_id": 2,
+                "symbol": ":/symbols/vpcs_guest.svg",
+                "type": "VPCSDevice",
+                "vm_id": "6c7ca617-4b26-4260-992c-9ac76005ea2f",
+                "x": 307.5,
+                "y": 177.5
+            },
+            {
+                "description": "Router c3600",
+                "dynamips_id": 2,
+                "id": 35,
+                "label": {
+                    "color": "#ff000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "R2_Distribution",
+                    "x": 48.0,
+                    "y": 12.0
+                },
+                "ports": [
+                    {
+                        "adapter_number": 0,
+                        "description": "connected to R1_Distribution on port FastEthernet1/0",
+                        "id": 154,
+                        "link_id": 16,
+                        "name": "FastEthernet0/0",
+                        "nio": "NIO_UDP",
+                        "port_number": 0
+                    },
+                    {
+                        "adapter_number": 0,
+                        "id": 155,
+                        "name": "FastEthernet0/1",
+                        "port_number": 1
+                    },
+                    {
+                        "adapter_number": 1,
+                        "description": "connected to SW-Enseignant on port 1",
+                        "id": 220,
+                        "link_id": 17,
+                        "name": "FastEthernet1/0",
+                        "nio": "NIO_UDP",
+                        "port_number": 0
+                    },
+                    {
+                        "adapter_number": 4,
+                        "description": "connected to R_CORE_ISSAT on port FastEthernet4/0",
+                        "id": 272,
+                        "link_id": 23,
+                        "name": "FastEthernet4/0",
+                        "nio": "NIO_UDP",
+                        "port_number": 0
+                    },
+                    {
+                        "adapter_number": 4,
+                        "id": 273,
+                        "name": "FastEthernet4/1",
+                        "port_number": 1
+                    },
+                    {
+                        "adapter_number": 4,
+                        "id": 274,
+                        "name": "FastEthernet4/2",
+                        "port_number": 2
+                    },
+                    {
+                        "adapter_number": 4,
+                        "id": 275,
+                        "name": "FastEthernet4/3",
+                        "port_number": 3
+                    },
+                    {
+                        "adapter_number": 4,
+                        "id": 276,
+                        "name": "FastEthernet4/4",
+                        "port_number": 4
+                    },
+                    {
+                        "adapter_number": 4,
+                        "id": 277,
+                        "name": "FastEthernet4/5",
+                        "port_number": 5
+                    },
+                    {
+                        "adapter_number": 4,
+                        "id": 278,
+                        "name": "FastEthernet4/6",
+                        "port_number": 6
+                    },
+                    {
+                        "adapter_number": 4,
+                        "id": 279,
+                        "name": "FastEthernet4/7",
+                        "port_number": 7
+                    },
+                    {
+                        "adapter_number": 4,
+                        "id": 280,
+                        "name": "FastEthernet4/8",
+                        "port_number": 8
+                    },
+                    {
+                        "adapter_number": 4,
+                        "id": 281,
+                        "name": "FastEthernet4/9",
+                        "port_number": 9
+                    },
+                    {
+                        "adapter_number": 4,
+                        "id": 282,
+                        "name": "FastEthernet4/10",
+                        "port_number": 10
+                    },
+                    {
+                        "adapter_number": 4,
+                        "id": 283,
+                        "name": "FastEthernet4/11",
+                        "port_number": 11
+                    },
+                    {
+                        "adapter_number": 4,
+                        "id": 284,
+                        "name": "FastEthernet4/12",
+                        "port_number": 12
+                    },
+                    {
+                        "adapter_number": 4,
+                        "id": 285,
+                        "name": "FastEthernet4/13",
+                        "port_number": 13
+                    },
+                    {
+                        "adapter_number": 4,
+                        "id": 286,
+                        "name": "FastEthernet4/14",
+                        "port_number": 14
+                    },
+                    {
+                        "adapter_number": 4,
+                        "id": 287,
+                        "name": "FastEthernet4/15",
+                        "port_number": 15
+                    },
+                    {
+                        "adapter_number": 2,
+                        "id": 288,
+                        "name": "Ethernet2/0",
+                        "port_number": 0
+                    },
+                    {
+                        "adapter_number": 2,
+                        "id": 289,
+                        "name": "Ethernet2/1",
+                        "port_number": 1
+                    },
+                    {
+                        "adapter_number": 2,
+                        "id": 290,
+                        "name": "Ethernet2/2",
+                        "port_number": 2
+                    },
+                    {
+                        "adapter_number": 2,
+                        "id": 291,
+                        "name": "Ethernet2/3",
+                        "port_number": 3
+                    },
+                    {
+                        "adapter_number": 3,
+                        "id": 292,
+                        "name": "Ethernet3/0",
+                        "port_number": 0
+                    },
+                    {
+                        "adapter_number": 5,
+                        "id": 293,
+                        "name": "Serial5/0",
+                        "port_number": 0
+                    },
+                    {
+                        "adapter_number": 5,
+                        "id": 294,
+                        "name": "Serial5/1",
+                        "port_number": 1
+                    },
+                    {
+                        "adapter_number": 5,
+                        "id": 295,
+                        "name": "Serial5/2",
+                        "port_number": 2
+                    },
+                    {
+                        "adapter_number": 5,
+                        "id": 296,
+                        "name": "Serial5/3",
+                        "port_number": 3
+                    }
+                ],
+                "properties": {
+                    "auto_delete_disks": true,
+                    "chassis": "3660",
+                    "clock_divisor": 4,
+                    "console": 5005,
+                    "disk0": 0,
+                    "disk1": 0,
+                    "exec_area": 64,
+                    "idlemax": 500,
+                    "idlepc": "0x6057f268",
+                    "idlesleep": 30,
+                    "image": "c3660-a3jk9s-mz.124-25d.image",
+                    "image_md5sum": "b88ee1b2ed182737395db2df27f34a33",
+                    "iomem": 5,
+                    "mac_addr": "cc02.05ec.0000",
+                    "mmap": true,
+                    "name": "R2_Distribution",
+                    "nvram": 256,
+                    "platform": "c3600",
+                    "ram": 192,
+                    "slot0": "Leopard-2FE",
+                    "slot1": "NM-1FE-TX",
+                    "slot2": "NM-4E",
+                    "slot3": "NM-1E",
+                    "slot4": "NM-16ESW",
+                    "slot5": "NM-4T",
+                    "sparsemem": true,
+                    "startup_config": "configs/i2_startup-config.cfg",
+                    "system_id": "FTX0945W0MY"
+                },
+                "server_id": 2,
+                "type": "C3600",
+                "vm_id": "6d621df0-23f8-4c96-a3a6-e439cc00c4e6",
+                "x": -47.0,
+                "y": -33.0
+            },
+            {
+                "description": "Router c3600",
+                "dynamips_id": 3,
+                "id": 36,
+                "label": {
+                    "color": "#ff000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "R_CORE_ISSAT",
+                    "x": -33.5,
+                    "y": -26.0
+                },
+                "ports": [
+                    {
+                        "adapter_number": 0,
+                        "description": "connected to R-ISSAT on port FastEthernet0/0",
+                        "id": 156,
+                        "link_id": 13,
+                        "name": "FastEthernet0/0",
+                        "nio": "NIO_UDP",
+                        "port_number": 0
+                    },
+                    {
+                        "adapter_number": 0,
+                        "description": "connected to R1_Distribution on port FastEthernet0/0",
+                        "id": 157,
+                        "link_id": 14,
+                        "name": "FastEthernet0/1",
+                        "nio": "NIO_UDP",
+                        "port_number": 1
+                    },
+                    {
+                        "adapter_number": 1,
+                        "description": "connected to R_ANNEXE on port FastEthernet0/1",
+                        "id": 174,
+                        "link_id": 19,
+                        "name": "FastEthernet1/0",
+                        "nio": "NIO_UDP",
+                        "port_number": 0
+                    },
+                    {
+                        "adapter_number": 4,
+                        "description": "connected to R2_Distribution on port FastEthernet4/0",
+                        "id": 247,
+                        "link_id": 23,
+                        "name": "FastEthernet4/0",
+                        "nio": "NIO_UDP",
+                        "port_number": 0
+                    },
+                    {
+                        "adapter_number": 4,
+                        "id": 248,
+                        "name": "FastEthernet4/1",
+                        "port_number": 1
+                    },
+                    {
+                        "adapter_number": 4,
+                        "id": 249,
+                        "name": "FastEthernet4/2",
+                        "port_number": 2
+                    },
+                    {
+                        "adapter_number": 4,
+                        "id": 250,
+                        "name": "FastEthernet4/3",
+                        "port_number": 3
+                    },
+                    {
+                        "adapter_number": 4,
+                        "id": 251,
+                        "name": "FastEthernet4/4",
+                        "port_number": 4
+                    },
+                    {
+                        "adapter_number": 4,
+                        "id": 252,
+                        "name": "FastEthernet4/5",
+                        "port_number": 5
+                    },
+                    {
+                        "adapter_number": 4,
+                        "id": 253,
+                        "name": "FastEthernet4/6",
+                        "port_number": 6
+                    },
+                    {
+                        "adapter_number": 4,
+                        "id": 254,
+                        "name": "FastEthernet4/7",
+                        "port_number": 7
+                    },
+                    {
+                        "adapter_number": 4,
+                        "id": 255,
+                        "name": "FastEthernet4/8",
+                        "port_number": 8
+                    },
+                    {
+                        "adapter_number": 4,
+                        "id": 256,
+                        "name": "FastEthernet4/9",
+                        "port_number": 9
+                    },
+                    {
+                        "adapter_number": 4,
+                        "id": 257,
+                        "name": "FastEthernet4/10",
+                        "port_number": 10
+                    },
+                    {
+                        "adapter_number": 4,
+                        "id": 258,
+                        "name": "FastEthernet4/11",
+                        "port_number": 11
+                    },
+                    {
+                        "adapter_number": 4,
+                        "id": 259,
+                        "name": "FastEthernet4/12",
+                        "port_number": 12
+                    },
+                    {
+                        "adapter_number": 4,
+                        "id": 260,
+                        "name": "FastEthernet4/13",
+                        "port_number": 13
+                    },
+                    {
+                        "adapter_number": 4,
+                        "id": 261,
+                        "name": "FastEthernet4/14",
+                        "port_number": 14
+                    },
+                    {
+                        "adapter_number": 4,
+                        "id": 262,
+                        "name": "FastEthernet4/15",
+                        "port_number": 15
+                    },
+                    {
+                        "adapter_number": 2,
+                        "id": 263,
+                        "name": "Ethernet2/0",
+                        "port_number": 0
+                    },
+                    {
+                        "adapter_number": 3,
+                        "id": 264,
+                        "name": "Ethernet3/0",
+                        "port_number": 0
+                    },
+                    {
+                        "adapter_number": 3,
+                        "id": 265,
+                        "name": "Ethernet3/1",
+                        "port_number": 1
+                    },
+                    {
+                        "adapter_number": 3,
+                        "id": 266,
+                        "name": "Ethernet3/2",
+                        "port_number": 2
+                    },
+                    {
+                        "adapter_number": 3,
+                        "id": 267,
+                        "name": "Ethernet3/3",
+                        "port_number": 3
+                    },
+                    {
+                        "adapter_number": 5,
+                        "id": 268,
+                        "name": "Serial5/0",
+                        "port_number": 0
+                    },
+                    {
+                        "adapter_number": 5,
+                        "id": 269,
+                        "name": "Serial5/1",
+                        "port_number": 1
+                    },
+                    {
+                        "adapter_number": 5,
+                        "id": 270,
+                        "name": "Serial5/2",
+                        "port_number": 2
+                    },
+                    {
+                        "adapter_number": 5,
+                        "id": 271,
+                        "name": "Serial5/3",
+                        "port_number": 3
+                    }
+                ],
+                "properties": {
+                    "auto_delete_disks": true,
+                    "chassis": "3660",
+                    "clock_divisor": 4,
+                    "console": 5006,
+                    "disk0": 0,
+                    "disk1": 0,
+                    "exec_area": 64,
+                    "idlemax": 500,
+                    "idlepc": "0x6057f268",
+                    "idlesleep": 30,
+                    "image": "c3660-a3jk9s-mz.124-25d.image",
+                    "image_md5sum": "b88ee1b2ed182737395db2df27f34a33",
+                    "iomem": 5,
+                    "mac_addr": "cc03.060d.0000",
+                    "mmap": true,
+                    "name": "R_CORE_ISSAT",
+                    "nvram": 256,
+                    "platform": "c3600",
+                    "ram": 192,
+                    "slot0": "Leopard-2FE",
+                    "slot1": "NM-1FE-TX",
+                    "slot2": "NM-1E",
+                    "slot3": "NM-4E",
+                    "slot4": "NM-16ESW",
+                    "slot5": "NM-4T",
+                    "sparsemem": true,
+                    "startup_config": "configs/i3_startup-config.cfg",
+                    "system_id": "FTX0945W0MY"
+                },
+                "server_id": 2,
+                "type": "C3600",
+                "vm_id": "30f710e6-b4ff-4dad-885f-0748ba810074",
+                "x": -176.99999999999997,
+                "y": -163.99999999999991
+            },
+            {
+                "description": "Router c3600",
+                "dynamips_id": 4,
+                "id": 37,
+                "label": {
+                    "color": "#ff000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "R_ANNEXE",
+                    "x": 21.0,
+                    "y": -57.0
+                },
+                "ports": [
+                    {
+                        "adapter_number": 0,
+                        "description": "connected to R-ISSAT on port FastEthernet0/1",
+                        "id": 175,
+                        "link_id": 18,
+                        "name": "FastEthernet0/0",
+                        "nio": "NIO_UDP",
+                        "port_number": 0
+                    },
+                    {
+                        "adapter_number": 0,
+                        "description": "connected to R_CORE_ISSAT on port FastEthernet1/0",
+                        "id": 176,
+                        "link_id": 19,
+                        "name": "FastEthernet0/1",
+                        "nio": "NIO_UDP",
+                        "port_number": 1
+                    },
+                    {
+                        "adapter_number": 2,
+                        "id": 221,
+                        "name": "Serial2/0",
+                        "port_number": 0
+                    },
+                    {
+                        "adapter_number": 2,
+                        "id": 222,
+                        "name": "Serial2/1",
+                        "port_number": 1
+                    },
+                    {
+                        "adapter_number": 2,
+                        "id": 223,
+                        "name": "Serial2/2",
+                        "port_number": 2
+                    },
+                    {
+                        "adapter_number": 2,
+                        "id": 224,
+                        "name": "Serial2/3",
+                        "port_number": 3
+                    },
+                    {
+                        "adapter_number": 3,
+                        "id": 225,
+                        "name": "Ethernet3/0",
+                        "port_number": 0
+                    },
+                    {
+                        "adapter_number": 3,
+                        "id": 226,
+                        "name": "Ethernet3/1",
+                        "port_number": 1
+                    },
+                    {
+                        "adapter_number": 3,
+                        "id": 227,
+                        "name": "Ethernet3/2",
+                        "port_number": 2
+                    },
+                    {
+                        "adapter_number": 3,
+                        "id": 228,
+                        "name": "Ethernet3/3",
+                        "port_number": 3
+                    },
+                    {
+                        "adapter_number": 1,
+                        "description": "connected to SW1 on port 1",
+                        "id": 229,
+                        "link_id": 21,
+                        "name": "FastEthernet1/0",
+                        "nio": "NIO_UDP",
+                        "port_number": 0
+                    }
+                ],
+                "properties": {
+                    "auto_delete_disks": true,
+                    "chassis": "3660",
+                    "clock_divisor": 4,
+                    "console": 5007,
+                    "disk0": 0,
+                    "disk1": 0,
+                    "exec_area": 64,
+                    "idlemax": 500,
+                    "idlepc": "0x6057f268",
+                    "idlesleep": 30,
+                    "image": "c3660-a3jk9s-mz.124-25d.image",
+                    "image_md5sum": "b88ee1b2ed182737395db2df27f34a33",
+                    "iomem": 5,
+                    "mac_addr": "cc04.0621.0000",
+                    "mmap": true,
+                    "name": "R_ANNEXE",
+                    "nvram": 256,
+                    "platform": "c3600",
+                    "ram": 192,
+                    "slot0": "Leopard-2FE",
+                    "slot1": "NM-1FE-TX",
+                    "slot2": "NM-4T",
+                    "slot3": "NM-4E",
+                    "sparsemem": true,
+                    "startup_config": "configs/i4_startup-config.cfg",
+                    "system_id": "FTX0945W0MY"
+                },
+                "server_id": 2,
+                "type": "C3600",
+                "vm_id": "18e5a378-5046-45f8-8d66-e5dd6b4639fc",
+                "x": 299.0,
+                "y": -162.0
+            },
+            {
+                "description": "Router c3600",
+                "dynamips_id": 5,
+                "id": 38,
+                "label": {
+                    "color": "#ff000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "R1_Distribution",
+                    "x": -85.0,
+                    "y": 6.0
+                },
+                "ports": [
+                    {
+                        "adapter_number": 0,
+                        "description": "connected to R_CORE_ISSAT on port FastEthernet0/1",
+                        "id": 177,
+                        "link_id": 14,
+                        "name": "FastEthernet0/0",
+                        "nio": "NIO_UDP",
+                        "port_number": 0
+                    },
+                    {
+                        "adapter_number": 0,
+                        "description": "connected to SW-Etudiant on port 3",
+                        "id": 178,
+                        "link_id": 15,
+                        "name": "FastEthernet0/1",
+                        "nio": "NIO_UDP",
+                        "port_number": 1
+                    },
+                    {
+                        "adapter_number": 2,
+                        "id": 185,
+                        "name": "Ethernet2/0",
+                        "port_number": 0
+                    },
+                    {
+                        "adapter_number": 2,
+                        "id": 186,
+                        "name": "Ethernet2/1",
+                        "port_number": 1
+                    },
+                    {
+                        "adapter_number": 2,
+                        "id": 187,
+                        "name": "Ethernet2/2",
+                        "port_number": 2
+                    },
+                    {
+                        "adapter_number": 2,
+                        "id": 188,
+                        "name": "Ethernet2/3",
+                        "port_number": 3
+                    },
+                    {
+                        "adapter_number": 3,
+                        "id": 189,
+                        "name": "Serial3/0",
+                        "port_number": 0
+                    },
+                    {
+                        "adapter_number": 3,
+                        "id": 190,
+                        "name": "Serial3/1",
+                        "port_number": 1
+                    },
+                    {
+                        "adapter_number": 3,
+                        "id": 191,
+                        "name": "Serial3/2",
+                        "port_number": 2
+                    },
+                    {
+                        "adapter_number": 3,
+                        "id": 192,
+                        "name": "Serial3/3",
+                        "port_number": 3
+                    },
+                    {
+                        "adapter_number": 1,
+                        "description": "connected to R2_Distribution on port FastEthernet0/0",
+                        "id": 193,
+                        "link_id": 16,
+                        "name": "FastEthernet1/0",
+                        "nio": "NIO_UDP",
+                        "port_number": 0
+                    },
+                    {
+                        "adapter_number": 4,
+                        "id": 230,
+                        "name": "FastEthernet4/0",
+                        "port_number": 0
+                    },
+                    {
+                        "adapter_number": 4,
+                        "id": 231,
+                        "name": "FastEthernet4/1",
+                        "port_number": 1
+                    },
+                    {
+                        "adapter_number": 4,
+                        "id": 232,
+                        "name": "FastEthernet4/2",
+                        "port_number": 2
+                    },
+                    {
+                        "adapter_number": 4,
+                        "id": 233,
+                        "name": "FastEthernet4/3",
+                        "port_number": 3
+                    },
+                    {
+                        "adapter_number": 4,
+                        "id": 234,
+                        "name": "FastEthernet4/4",
+                        "port_number": 4
+                    },
+                    {
+                        "adapter_number": 4,
+                        "id": 235,
+                        "name": "FastEthernet4/5",
+                        "port_number": 5
+                    },
+                    {
+                        "adapter_number": 4,
+                        "id": 236,
+                        "name": "FastEthernet4/6",
+                        "port_number": 6
+                    },
+                    {
+                        "adapter_number": 4,
+                        "id": 237,
+                        "name": "FastEthernet4/7",
+                        "port_number": 7
+                    },
+                    {
+                        "adapter_number": 4,
+                        "id": 238,
+                        "name": "FastEthernet4/8",
+                        "port_number": 8
+                    },
+                    {
+                        "adapter_number": 4,
+                        "id": 239,
+                        "name": "FastEthernet4/9",
+                        "port_number": 9
+                    },
+                    {
+                        "adapter_number": 4,
+                        "id": 240,
+                        "name": "FastEthernet4/10",
+                        "port_number": 10
+                    },
+                    {
+                        "adapter_number": 4,
+                        "id": 241,
+                        "name": "FastEthernet4/11",
+                        "port_number": 11
+                    },
+                    {
+                        "adapter_number": 4,
+                        "id": 242,
+                        "name": "FastEthernet4/12",
+                        "port_number": 12
+                    },
+                    {
+                        "adapter_number": 4,
+                        "id": 243,
+                        "name": "FastEthernet4/13",
+                        "port_number": 13
+                    },
+                    {
+                        "adapter_number": 4,
+                        "id": 244,
+                        "name": "FastEthernet4/14",
+                        "port_number": 14
+                    },
+                    {
+                        "adapter_number": 4,
+                        "id": 245,
+                        "name": "FastEthernet4/15",
+                        "port_number": 15
+                    },
+                    {
+                        "adapter_number": 5,
+                        "id": 246,
+                        "name": "Ethernet5/0",
+                        "port_number": 0
+                    }
+                ],
+                "properties": {
+                    "auto_delete_disks": true,
+                    "chassis": "3660",
+                    "clock_divisor": 4,
+                    "console": 5008,
+                    "disk0": 0,
+                    "disk1": 0,
+                    "exec_area": 64,
+                    "idlemax": 500,
+                    "idlepc": "0x6057f268",
+                    "idlesleep": 30,
+                    "image": "c3660-a3jk9s-mz.124-25d.image",
+                    "image_md5sum": "b88ee1b2ed182737395db2df27f34a33",
+                    "iomem": 5,
+                    "mac_addr": "cc05.0630.0000",
+                    "mmap": true,
+                    "name": "R1_Distribution",
+                    "nvram": 256,
+                    "platform": "c3600",
+                    "ram": 192,
+                    "slot0": "Leopard-2FE",
+                    "slot1": "NM-1FE-TX",
+                    "slot2": "NM-4E",
+                    "slot3": "NM-4T",
+                    "slot4": "NM-16ESW",
+                    "slot5": "NM-1E",
+                    "sparsemem": true,
+                    "startup_config": "configs/i5_startup-config.cfg",
+                    "system_id": "FTX0945W0MY"
+                },
+                "server_id": 2,
+                "type": "C3600",
+                "vm_id": "24a2ce47-9941-4f70-ab33-dfdb28578803",
+                "x": -296.0,
+                "y": -33.0
+            },
+            {
+                "description": "Router c3600",
+                "dynamips_id": 6,
+                "id": 39,
+                "label": {
+                    "color": "#ff000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "R4",
+                    "x": 20.5,
+                    "y": -25.0
+                },
+                "ports": [
+                    {
+                        "adapter_number": 0,
+                        "id": 179,
+                        "name": "FastEthernet0/0",
+                        "port_number": 0
+                    },
+                    {
+                        "adapter_number": 0,
+                        "id": 180,
+                        "name": "FastEthernet0/1",
+                        "port_number": 1
+                    }
+                ],
+                "properties": {
+                    "auto_delete_disks": true,
+                    "chassis": "3660",
+                    "clock_divisor": 4,
+                    "console": 5009,
+                    "disk0": 0,
+                    "disk1": 0,
+                    "exec_area": 64,
+                    "idlemax": 500,
+                    "idlepc": "0x6057f268",
+                    "idlesleep": 30,
+                    "image": "c3660-a3jk9s-mz.124-25d.image",
+                    "image_md5sum": "b88ee1b2ed182737395db2df27f34a33",
+                    "iomem": 5,
+                    "mac_addr": "cc06.063f.0000",
+                    "mmap": true,
+                    "name": "R4",
+                    "nvram": 256,
+                    "platform": "c3600",
+                    "ram": 192,
+                    "slot0": "Leopard-2FE",
+                    "sparsemem": true,
+                    "startup_config": "configs/i6_startup-config.cfg",
+                    "system_id": "FTX0945W0MY"
+                },
+                "server_id": 2,
+                "type": "C3600",
+                "vm_id": "170ee9ad-0f83-4436-9aca-06d423acd60c",
+                "x": -626.0,
+                "y": 198.0
+            },
+            {
+                "description": "Ethernet switch",
+                "device_id": "1df1ca30-f10c-452f-94ec-7072cbfdc693",
+                "id": 40,
+                "label": {
+                    "color": "#ff000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "SW1",
+                    "x": 17.0,
+                    "y": -25.0
+                },
+                "ports": [
+                    {
+                        "description": "connected to R_ANNEXE on port FastEthernet1/0",
+                        "id": 317,
+                        "link_id": 21,
+                        "name": "1",
+                        "nio": "NIO_UDP",
+                        "port_number": 1,
+                        "type": "access",
+                        "vlan": 1
+                    },
+                    {
+                        "description": "connected to PC15 on port Ethernet0",
+                        "id": 318,
+                        "link_id": 22,
+                        "name": "2",
+                        "nio": "NIO_UDP",
+                        "port_number": 2,
+                        "type": "access",
+                        "vlan": 1
+                    },
+                    {
+                        "id": 319,
+                        "name": "3",
+                        "port_number": 3,
+                        "type": "access",
+                        "vlan": 1
+                    },
+                    {
+                        "id": 320,
+                        "name": "4",
+                        "port_number": 4,
+                        "type": "access",
+                        "vlan": 1
+                    },
+                    {
+                        "id": 321,
+                        "name": "5",
+                        "port_number": 5,
+                        "type": "access",
+                        "vlan": 1
+                    },
+                    {
+                        "id": 322,
+                        "name": "6",
+                        "port_number": 6,
+                        "type": "access",
+                        "vlan": 1
+                    },
+                    {
+                        "id": 323,
+                        "name": "7",
+                        "port_number": 7,
+                        "type": "access",
+                        "vlan": 1
+                    },
+                    {
+                        "id": 324,
+                        "name": "8",
+                        "port_number": 8,
+                        "type": "access",
+                        "vlan": 1
+                    }
+                ],
+                "properties": {
+                    "name": "SW1"
+                },
+                "server_id": 1,
+                "type": "EthernetSwitch",
+                "x": 299.5,
+                "y": 70.0
+            }
+        ],
+        "notes": [
+            {
+                "color": "#ff000000",
+                "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                "text": "\nSR7:172.19.0.0/25",
+                "x": -344.0,
+                "y": 251.0
+            },
+            {
+                "color": "#ff000000",
+                "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                "text": "SR8:172.20.0.0/27",
+                "x": -85.0,
+                "y": 266.0
+            },
+            {
+                "color": "#ff000000",
+                "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                "text": "SR2:172.22.0.0/30",
+                "x": -131.0,
+                "y": -90.0
+            },
+            {
+                "color": "#ff000000",
+                "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                "text": "SR9:172.16.0.0/28",
+                "x": 296.0,
+                "y": 264.0
+            },
+            {
+                "color": "#ff000000",
+                "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                "text": "SR6:172.23.0.0/30",
+                "x": -126.0,
+                "y": -246.0
+            },
+            {
+                "color": "#ff000000",
+                "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                "text": "SR4:172.25.0.0/30",
+                "x": 161.0,
+                "y": -252.0
+            },
+            {
+                "color": "#ffffffff",
+                "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                "text": "SR5:172.27.0.0/30",
+                "x": 32.0,
+                "y": -167.0
+            },
+            {
+                "color": "#ff000000",
+                "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                "text": "SR1:172.26.0.0/30",
+                "x": -204.0,
+                "y": -38.0
+            },
+            {
+                "color": "#ff000000",
+                "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                "text": "SR3:172.24.0.0/30",
+                "x": -288.0,
+                "y": -96.0
+            },
+            {
+                "color": "#ff000000",
+                "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                "text": ".1",
+                "x": -43.0,
+                "y": 25.0
+            },
+            {
+                "color": "#ff000000",
+                "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                "text": ".10",
+                "x": 1.0,
+                "y": 205.0
+            },
+            {
+                "color": "#ff000000",
+                "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                "text": ".10",
+                "x": -256.0,
+                "y": 210.0
+            },
+            {
+                "color": "#ff000000",
+                "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                "text": ".1",
+                "x": -270.0,
+                "y": -2.0
+            },
+            {
+                "color": "#ff000000",
+                "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                "text": ".1",
+                "x": -244.0,
+                "y": -14.0
+            },
+            {
+                "color": "#ff000000",
+                "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                "text": ".2",
+                "x": -61.0,
+                "y": -10.0
+            },
+            {
+                "color": "#ff000000",
+                "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                "text": ".2",
+                "x": -64.0,
+                "y": -44.0
+            },
+            {
+                "color": "#ff000000",
+                "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                "text": ".1",
+                "x": -140.0,
+                "y": -126.0
+            },
+            {
+                "color": "#ff000000",
+                "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                "text": ".1",
+                "x": -190.0,
+                "y": -137.0
+            },
+            {
+                "color": "#ff000000",
+                "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                "text": ".2",
+                "x": -238.0,
+                "y": -40.0
+            },
+            {
+                "color": "#ff000000",
+                "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                "text": ".2",
+                "x": -110.5,
+                "y": -176.5
+            },
+            {
+                "color": "#ff000000",
+                "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                "text": ".1",
+                "x": 47.0,
+                "y": -288.0
+            },
+            {
+                "color": "#ff000000",
+                "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                "text": ".1",
+                "x": 91.0,
+                "y": -290.0
+            },
+            {
+                "color": "#ff000000",
+                "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                "text": ".2",
+                "x": 281.0,
+                "y": -162.0
+            },
+            {
+                "color": "#ff000000",
+                "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                "text": ".2",
+                "x": 305.0,
+                "y": -180.0
+            },
+            {
+                "color": "#ff000000",
+                "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                "text": ".1",
+                "x": 319.0,
+                "y": -107.0
+            },
+            {
+                "color": "#ff000000",
+                "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                "text": ".10",
+                "x": 358.0,
+                "y": 201.0
+            },
+            {
+                "color": "#ff000000",
+                "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                "text": "RIPV2",
+                "x": -530.0,
+                "y": -101.0
+            },
+            {
+                "color": "#ff000000",
+                "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                "text": "routage statique",
+                "x": -580.0,
+                "y": 2.0
+            },
+            {
+                "color": "#ff000000",
+                "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                "text": "ospf",
+                "x": 529.0,
+                "y": -233.0
+            },
+            {
+                "color": "#ffffffff",
+                "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                "text": "EIGRP",
+                "x": 547.0,
+                "y": -62.0
+            },
+            {
+                "color": "#ff000000",
+                "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                "text": ".1",
+                "x": -103.0,
+                "y": -160.0
+            }
+        ],
+        "rectangles": [
+            {
+                "color": "#ffff7f",
+                "height": 59.0,
+                "width": 155.0,
+                "x": -122.0,
+                "y": -247.0,
+                "z": -1.0
+            },
+            {
+                "color": "#ff5500",
+                "height": 57.0,
+                "width": 127.0,
+                "x": -288.0,
+                "y": -108.0
+            },
+            {
+                "color": "#1111ff",
+                "height": 339.0,
+                "width": 196.00000000000006,
+                "x": 257.99999999999994,
+                "y": -87.0,
+                "z": -1.0
+            },
+            {
+                "color": "#ff5500",
+                "height": 57.0,
+                "width": 127.0,
+                "x": -130.0,
+                "y": -106.0,
+                "z": -1.0
+            },
+            {
+                "color": "#ff5500",
+                "height": 57.0,
+                "width": 77.0,
+                "x": -554.0,
+                "y": -117.0
+            },
+            {
+                "color": "#ffff7f",
+                "height": 59.0,
+                "width": 155.0,
+                "x": 139.0,
+                "y": -250.0,
+                "z": -1.0
+            },
+            {
+                "color": "#ffff7f",
+                "height": 59.0,
+                "width": 71.0,
+                "x": 511.0,
+                "y": -250.0,
+                "z": -1.0
+            },
+            {
+                "color": "#1111ff",
+                "height": 66.0,
+                "width": 308.0,
+                "x": -60.0,
+                "y": -179.0,
+                "z": -1.0
+            },
+            {
+                "color": "#1111ff",
+                "height": 51.0,
+                "width": 85.0,
+                "x": 526.0,
+                "y": -75.0,
+                "z": -1.0
+            }
+        ],
+        "servers": [
+            {
+                "host": "192.168.42.1",
+                "id": 1,
+                "local": true,
+                "port": 3080,
+                "protocol": "http",
+                "vm": false
+            },
+            {
+                "host": "192.168.42.128",
+                "id": 2,
+                "local": false,
+                "port": 3080,
+                "protocol": "http",
+                "user": "",
+                "vm": true
+            }
+        ]
+    },
+    "type": "topology",
+    "version": "1.5.2"
+}

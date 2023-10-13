@@ -1,0 +1,38 @@
+May 17 10:16:00.289 HYPERVISOR: Release 0.2.14-x86/Windows (tag 2014092320)
+May 17 10:16:00.289 HYPERVISOR: Started on IP = 192.168.81.1, TCP port = 61844.
+May 17 10:16:00.492 HYPERVISOR: exec_cmd: hypervisor version 
+May 17 10:16:00.539 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\HP\GNS3\projects\LAB de Projet\lab configuration complet\routing +test=!!!!!!lab complete!!!!!!!!\project-files\dynamips 
+May 17 10:16:00.539 GENERAL: working_dir=C:\Users\HP\GNS3\projects\LAB de Projet\lab configuration complet\routing +test=!!!!!!lab complete!!!!!!!!\project-files\dynamips
+May 17 10:16:00.571 HYPERVISOR: exec_cmd: vm create R-ANNEX 11 c3600 
+May 17 10:16:00.571 VM: VM R-ANNEX created.
+May 17 10:16:00.617 HYPERVISOR: exec_cmd: vm set_con_tcp_port R-ANNEX 5004 
+May 17 10:16:00.649 HYPERVISOR: exec_cmd: c3600 get_mac_addr R-ANNEX 
+May 17 10:16:00.680 HYPERVISOR: exec_cmd: c3600 set_chassis R-ANNEX 3660 
+May 17 10:16:00.727 HYPERVISOR: exec_cmd: c3600 set_mac_addr R-ANNEX cc0b.14f4.0000 
+May 17 10:16:00.789 HYPERVISOR: exec_cmd: vm set_ios R-ANNEX C:/Users/HP/GNS3/images/IOS/c3660-jk9o3s-mz.124-25d.image 
+May 17 10:16:00.821 HYPERVISOR: exec_cmd: vm set_ram R-ANNEX 192 
+May 17 10:16:00.867 HYPERVISOR: exec_cmd: vm set_nvram R-ANNEX 256 
+May 17 10:16:00.914 HYPERVISOR: exec_cmd: vm get_status R-ANNEX 
+May 17 10:16:00.946 HYPERVISOR: exec_cmd: vm slot_add_binding R-ANNEX 1 0 NM-4E 
+May 17 10:16:00.977 HYPERVISOR: exec_cmd: vm get_status R-ANNEX 
+May 17 10:16:01.008 HYPERVISOR: exec_cmd: vm set_idle_pc R-ANNEX 0x606071f8 
+May 17 10:16:01.039 HYPERVISOR: exec_cmd: vm set_exec_area R-ANNEX 64 
+May 17 10:16:01.086 HYPERVISOR: exec_cmd: vm set_config R-ANNEX configs/i11_startup-config.cfg 
+May 17 10:16:01.446 HYPERVISOR: exec_cmd: nio create_udp udp-a78f799d-038e-4456-8732-8206e6562ce3 10009 192.168.81.1 10008 
+May 17 10:16:01.477 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R-ANNEX 0 1 udp-a78f799d-038e-4456-8732-8206e6562ce3 
+May 17 10:16:01.508 HYPERVISOR: exec_cmd: vm get_status R-ANNEX 
+May 17 10:16:01.555 HYPERVISOR: exec_cmd: nio create_udp udp-c080e7ab-fe39-44e0-b5c2-25aacdca9452 10010 192.168.81.128 10004 
+May 17 10:16:01.586 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R-ANNEX 0 0 udp-c080e7ab-fe39-44e0-b5c2-25aacdca9452 
+May 17 10:16:01.633 HYPERVISOR: exec_cmd: vm get_status R-ANNEX 
+May 17 10:16:01.727 HYPERVISOR: exec_cmd: nio create_udp udp-626db35b-a2e6-4f79-8751-564986a28fd6 10018 192.168.81.1 10017 
+May 17 10:16:01.743 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R-ANNEX 1 2 udp-626db35b-a2e6-4f79-8751-564986a28fd6 
+May 17 10:16:01.758 HYPERVISOR: exec_cmd: vm get_status R-ANNEX 
+May 17 10:22:07.110 HYPERVISOR: exec_cmd: vm extract_config R-ANNEX 
+May 17 10:25:35.649 HYPERVISOR: exec_cmd: vm extract_config R-ANNEX 
+May 17 10:26:12.981 HYPERVISOR: exec_cmd: vm get_status R-ANNEX 
+May 17 10:26:13.012 HYPERVISOR: exec_cmd: vm extract_config R-ANNEX 
+May 17 10:26:13.044 HYPERVISOR: exec_cmd: vm delete R-ANNEX 
+May 17 10:26:13.044 VM: VM R-ANNEX destroyed.
+May 17 10:26:13.059 HYPERVISOR: exec_cmd: hypervisor stop 
+May 17 10:26:13.106 HYPERVISOR: Stopped.
+May 17 10:26:13.106 GENERAL: reset done.

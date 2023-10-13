@@ -1,0 +1,19 @@
+Apr 15 22:14:20.320 HYPERVISOR: Release 0.2.14-x86/Windows (tag 2014092320)
+Apr 15 22:14:20.320 HYPERVISOR: Started on IP = 192.168.2.10, TCP port = 50640.
+Apr 15 22:14:20.385 HYPERVISOR: exec_cmd: hypervisor version 
+Apr 15 22:14:20.408 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\user1\GNS3\projects\LAB de Projet\switching\project-files\dynamips 
+Apr 15 22:14:20.535 GENERAL: working_dir=C:\Users\user1\GNS3\projects\LAB de Projet\switching\project-files\dynamips
+Apr 15 22:14:20.543 HYPERVISOR: exec_cmd: vm create R1 1 c3600 
+Apr 15 22:14:20.546 VM: VM R1 created.
+Apr 15 22:14:20.562 HYPERVISOR: exec_cmd: vm set_con_tcp_port R1 5000 
+Apr 15 22:14:20.579 HYPERVISOR: exec_cmd: c3600 get_mac_addr R1 
+Apr 15 22:14:20.596 HYPERVISOR: exec_cmd: c3600 set_chassis R1 3660 
+Apr 15 22:14:20.612 HYPERVISOR: exec_cmd: c3600 set_mac_addr R1 cc01.1708.0000 
+Apr 15 22:14:20.629 HYPERVISOR: exec_cmd: vm set_ios R1 C:/Users/user1/GNS3/images/IOS/c3660-jk9o3s-mz.124-25d.image 
+Apr 15 22:14:20.646 HYPERVISOR: exec_cmd: vm set_nvram R1 256 
+Apr 15 22:14:20.663 HYPERVISOR: exec_cmd: vm set_exec_area R1 64 
+Apr 15 22:14:20.679 HYPERVISOR: exec_cmd: vm set_ram R1 192 
+Apr 15 22:14:20.699 HYPERVISOR: exec_cmd: vm set_config R1 configs/i1_startup-config.cfg 
+Apr 15 22:14:20.829 HYPERVISOR: exec_cmd: nio create_udp udp-14aac03f-c92a-4967-bc06-d2b8de4f03ba 10000 192.168.2.128 10020 
+Apr 15 22:14:20.846 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R1 0 0 udp-14aac03f-c92a-4967-bc06-d2b8de4f03ba 
+Apr 15 22:14:20.863 HYPERVISOR: exec_cmd: vm get_status R1 

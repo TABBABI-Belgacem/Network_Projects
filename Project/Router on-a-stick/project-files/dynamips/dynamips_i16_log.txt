@@ -1,0 +1,28 @@
+May 03 14:44:45.212 HYPERVISOR: Release 0.2.14-x86/Windows (tag 2014092320)
+May 03 14:44:45.213 HYPERVISOR: Started on IP = 10.0.0.2, TCP port = 61362.
+May 03 14:44:45.726 HYPERVISOR: exec_cmd: hypervisor version 
+May 03 14:44:45.733 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\user1\GNS3\projects\LAB de Projet\Router on-a-stick\project-files\dynamips 
+May 03 14:44:45.861 GENERAL: working_dir=C:\Users\user1\GNS3\projects\LAB de Projet\Router on-a-stick\project-files\dynamips
+May 03 14:44:45.865 HYPERVISOR: exec_cmd: vm create R1 1 c2691 
+May 03 14:44:45.867 VM: VM R1 created.
+May 03 14:44:45.875 HYPERVISOR: exec_cmd: vm set_con_tcp_port R1 5000 
+May 03 14:44:45.884 HYPERVISOR: exec_cmd: c2691 get_mac_addr R1 
+May 03 14:44:45.891 HYPERVISOR: exec_cmd: vm get_status R1 
+May 03 14:44:45.898 HYPERVISOR: exec_cmd: vm set_idle_pc R1 0x601cd7a0 
+May 03 14:44:45.905 HYPERVISOR: exec_cmd: vm set_ram R1 192 
+May 03 14:44:45.912 HYPERVISOR: exec_cmd: vm set_ios R1 C:/Users/user1/GNS3/images/IOS/c2691-gns3-entservicesk9-mz.123-16.image 
+May 03 14:44:45.919 HYPERVISOR: exec_cmd: vm set_exec_area R1 64 
+May 03 14:44:45.926 HYPERVISOR: exec_cmd: vm set_disk0 R1 0 
+May 03 14:44:45.932 HYPERVISOR: exec_cmd: vm set_nvram R1 256 
+May 03 14:44:45.941 HYPERVISOR: exec_cmd: vm set_config R1 configs/i1_startup-config.cfg 
+May 03 14:45:27.970 HYPERVISOR: exec_cmd: nio create_udp udp-239cc05b-e6dc-4fb0-9d03-5a8c3444943f 10000 10.0.0.129 10006 
+May 03 14:45:27.979 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R1 0 0 udp-239cc05b-e6dc-4fb0-9d03-5a8c3444943f 
+May 03 14:45:27.988 HYPERVISOR: exec_cmd: vm get_status R1 
+May 03 14:47:15.513 HYPERVISOR: exec_cmd: vm extract_config R1 
+May 03 14:47:25.174 HYPERVISOR: exec_cmd: vm get_status R1 
+May 03 14:47:25.183 HYPERVISOR: exec_cmd: vm extract_config R1 
+May 03 14:47:25.189 HYPERVISOR: exec_cmd: vm delete R1 
+May 03 14:47:25.189 VM: VM R1 destroyed.
+May 03 14:47:25.197 HYPERVISOR: exec_cmd: hypervisor stop 
+May 03 14:47:25.696 HYPERVISOR: Stopped.
+May 03 14:47:25.696 GENERAL: reset done.

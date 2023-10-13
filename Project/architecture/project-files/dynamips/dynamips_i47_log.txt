@@ -1,0 +1,36 @@
+May 16 01:49:10.698 HYPERVISOR: Release 0.2.14-x86/Windows (tag 2014092320)
+May 16 01:49:10.698 HYPERVISOR: Started on IP = 192.168.81.1, TCP port = 57919.
+May 16 01:49:10.713 HYPERVISOR: exec_cmd: hypervisor version 
+May 16 01:49:10.713 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\HP\GNS3\projects\LAB de Projet\aechitecture\project-files\dynamips 
+May 16 01:49:10.713 GENERAL: working_dir=C:\Users\HP\GNS3\projects\LAB de Projet\aechitecture\project-files\dynamips
+May 16 01:49:10.729 HYPERVISOR: exec_cmd: vm create R1 6 c1700 
+May 16 01:49:10.729 VM: VM R1 created.
+May 16 01:49:10.729 HYPERVISOR: exec_cmd: vm set_con_tcp_port R1 5010 
+May 16 01:49:10.729 HYPERVISOR: exec_cmd: c1700 get_mac_addr R1 
+May 16 01:49:10.745 HYPERVISOR: exec_cmd: vm set_sparse_mem R1 1 
+May 16 01:49:10.745 HYPERVISOR: exec_cmd: vm set_nvram R1 128 
+May 16 01:49:10.745 HYPERVISOR: exec_cmd: vm set_exec_area R1 64 
+May 16 01:49:10.760 HYPERVISOR: exec_cmd: c1700 set_iomem R1 5 
+May 16 01:49:10.760 HYPERVISOR: exec_cmd: vm set_ram R1 160 
+May 16 01:49:10.760 HYPERVISOR: exec_cmd: vm get_status R1 
+May 16 01:49:10.776 HYPERVISOR: exec_cmd: vm set_idle_pc R1 0x80618b54 
+May 16 01:49:10.776 HYPERVISOR: exec_cmd: vm set_ios R1 C:/Users/HP/GNS3/images/IOS/c1700-adventerprisek9-mz.124-8.image 
+May 16 01:49:10.792 HYPERVISOR: exec_cmd: vm set_config R1 configs/i6_startup-config.cfg 
+May 16 01:49:20.605 HYPERVISOR: exec_cmd: vm rename R1 serveur 
+May 16 01:49:48.438 HYPERVISOR: exec_cmd: nio create_udp udp-137b9444-dc13-4f3d-a9ca-2240f93dbb72 10008 192.168.81.1 10009 
+May 16 01:49:48.454 HYPERVISOR: exec_cmd: vm slot_add_nio_binding serveur 0 0 udp-137b9444-dc13-4f3d-a9ca-2240f93dbb72 
+May 16 01:49:48.470 HYPERVISOR: exec_cmd: vm get_status serveur 
+May 16 01:50:47.530 HYPERVISOR: exec_cmd: vm get_status serveur 
+May 16 01:50:47.546 HYPERVISOR: exec_cmd: vm slot_remove_nio_binding serveur 0 0 
+May 16 01:50:47.546 HYPERVISOR: exec_cmd: nio delete udp-137b9444-dc13-4f3d-a9ca-2240f93dbb72 
+May 16 01:51:16.902 HYPERVISOR: exec_cmd: nio create_udp udp-9374c3b1-ae6d-4376-b1d2-8e91a4eb6e51 10008 192.168.81.1 10009 
+May 16 01:51:16.917 HYPERVISOR: exec_cmd: vm slot_add_nio_binding serveur 0 0 udp-9374c3b1-ae6d-4376-b1d2-8e91a4eb6e51 
+May 16 01:51:16.933 HYPERVISOR: exec_cmd: vm get_status serveur 
+May 16 01:51:46.639 HYPERVISOR: exec_cmd: vm extract_config serveur 
+May 16 01:54:15.586 HYPERVISOR: exec_cmd: vm get_status serveur 
+May 16 01:54:15.633 HYPERVISOR: exec_cmd: vm extract_config serveur 
+May 16 01:54:15.696 HYPERVISOR: exec_cmd: vm delete serveur 
+May 16 01:54:15.696 VM: VM serveur destroyed.
+May 16 01:54:15.758 HYPERVISOR: exec_cmd: hypervisor stop 
+May 16 01:54:15.852 HYPERVISOR: Stopped.
+May 16 01:54:15.852 GENERAL: reset done.

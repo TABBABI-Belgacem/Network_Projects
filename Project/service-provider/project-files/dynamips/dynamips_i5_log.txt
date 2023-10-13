@@ -1,0 +1,14 @@
+May 22 01:16:08.385 HYPERVISOR: Release 0.2.14-x86/Windows (tag 2014092320)
+May 22 01:16:08.386 HYPERVISOR: Started on IP = 192.168.81.1, TCP port = 51477.
+May 22 01:16:08.767 HYPERVISOR: exec_cmd: hypervisor version 
+May 22 01:16:08.780 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\HP\GNS3\projects\LAB de Projet\lab configuration complet\service-provider\project-files\dynamips 
+May 22 01:16:09.159 GENERAL: working_dir=C:\Users\HP\GNS3\projects\LAB de Projet\lab configuration complet\service-provider\project-files\dynamips
+May 22 01:16:09.181 HYPERVISOR: exec_cmd: frsw create FR1 
+May 22 01:16:09.670 HYPERVISOR: exec_cmd: nio create_udp udp-4051c7a1-5d40-4f11-a69a-f8f36e9f233e 10002 192.168.81.1 10001 
+May 22 01:16:09.716 HYPERVISOR: exec_cmd: nio create_udp udp-8eead42d-ea7b-4df3-8718-ad1bd518c43b 10004 192.168.81.1 10003 
+May 22 01:16:09.740 HYPERVISOR: exec_cmd: frsw create_vc FR1 udp-8eead42d-ea7b-4df3-8718-ad1bd518c43b 101 udp-4051c7a1-5d40-4f11-a69a-f8f36e9f233e 202 
+May 22 01:16:09.794 HYPERVISOR: exec_cmd: frsw create_vc FR1 udp-4051c7a1-5d40-4f11-a69a-f8f36e9f233e 202 udp-8eead42d-ea7b-4df3-8718-ad1bd518c43b 101 
+May 22 01:17:39.264 HYPERVISOR: exec_cmd: frsw delete FR1 
+May 22 01:17:39.311 HYPERVISOR: exec_cmd: hypervisor stop 
+May 22 01:17:39.802 HYPERVISOR: Stopped.
+May 22 01:17:39.802 GENERAL: reset done.

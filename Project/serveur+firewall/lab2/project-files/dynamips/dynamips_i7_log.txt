@@ -1,0 +1,53 @@
+May 15 21:55:52.457 HYPERVISOR: Release 0.2.14-x86/Windows (tag 2014092320)
+May 15 21:55:52.457 HYPERVISOR: Started on IP = 192.168.81.1, TCP port = 56066.
+May 15 21:55:52.818 HYPERVISOR: exec_cmd: hypervisor version 
+May 15 21:55:52.849 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\HP\GNS3\projects\LAB de Projet\lab configuration complet\serveur+firewall\lab2\project-files\dynamips 
+May 15 21:55:53.319 GENERAL: working_dir=C:\Users\HP\GNS3\projects\LAB de Projet\lab configuration complet\serveur+firewall\lab2\project-files\dynamips
+May 15 21:55:53.350 HYPERVISOR: exec_cmd: vm create serveur 2 c1700 
+May 15 21:55:53.350 VM: VM serveur created.
+May 15 21:55:53.366 HYPERVISOR: exec_cmd: vm set_con_tcp_port serveur 5002 
+May 15 21:55:53.428 HYPERVISOR: exec_cmd: c1700 get_mac_addr serveur 
+May 15 21:55:53.460 HYPERVISOR: exec_cmd: vm set_nvram serveur 128 
+May 15 21:55:53.507 HYPERVISOR: exec_cmd: vm set_ios serveur C:/Users/HP/GNS3/images/IOS/c1700-adventerprisek9-mz.124-8.image 
+May 15 21:55:53.538 HYPERVISOR: exec_cmd: vm get_status serveur 
+May 15 21:55:53.569 HYPERVISOR: exec_cmd: vm set_idle_pc serveur 0x80618b54 
+May 15 21:55:53.616 HYPERVISOR: exec_cmd: c1700 set_iomem serveur 5 
+May 15 21:55:53.647 HYPERVISOR: exec_cmd: c1700 set_mac_addr serveur d002.0fe8.0000 
+May 15 21:55:53.678 HYPERVISOR: exec_cmd: vm set_ram serveur 160 
+May 15 21:55:53.694 HYPERVISOR: exec_cmd: vm set_exec_area serveur 64 
+May 15 21:55:53.725 HYPERVISOR: exec_cmd: vm set_sparse_mem serveur 1 
+May 15 21:55:53.757 HYPERVISOR: exec_cmd: vm set_config serveur configs/i2_startup-config.cfg 
+May 15 21:55:53.953 HYPERVISOR: exec_cmd: nio create_udp udp-d7c57a5d-0563-4c5c-a8c2-7d5276e9d2d3 10004 192.168.81.1 10005 
+May 15 21:55:54.015 HYPERVISOR: exec_cmd: vm slot_add_nio_binding serveur 0 0 udp-d7c57a5d-0563-4c5c-a8c2-7d5276e9d2d3 
+May 15 21:55:54.046 HYPERVISOR: exec_cmd: vm get_status serveur 
+May 15 21:56:07.966 HYPERVISOR: exec_cmd: vm create Ghost 0 c1700 
+May 15 21:56:07.966 VM: VM Ghost created.
+May 15 21:56:07.978 HYPERVISOR: exec_cmd: vm set_ios Ghost C:/Users/HP/GNS3/images/IOS/c1700-adventerprisek9-mz.124-8.image 
+May 15 21:56:07.985 HYPERVISOR: exec_cmd: vm set_ghost_status Ghost 1 
+May 15 21:56:07.989 HYPERVISOR: exec_cmd: vm set_ghost_file Ghost c1700-adventerprisek9-mz.124-8.image-160.ghost 
+May 15 21:56:07.997 HYPERVISOR: exec_cmd: vm set_ram Ghost 160 
+May 15 21:56:08.001 HYPERVISOR: exec_cmd: vm get_status Ghost 
+May 15 21:56:08.009 HYPERVISOR: exec_cmd: vm start Ghost 
+May 15 21:56:08.372 HYPERVISOR: exec_cmd: vm get_status Ghost 
+May 15 21:56:08.383 HYPERVISOR: exec_cmd: vm stop Ghost 
+May 15 21:56:09.070 VM: VM Ghost shutdown.
+May 15 21:56:09.074 HYPERVISOR: exec_cmd: vm clean_delete Ghost 
+May 15 21:56:09.074 VM: VM Ghost destroyed.
+May 15 21:56:09.084 HYPERVISOR: exec_cmd: vm set_ghost_status serveur 2 
+May 15 21:56:09.098 HYPERVISOR: exec_cmd: vm set_ghost_file serveur c1700-adventerprisek9-mz.124-8.image-160.ghost 
+May 15 21:56:09.111 HYPERVISOR: exec_cmd: vm get_status serveur 
+May 15 21:56:09.128 HYPERVISOR: exec_cmd: vm start serveur 
+May 15 21:56:09.132 GHOST: loaded ghost image c1700-adventerprisek9-mz.124-8.image-160.ghost (fd=11) at addr=0xf07f0000 (size=0xa000000)
+May 15 21:56:09.133 GHOST: loaded image c1700-adventerprisek9-mz.124-8.image-160.ghost successfully.
+May 15 21:56:38.770 HYPERVISOR: exec_cmd: vm get_status serveur 
+May 15 21:56:38.800 HYPERVISOR: exec_cmd: vm stop serveur 
+May 15 21:56:38.976 GHOST: unloaded ghost image c1700-adventerprisek9-mz.124-8.image-160.ghost (fd=11) at addr=0xf07f0000 (size=0xa000000)
+May 15 21:56:39.033 VM: VM serveur shutdown.
+May 15 21:56:39.039 HYPERVISOR: exec_cmd: vm extract_config serveur 
+May 15 21:56:54.098 HYPERVISOR: exec_cmd: vm get_status serveur 
+May 15 21:56:54.116 HYPERVISOR: exec_cmd: vm extract_config serveur 
+May 15 21:56:54.137 HYPERVISOR: exec_cmd: vm delete serveur 
+May 15 21:56:54.137 VM: VM serveur destroyed.
+May 15 21:56:54.159 HYPERVISOR: exec_cmd: hypervisor stop 
+May 15 21:56:54.480 HYPERVISOR: Stopped.
+May 15 21:56:54.480 GENERAL: reset done.

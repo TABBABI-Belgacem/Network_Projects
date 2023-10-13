@@ -1,0 +1,907 @@
+{
+    "auto_start": false,
+    "name": "lab3",
+    "project_id": "9975fcc9-557e-4535-9dcb-a221deaa70d4",
+    "revision": 4,
+    "show_port_names": true,
+    "topology": {
+        "links": [
+            {
+                "description": "Link from HUB1 port 2 to PC1 port Ethernet0",
+                "destination_node_id": 13,
+                "destination_port_id": 43,
+                "destination_port_label": {
+                    "color": "#ff000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "e0",
+                    "x": 48.15685424949237,
+                    "y": -20.09797974644667
+                },
+                "id": 1,
+                "source_node_id": 11,
+                "source_port_id": 28,
+                "source_port_label": {
+                    "color": "#ff000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "2",
+                    "x": 43.34314575050763,
+                    "y": 45.59797974644667
+                }
+            },
+            {
+                "description": "Link from R-SP port Serial0/0 to FR1 port 10",
+                "destination_node_id": 38,
+                "destination_port_id": 123,
+                "destination_port_label": {
+                    "color": "#ff000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "10",
+                    "x": 55.5,
+                    "y": 4.5
+                },
+                "id": 2,
+                "source_node_id": 48,
+                "source_port_id": 165,
+                "source_port_label": {
+                    "color": "#ff000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "s0/0",
+                    "x": -38.0,
+                    "y": 14.0
+                }
+            },
+            {
+                "description": "Link from R-MESRS port Serial0/0 to FR1 port 1",
+                "destination_node_id": 38,
+                "destination_port_id": 122,
+                "destination_port_label": {
+                    "color": "#ff000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "1",
+                    "x": 0.5,
+                    "y": 47.5
+                },
+                "id": 3,
+                "source_node_id": 46,
+                "source_port_id": 157,
+                "source_port_label": {
+                    "color": "#ff000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "s0/0",
+                    "x": 37.0,
+                    "y": -47.0
+                }
+            },
+            {
+                "description": "Link from R-MESRS port FastEthernet0/0 to HUB1 port 1",
+                "destination_node_id": 11,
+                "destination_port_id": 27,
+                "destination_port_label": {
+                    "color": "#ff000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "1",
+                    "x": 34.5195335796048,
+                    "y": -23.972593350670685
+                },
+                "id": 4,
+                "source_node_id": 46,
+                "source_port_id": 155,
+                "source_port_label": {
+                    "color": "#ff000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "f0/0",
+                    "x": 37.4804664203952,
+                    "y": 45.97259335067068
+                }
+            },
+            {
+                "description": "Link from HUB2 port 2 to PC2 port Ethernet0",
+                "destination_node_id": 14,
+                "destination_port_id": 44,
+                "destination_port_label": {
+                    "color": "#ff000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "e0",
+                    "x": 37.08665580776787,
+                    "y": -21.837130491856612
+                },
+                "id": 5,
+                "source_node_id": 12,
+                "source_port_id": 36,
+                "source_port_label": {
+                    "color": "#ff000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "2",
+                    "x": 47.41334419223213,
+                    "y": 54.3371304918566
+                }
+            },
+            {
+                "description": "Link from HUB2 port 3 to PC3 port Ethernet0",
+                "destination_node_id": 15,
+                "destination_port_id": 57,
+                "destination_port_label": {
+                    "color": "#ff000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "e0",
+                    "x": 15.714016989124218,
+                    "y": -28.254334254640696
+                },
+                "id": 6,
+                "source_node_id": 12,
+                "source_port_id": 37,
+                "source_port_label": {
+                    "color": "#ff000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "3",
+                    "x": 22.785983010875782,
+                    "y": 53.754334254640696
+                }
+            },
+            {
+                "description": "Link from R-MESRS port Serial0/1 to R-ISSAT port Serial0/0",
+                "destination_node_id": 47,
+                "destination_port_id": 161,
+                "destination_port_label": {
+                    "color": "#ff000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "s0/0",
+                    "x": -32.0,
+                    "y": 33.0
+                },
+                "id": 7,
+                "source_node_id": 46,
+                "source_port_id": 158,
+                "source_port_label": {
+                    "color": "#ff000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "s0/1",
+                    "x": 65.0,
+                    "y": 27.0
+                }
+            },
+            {
+                "description": "Link from R-ISSAT port FastEthernet0/0 to HUB2 port 1",
+                "destination_node_id": 12,
+                "destination_port_id": 35,
+                "destination_port_label": {
+                    "color": "#ff000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "1",
+                    "x": 34.572338779503525,
+                    "y": -23.974514173901987
+                },
+                "id": 8,
+                "source_node_id": 47,
+                "source_port_id": 159,
+                "source_port_label": {
+                    "color": "#ff000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "f0/0",
+                    "x": 42.427661220496475,
+                    "y": 48.97451417390198
+                }
+            },
+            {
+                "description": "Link from R-SP port Serial0/1 to R-ISSAT port Serial0/1",
+                "destination_node_id": 47,
+                "destination_port_id": 162,
+                "destination_port_label": {
+                    "color": "#ff000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "s0/1",
+                    "x": -13.0,
+                    "y": -40.0
+                },
+                "id": 9,
+                "source_node_id": 48,
+                "source_port_id": 166,
+                "source_port_label": {
+                    "color": "#ff000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "s0/1",
+                    "x": 69.0,
+                    "y": 15.0
+                }
+            }
+        ],
+        "nodes": [
+            {
+                "description": "Router c2691",
+                "dynamips_id": 6,
+                "id": 48,
+                "label": {
+                    "color": "#ff000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "R-SP",
+                    "x": 13.5,
+                    "y": -25.0
+                },
+                "ports": [
+                    {
+                        "adapter_number": 0,
+                        "id": 163,
+                        "name": "FastEthernet0/0",
+                        "port_number": 0
+                    },
+                    {
+                        "adapter_number": 0,
+                        "id": 164,
+                        "name": "FastEthernet0/1",
+                        "port_number": 1
+                    },
+                    {
+                        "adapter_number": 0,
+                        "description": "connected to FR1 on port 10",
+                        "id": 165,
+                        "link_id": 2,
+                        "name": "Serial0/0",
+                        "nio": "NIO_UDP",
+                        "port_number": 16
+                    },
+                    {
+                        "adapter_number": 0,
+                        "description": "connected to R-ISSAT on port Serial0/1",
+                        "id": 166,
+                        "link_id": 9,
+                        "name": "Serial0/1",
+                        "nio": "NIO_UDP",
+                        "port_number": 17
+                    }
+                ],
+                "properties": {
+                    "auto_delete_disks": true,
+                    "clock_divisor": 8,
+                    "console": 5000,
+                    "disk0": 0,
+                    "disk1": 0,
+                    "exec_area": 64,
+                    "idlemax": 500,
+                    "idlepc": "0x6114a604",
+                    "idlesleep": 30,
+                    "image": "c2691-entservicesk9-mz.124-13b.image",
+                    "image_md5sum": "306402b874eb783036d6c7c64a100e59",
+                    "iomem": 5,
+                    "mac_addr": "c006.0b20.0000",
+                    "mmap": true,
+                    "name": "R-SP",
+                    "nvram": 256,
+                    "platform": "c2691",
+                    "ram": 192,
+                    "slot0": "GT96100-FE",
+                    "sparsemem": true,
+                    "startup_config": "configs/i6_startup-config.cfg",
+                    "system_id": "FTX0945W0MY",
+                    "wic0": "WIC-2T"
+                },
+                "server_id": 1,
+                "type": "C2691",
+                "vm_id": "3499c74d-935a-4b39-93f4-e70816df8e73",
+                "x": -43.0,
+                "y": -330.0
+            },
+            {
+                "description": "Router c2691",
+                "dynamips_id": 2,
+                "id": 46,
+                "label": {
+                    "color": "#ff000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "R-MESRS",
+                    "x": -15.0,
+                    "y": -27.0
+                },
+                "ports": [
+                    {
+                        "adapter_number": 0,
+                        "description": "connected to HUB1 on port 1",
+                        "id": 155,
+                        "link_id": 4,
+                        "name": "FastEthernet0/0",
+                        "nio": "NIO_UDP",
+                        "port_number": 0
+                    },
+                    {
+                        "adapter_number": 0,
+                        "id": 156,
+                        "name": "FastEthernet0/1",
+                        "port_number": 1
+                    },
+                    {
+                        "adapter_number": 0,
+                        "description": "connected to FR1 on port 1",
+                        "id": 157,
+                        "link_id": 3,
+                        "name": "Serial0/0",
+                        "nio": "NIO_UDP",
+                        "port_number": 16
+                    },
+                    {
+                        "adapter_number": 0,
+                        "description": "connected to R-ISSAT on port Serial0/0",
+                        "id": 158,
+                        "link_id": 7,
+                        "name": "Serial0/1",
+                        "nio": "NIO_UDP",
+                        "port_number": 17
+                    }
+                ],
+                "properties": {
+                    "auto_delete_disks": true,
+                    "clock_divisor": 8,
+                    "console": 5001,
+                    "disk0": 0,
+                    "disk1": 0,
+                    "exec_area": 64,
+                    "idlemax": 500,
+                    "idlepc": "0x6114a604",
+                    "idlesleep": 30,
+                    "image": "c2691-entservicesk9-mz.124-13b.image",
+                    "image_md5sum": "306402b874eb783036d6c7c64a100e59",
+                    "iomem": 5,
+                    "mac_addr": "c002.1094.0000",
+                    "mmap": true,
+                    "name": "R-MESRS",
+                    "nvram": 256,
+                    "platform": "c2691",
+                    "private_config": "configs/i2_private-config.cfg",
+                    "ram": 192,
+                    "slot0": "GT96100-FE",
+                    "sparsemem": true,
+                    "startup_config": "configs/i2_startup-config.cfg",
+                    "system_id": "FTX0945W0MY",
+                    "wic0": "WIC-2T"
+                },
+                "server_id": 1,
+                "type": "C2691",
+                "vm_id": "40aedf50-b267-474b-bb07-3d0c71465cca",
+                "x": -351.0,
+                "y": -145.0
+            },
+            {
+                "description": "Frame Relay switch",
+                "device_id": "f194f8d9-24f3-42c6-bc0c-553259919b77",
+                "id": 38,
+                "label": {
+                    "color": "#ff000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "FR1",
+                    "x": 10.0,
+                    "y": -25.0
+                },
+                "ports": [
+                    {
+                        "description": "connected to R-MESRS on port Serial0/0",
+                        "id": 122,
+                        "link_id": 3,
+                        "name": "1",
+                        "nio": "NIO_UDP",
+                        "port_number": 1
+                    },
+                    {
+                        "description": "connected to R-SP on port Serial0/0",
+                        "id": 123,
+                        "link_id": 2,
+                        "name": "10",
+                        "nio": "NIO_UDP",
+                        "port_number": 10
+                    }
+                ],
+                "properties": {
+                    "mappings": {
+                        "1:101": "10:202"
+                    },
+                    "name": "FR1"
+                },
+                "server_id": 1,
+                "type": "FrameRelaySwitch",
+                "x": -188.5,
+                "y": -241.5
+            },
+            {
+                "description": "Router c2691",
+                "dynamips_id": 3,
+                "id": 47,
+                "label": {
+                    "color": "#ff000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "R-ISSAT",
+                    "x": 18.5,
+                    "y": -24.0
+                },
+                "ports": [
+                    {
+                        "adapter_number": 0,
+                        "description": "connected to HUB2 on port 1",
+                        "id": 159,
+                        "link_id": 8,
+                        "name": "FastEthernet0/0",
+                        "nio": "NIO_UDP",
+                        "port_number": 0
+                    },
+                    {
+                        "adapter_number": 0,
+                        "id": 160,
+                        "name": "FastEthernet0/1",
+                        "port_number": 1
+                    },
+                    {
+                        "adapter_number": 0,
+                        "description": "connected to R-MESRS on port Serial0/1",
+                        "id": 161,
+                        "link_id": 7,
+                        "name": "Serial0/0",
+                        "nio": "NIO_UDP",
+                        "port_number": 16
+                    },
+                    {
+                        "adapter_number": 0,
+                        "description": "connected to R-SP on port Serial0/1",
+                        "id": 162,
+                        "link_id": 9,
+                        "name": "Serial0/1",
+                        "nio": "NIO_UDP",
+                        "port_number": 17
+                    }
+                ],
+                "properties": {
+                    "auto_delete_disks": true,
+                    "clock_divisor": 8,
+                    "console": 5002,
+                    "disk0": 0,
+                    "disk1": 0,
+                    "exec_area": 64,
+                    "idlemax": 500,
+                    "idlepc": "0x6114a604",
+                    "idlesleep": 30,
+                    "image": "c2691-entservicesk9-mz.124-13b.image",
+                    "image_md5sum": "306402b874eb783036d6c7c64a100e59",
+                    "iomem": 5,
+                    "mac_addr": "c003.1090.0000",
+                    "mmap": true,
+                    "name": "R-ISSAT",
+                    "nvram": 256,
+                    "platform": "c2691",
+                    "ram": 192,
+                    "slot0": "GT96100-FE",
+                    "sparsemem": true,
+                    "startup_config": "configs/i3_startup-config.cfg",
+                    "system_id": "FTX0945W0MY",
+                    "wic0": "WIC-2T"
+                },
+                "server_id": 1,
+                "type": "C2691",
+                "vm_id": "7c89e60a-7a81-4cc0-8fbf-f667137282d9",
+                "x": 253.0,
+                "y": -139.0
+            },
+            {
+                "description": "Ethernet hub",
+                "device_id": "c9ba1acf-7271-4e21-bc44-754dff599005",
+                "id": 11,
+                "label": {
+                    "color": "#ff000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "HUB1",
+                    "x": 9.5,
+                    "y": 10.0
+                },
+                "ports": [
+                    {
+                        "description": "connected to R-MESRS on port FastEthernet0/0",
+                        "id": 27,
+                        "link_id": 4,
+                        "name": "1",
+                        "nio": "NIO_UDP",
+                        "port_number": 1
+                    },
+                    {
+                        "description": "connected to PC1 on port Ethernet0",
+                        "id": 28,
+                        "link_id": 1,
+                        "name": "2",
+                        "nio": "NIO_UDP",
+                        "port_number": 2
+                    },
+                    {
+                        "id": 29,
+                        "name": "3",
+                        "port_number": 3
+                    },
+                    {
+                        "id": 30,
+                        "name": "4",
+                        "port_number": 4
+                    },
+                    {
+                        "id": 31,
+                        "name": "5",
+                        "port_number": 5
+                    },
+                    {
+                        "id": 32,
+                        "name": "6",
+                        "port_number": 6
+                    },
+                    {
+                        "id": 33,
+                        "name": "7",
+                        "port_number": 7
+                    },
+                    {
+                        "id": 34,
+                        "name": "8",
+                        "port_number": 8
+                    }
+                ],
+                "properties": {
+                    "name": "HUB1"
+                },
+                "server_id": 1,
+                "type": "EthernetHub",
+                "x": -349.0,
+                "y": -5.0
+            },
+            {
+                "description": "Ethernet hub",
+                "device_id": "09996caa-1c09-4bdb-abd2-3c60eba32896",
+                "id": 12,
+                "label": {
+                    "color": "#ff000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "HUB2",
+                    "x": 9.5,
+                    "y": 11.0
+                },
+                "ports": [
+                    {
+                        "description": "connected to R-ISSAT on port FastEthernet0/0",
+                        "id": 35,
+                        "link_id": 8,
+                        "name": "1",
+                        "nio": "NIO_UDP",
+                        "port_number": 1
+                    },
+                    {
+                        "description": "connected to PC2 on port Ethernet0",
+                        "id": 36,
+                        "link_id": 5,
+                        "name": "2",
+                        "nio": "NIO_UDP",
+                        "port_number": 2
+                    },
+                    {
+                        "description": "connected to PC3 on port Ethernet0",
+                        "id": 37,
+                        "link_id": 6,
+                        "name": "3",
+                        "nio": "NIO_UDP",
+                        "port_number": 3
+                    },
+                    {
+                        "id": 38,
+                        "name": "4",
+                        "port_number": 4
+                    },
+                    {
+                        "id": 39,
+                        "name": "5",
+                        "port_number": 5
+                    },
+                    {
+                        "id": 40,
+                        "name": "6",
+                        "port_number": 6
+                    },
+                    {
+                        "id": 41,
+                        "name": "7",
+                        "port_number": 7
+                    },
+                    {
+                        "id": 42,
+                        "name": "8",
+                        "port_number": 8
+                    }
+                ],
+                "properties": {
+                    "name": "HUB2"
+                },
+                "server_id": 1,
+                "type": "EthernetHub",
+                "x": 256.0,
+                "y": 9.0
+            },
+            {
+                "description": "VPCS device",
+                "id": 13,
+                "label": {
+                    "color": "#ff000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "PC1",
+                    "x": 16.5,
+                    "y": 30.0
+                },
+                "ports": [
+                    {
+                        "adapter_number": 0,
+                        "description": "connected to HUB1 on port 2",
+                        "id": 43,
+                        "link_id": 1,
+                        "name": "Ethernet0",
+                        "nio": "NIO_UDP",
+                        "port_number": 0
+                    }
+                ],
+                "properties": {
+                    "console": 5000,
+                    "name": "PC1",
+                    "startup_script_path": "startup.vpc"
+                },
+                "server_id": 2,
+                "symbol": ":/symbols/vpcs_guest.svg",
+                "type": "VPCSDevice",
+                "vm_id": "13330445-98ac-4cde-9c4b-029b13fcad21",
+                "x": -345.5,
+                "y": 114.5
+            },
+            {
+                "description": "VPCS device",
+                "id": 14,
+                "label": {
+                    "color": "#ff000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "PC2",
+                    "x": 13.5,
+                    "y": 32.0
+                },
+                "ports": [
+                    {
+                        "adapter_number": 0,
+                        "description": "connected to HUB2 on port 2",
+                        "id": 44,
+                        "link_id": 5,
+                        "name": "Ethernet0",
+                        "nio": "NIO_UDP",
+                        "port_number": 0
+                    }
+                ],
+                "properties": {
+                    "console": 5001,
+                    "name": "PC2",
+                    "startup_script_path": "startup.vpc"
+                },
+                "server_id": 2,
+                "symbol": ":/symbols/vpcs_guest.svg",
+                "type": "VPCSDevice",
+                "vm_id": "6a4b85c4-c746-4404-a5fc-dd82e89b432c",
+                "x": 286.5,
+                "y": 115.5
+            },
+            {
+                "description": "VPCS device",
+                "id": 15,
+                "label": {
+                    "color": "#ff000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "PC3",
+                    "x": 17.5,
+                    "y": 34.0
+                },
+                "ports": [
+                    {
+                        "adapter_number": 0,
+                        "description": "connected to HUB2 on port 3",
+                        "id": 57,
+                        "link_id": 6,
+                        "name": "Ethernet0",
+                        "nio": "NIO_UDP",
+                        "port_number": 0
+                    }
+                ],
+                "properties": {
+                    "console": 5002,
+                    "name": "PC3",
+                    "startup_script_path": "startup.vpc"
+                },
+                "server_id": 2,
+                "symbol": ":/symbols/vpcs_guest.svg",
+                "type": "VPCSDevice",
+                "vm_id": "125fd085-1b0c-4dfa-948b-bceb2351c983",
+                "x": 217.5,
+                "y": 115.5
+            }
+        ],
+        "notes": [
+            {
+                "color": "#ff000000",
+                "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                "text": "Frame-Relay\n@R:130.112.0.0/30",
+                "x": -261.0,
+                "y": -312.0
+            },
+            {
+                "color": "#ff000000",
+                "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                "text": "PPP\n@R:40.0.0.0/28",
+                "x": 119.0,
+                "y": -269.0
+            },
+            {
+                "color": "#ff000000",
+                "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                "text": "HDLC:\n@R:200.150.11.0/30",
+                "x": -94.0,
+                "y": -122.0
+            },
+            {
+                "color": "#ff000000",
+                "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                "text": "@SR:172.16.0.0/28",
+                "x": 387.0,
+                "y": 30.0
+            },
+            {
+                "color": "#ff000000",
+                "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                "text": "192.168.192.0/30",
+                "x": -494.0,
+                "y": 7.0
+            },
+            {
+                "color": "#ff000000",
+                "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                "text": "NAT statique:",
+                "x": -476.0,
+                "y": -146.0
+            },
+            {
+                "color": "#ff000000",
+                "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                "text": "NAT dynamique:",
+                "x": 334.0,
+                "y": -137.0
+            },
+            {
+                "color": "#ff000000",
+                "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                "text": ".1",
+                "x": -296.0,
+                "y": -179.0
+            },
+            {
+                "color": "#ff000000",
+                "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                "text": ".2",
+                "x": -53.0,
+                "y": -275.0
+            },
+            {
+                "color": "#ff000000",
+                "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                "text": ".2",
+                "x": 7.0,
+                "y": -270.0
+            },
+            {
+                "color": "#ff000000",
+                "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                "text": ".1",
+                "x": 239.0,
+                "y": -161.0
+            },
+            {
+                "color": "#ff000000",
+                "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                "text": ".2",
+                "x": 231.0,
+                "y": -138.0
+            },
+            {
+                "color": "#ff000000",
+                "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                "text": ".1",
+                "x": -273.0,
+                "y": -153.0
+            },
+            {
+                "color": "#ff000000",
+                "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                "text": ".1",
+                "x": -340.0,
+                "y": -102.0
+            },
+            {
+                "color": "#ff000000",
+                "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                "text": ".2",
+                "x": -281.0,
+                "y": 133.0
+            },
+            {
+                "color": "#ff000000",
+                "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                "text": ".5",
+                "x": 237.0,
+                "y": 170.0
+            },
+            {
+                "color": "#ff000000",
+                "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                "text": ".1",
+                "x": 262.0,
+                "y": -95.0
+            },
+            {
+                "color": "#ff000000",
+                "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                "text": ".6",
+                "x": 305.0,
+                "y": 171.0
+            }
+        ],
+        "rectangles": [
+            {
+                "color": "#55aaff",
+                "height": 100.0,
+                "width": 200.0,
+                "x": -262.0,
+                "y": -277.0,
+                "z": -2.0
+            },
+            {
+                "color": "#55ffff",
+                "height": 100.0,
+                "width": 200.0,
+                "x": 34.0,
+                "y": -271.0,
+                "z": -1.0
+            },
+            {
+                "color": "#ffaaff",
+                "height": 100.0,
+                "width": 200.0,
+                "x": -109.0,
+                "y": -167.0,
+                "z": -1.0
+            },
+            {
+                "color": "#aaaa7f",
+                "height": 256.0,
+                "width": 141.0,
+                "x": 214.0,
+                "y": -62.0,
+                "z": -1.0
+            },
+            {
+                "color": "#c5cdff",
+                "height": 256.0,
+                "width": 107.0,
+                "x": -363.0,
+                "y": -80.0,
+                "z": -1.0
+            }
+        ],
+        "servers": [
+            {
+                "host": "192.168.81.1",
+                "id": 1,
+                "local": true,
+                "port": 3080,
+                "protocol": "http",
+                "vm": false
+            },
+            {
+                "host": "192.168.81.128",
+                "id": 2,
+                "local": false,
+                "port": 3080,
+                "protocol": "http",
+                "user": "",
+                "vm": true
+            }
+        ]
+    },
+    "type": "topology",
+    "version": "1.5.2"
+}

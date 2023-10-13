@@ -1,0 +1,1164 @@
+{
+    "auto_start": false,
+    "name": "LAB-8",
+    "project_id": "fdf7ff47-e6d7-4992-8321-3ed29e2d19e9",
+    "revision": 4,
+    "show_port_names": true,
+    "topology": {
+        "links": [
+            {
+                "description": "Link from IOU1 port Ethernet0/0 to IOU2 port Ethernet0/0",
+                "destination_node_id": 13,
+                "destination_port_id": 85,
+                "destination_port_label": {
+                    "color": "#ff000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "e0/0",
+                    "x": -54.4863233057184,
+                    "y": 21.454080074498307
+                },
+                "id": 1,
+                "source_node_id": 12,
+                "source_port_id": 69,
+                "source_port_label": {
+                    "color": "#ff000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "e0/0",
+                    "x": 63.4863233057184,
+                    "y": 21.545919925501693
+                }
+            },
+            {
+                "description": "Link from IOU1 port Ethernet0/1 to IOU2 port Ethernet0/1",
+                "destination_node_id": 13,
+                "destination_port_id": 86,
+                "destination_port_label": {
+                    "color": "#ff000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "e0/1",
+                    "x": -55.355583315030714,
+                    "y": -12.544210338716482
+                },
+                "id": 2,
+                "source_node_id": 12,
+                "source_port_id": 70,
+                "source_port_label": {
+                    "color": "#ff000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "e0/1",
+                    "x": 62.617063296406116,
+                    "y": -10.452370487713097
+                }
+            },
+            {
+                "description": "Link from IOU1 port Ethernet0/2 to IOU3 port Ethernet0/2",
+                "destination_node_id": 14,
+                "destination_port_id": 103,
+                "destination_port_label": {
+                    "color": "#ff000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "e0/2",
+                    "x": -12.459723639382048,
+                    "y": -51.4884849742524
+                },
+                "id": 3,
+                "source_node_id": 12,
+                "source_port_id": 71,
+                "source_port_label": {
+                    "color": "#ff000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "e0/2",
+                    "x": -12.540276360617952,
+                    "y": 75.4884849742524
+                }
+            },
+            {
+                "description": "Link from IOU1 port Ethernet0/3 to IOU3 port Ethernet0/3",
+                "destination_node_id": 14,
+                "destination_port_id": 104,
+                "destination_port_label": {
+                    "color": "#ff000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "e0/3",
+                    "x": 31.538836982399516,
+                    "y": -50.60845042917518
+                },
+                "id": 4,
+                "source_node_id": 12,
+                "source_port_id": 72,
+                "source_port_label": {
+                    "color": "#ff000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "e0/3",
+                    "x": 31.458284261163612,
+                    "y": 74.36851951932965
+                }
+            },
+            {
+                "description": "Link from IOU2 port Ethernet1/0 to IOU3 port Ethernet1/0",
+                "destination_node_id": 14,
+                "destination_port_id": 105,
+                "destination_port_label": {
+                    "color": "#ff000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "e1/0",
+                    "x": 91.52305588214733,
+                    "y": -20.887910884050754
+                },
+                "id": 5,
+                "source_node_id": 13,
+                "source_port_id": 89,
+                "source_port_label": {
+                    "color": "#ff000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "e1/0",
+                    "x": -75.52305588214733,
+                    "y": 72.88791088405074
+                }
+            },
+            {
+                "description": "Link from IOU3 port Ethernet1/1 to IOU2 port Ethernet1/1",
+                "destination_node_id": 13,
+                "destination_port_id": 90,
+                "destination_port_label": {
+                    "color": "#ff000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "e1/1",
+                    "x": -97.69654474265366,
+                    "y": 44.38502889878234
+                },
+                "id": 6,
+                "source_node_id": 14,
+                "source_port_id": 106,
+                "source_port_label": {
+                    "color": "#ff000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "e1/1",
+                    "x": 86.34956702164098,
+                    "y": -49.39079286931917
+                }
+            },
+            {
+                "description": "Link from IOU3 port Ethernet1/3 to PC5 port Ethernet0",
+                "destination_node_id": 5,
+                "destination_port_id": 65,
+                "destination_port_label": {
+                    "color": "#ff000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "e0",
+                    "x": 50.11846389660923,
+                    "y": -6.410858106203449
+                },
+                "id": 7,
+                "source_node_id": 14,
+                "source_port_id": 108,
+                "source_port_label": {
+                    "color": "#ff000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "e1/3",
+                    "x": -36.1184638966092,
+                    "y": 47.41085810620345
+                }
+            },
+            {
+                "description": "Link from IOU3 port Ethernet1/2 to PC6 port Ethernet0",
+                "destination_node_id": 6,
+                "destination_port_id": 66,
+                "destination_port_label": {
+                    "color": "#ff000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "e0",
+                    "x": 19.61135311979703,
+                    "y": -8.366644710053663
+                },
+                "id": 8,
+                "source_node_id": 14,
+                "source_port_id": 107,
+                "source_port_label": {
+                    "color": "#ff000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "e1/2",
+                    "x": 47.38864688020297,
+                    "y": 50.36664471005366
+                }
+            },
+            {
+                "description": "Link from IOU3 port Ethernet0/0 to IOU4 port Ethernet0/0",
+                "destination_node_id": 15,
+                "destination_port_id": 117,
+                "destination_port_label": {
+                    "color": "#ff000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "e0/0",
+                    "x": -77.4644834170845,
+                    "y": 22.81475069927957
+                },
+                "id": 9,
+                "source_node_id": 14,
+                "source_port_id": 101,
+                "source_port_label": {
+                    "color": "#ff000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "e0/0",
+                    "x": 141.46448341708447,
+                    "y": 28.18524930072043
+                }
+            },
+            {
+                "description": "Link from IOU3 port Ethernet0/1 to IOU4 port Ethernet0/1",
+                "destination_node_id": 15,
+                "destination_port_id": 118,
+                "destination_port_label": {
+                    "color": "#ff000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "e0/1",
+                    "x": -78.25382725449444,
+                    "y": -9.180809727855987
+                },
+                "id": 10,
+                "source_node_id": 14,
+                "source_port_id": 102,
+                "source_port_label": {
+                    "color": "#ff000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "e0/1",
+                    "x": 146.67513957967458,
+                    "y": -1.8103111264151295
+                }
+            },
+            {
+                "description": "Link from IOU4 port Ethernet0/2 to IOU2 port Ethernet0/2",
+                "destination_node_id": 13,
+                "destination_port_id": 87,
+                "destination_port_label": {
+                    "color": "#ff000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "e0/2",
+                    "x": 26.58487208586604,
+                    "y": 70.48528545049177
+                },
+                "id": 11,
+                "source_node_id": 15,
+                "source_port_id": 119,
+                "source_port_label": {
+                    "color": "#ff000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "e0/2",
+                    "x": 24.41512791413396,
+                    "y": -56.485285450491766
+                }
+            },
+            {
+                "description": "Link from IOU4 port Ethernet0/3 to IOU2 port Ethernet0/3",
+                "destination_node_id": 13,
+                "destination_port_id": 88,
+                "destination_port_label": {
+                    "color": "#ff000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "e0/3",
+                    "x": -14.413288595445408,
+                    "y": 72.62089446122502
+                },
+                "id": 12,
+                "source_node_id": 15,
+                "source_port_id": 120,
+                "source_port_label": {
+                    "color": "#ff000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "e0/3",
+                    "x": -16.583032767177485,
+                    "y": -57.349676439758504
+                }
+            },
+            {
+                "description": "Link from IOU4 port Ethernet1/0 to PC7 port Ethernet0",
+                "destination_node_id": 7,
+                "destination_port_id": 67,
+                "destination_port_label": {
+                    "color": "#ff000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "e0",
+                    "x": 50.34819754195149,
+                    "y": -6.297232358151319
+                },
+                "id": 13,
+                "source_node_id": 15,
+                "source_port_id": 121,
+                "source_port_label": {
+                    "color": "#ff000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "e1/0",
+                    "x": -37.34819754195149,
+                    "y": 47.29723235815132
+                }
+            },
+            {
+                "description": "Link from IOU4 port Ethernet1/1 to PC8 port Ethernet0",
+                "destination_node_id": 8,
+                "destination_port_id": 68,
+                "destination_port_label": {
+                    "color": "#ff000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "e0",
+                    "x": 15.200290262193448,
+                    "y": -6.565496572037404
+                },
+                "id": 14,
+                "source_node_id": 15,
+                "source_port_id": 122,
+                "source_port_label": {
+                    "color": "#ff000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "e1/1",
+                    "x": 46.79970973780655,
+                    "y": 45.565496572037404
+                }
+            },
+            {
+                "description": "Link from IOU4 port Ethernet1/2 to IOU1 port Ethernet1/0",
+                "destination_node_id": 12,
+                "destination_port_id": 73,
+                "destination_port_label": {
+                    "color": "#ff000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "e1/0",
+                    "x": 109.73006045362382,
+                    "y": 46.44314758518266
+                },
+                "id": 15,
+                "source_node_id": 15,
+                "source_port_id": 123,
+                "source_port_label": {
+                    "color": "#ff000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "e1/2",
+                    "x": -96.73006045362382,
+                    "y": -61.44314758518264
+                }
+            },
+            {
+                "description": "Link from IOU4 port Ethernet1/3 to IOU1 port Ethernet1/3",
+                "destination_node_id": 12,
+                "destination_port_id": 76,
+                "destination_port_label": {
+                    "color": "#ff000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "e1/3",
+                    "x": 85.36216700547598,
+                    "y": 73.84690514188563
+                },
+                "id": 16,
+                "source_node_id": 15,
+                "source_port_id": 124,
+                "source_port_label": {
+                    "color": "#ff000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "e1/3",
+                    "x": -127.09795390177163,
+                    "y": -36.03939002847967
+                }
+            }
+        ],
+        "nodes": [
+            {
+                "description": "VPCS device",
+                "id": 5,
+                "label": {
+                    "color": "#ff000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "PC5",
+                    "x": 16.5,
+                    "y": -25.0
+                },
+                "ports": [
+                    {
+                        "adapter_number": 0,
+                        "description": "connected to IOU3 on port Ethernet1/3",
+                        "id": 65,
+                        "link_id": 7,
+                        "name": "Ethernet0",
+                        "nio": "NIO_UDP",
+                        "port_number": 0
+                    }
+                ],
+                "properties": {
+                    "console": 5000,
+                    "name": "PC5"
+                },
+                "server_id": 1,
+                "symbol": ":/symbols/vpcs_guest.svg",
+                "type": "VPCSDevice",
+                "vm_id": "95a03175-0222-4bfa-93ca-34d608c23035",
+                "x": -330.0,
+                "y": 222.0
+            },
+            {
+                "description": "VPCS device",
+                "id": 6,
+                "label": {
+                    "color": "#ff000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "PC6",
+                    "x": 16.5,
+                    "y": -25.0
+                },
+                "ports": [
+                    {
+                        "adapter_number": 0,
+                        "description": "connected to IOU3 on port Ethernet1/2",
+                        "id": 66,
+                        "link_id": 8,
+                        "name": "Ethernet0",
+                        "nio": "NIO_UDP",
+                        "port_number": 0
+                    }
+                ],
+                "properties": {
+                    "console": 5001,
+                    "name": "PC6"
+                },
+                "server_id": 1,
+                "symbol": ":/symbols/vpcs_guest.svg",
+                "type": "VPCSDevice",
+                "vm_id": "4effe0c9-64f2-4832-bd5e-3df6ea6d282a",
+                "x": -174.0,
+                "y": 225.0
+            },
+            {
+                "description": "VPCS device",
+                "id": 7,
+                "label": {
+                    "color": "#ff000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "PC7",
+                    "x": 16.5,
+                    "y": -25.0
+                },
+                "ports": [
+                    {
+                        "adapter_number": 0,
+                        "description": "connected to IOU4 on port Ethernet1/0",
+                        "id": 67,
+                        "link_id": 13,
+                        "name": "Ethernet0",
+                        "nio": "NIO_UDP",
+                        "port_number": 0
+                    }
+                ],
+                "properties": {
+                    "console": 5002,
+                    "name": "PC7"
+                },
+                "server_id": 1,
+                "symbol": ":/symbols/vpcs_guest.svg",
+                "type": "VPCSDevice",
+                "vm_id": "c71ad7d1-0642-489e-900b-b6bfaeedb42b",
+                "x": 171.0,
+                "y": 234.0
+            },
+            {
+                "description": "VPCS device",
+                "id": 8,
+                "label": {
+                    "color": "#ff000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "PC8",
+                    "x": 16.5,
+                    "y": -25.0
+                },
+                "ports": [
+                    {
+                        "adapter_number": 0,
+                        "description": "connected to IOU4 on port Ethernet1/1",
+                        "id": 68,
+                        "link_id": 14,
+                        "name": "Ethernet0",
+                        "nio": "NIO_UDP",
+                        "port_number": 0
+                    }
+                ],
+                "properties": {
+                    "console": 5003,
+                    "name": "PC8"
+                },
+                "server_id": 1,
+                "symbol": ":/symbols/vpcs_guest.svg",
+                "type": "VPCSDevice",
+                "vm_id": "3ae07051-f016-4149-afbd-54e281102fd2",
+                "x": 348.0,
+                "y": 241.0
+            },
+            {
+                "description": "IOU device",
+                "id": 12,
+                "label": {
+                    "color": "#ff000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "IOU1",
+                    "x": 6.5,
+                    "y": -25.0
+                },
+                "ports": [
+                    {
+                        "adapter_number": 0,
+                        "description": "connected to IOU2 on port Ethernet0/0",
+                        "id": 69,
+                        "link_id": 1,
+                        "name": "Ethernet0/0",
+                        "nio": "NIO_UDP",
+                        "port_number": 0
+                    },
+                    {
+                        "adapter_number": 0,
+                        "description": "connected to IOU2 on port Ethernet0/1",
+                        "id": 70,
+                        "link_id": 2,
+                        "name": "Ethernet0/1",
+                        "nio": "NIO_UDP",
+                        "port_number": 1
+                    },
+                    {
+                        "adapter_number": 0,
+                        "description": "connected to IOU3 on port Ethernet0/2",
+                        "id": 71,
+                        "link_id": 3,
+                        "name": "Ethernet0/2",
+                        "nio": "NIO_UDP",
+                        "port_number": 2
+                    },
+                    {
+                        "adapter_number": 0,
+                        "description": "connected to IOU3 on port Ethernet0/3",
+                        "id": 72,
+                        "link_id": 4,
+                        "name": "Ethernet0/3",
+                        "nio": "NIO_UDP",
+                        "port_number": 3
+                    },
+                    {
+                        "adapter_number": 1,
+                        "description": "connected to IOU4 on port Ethernet1/2",
+                        "id": 73,
+                        "link_id": 15,
+                        "name": "Ethernet1/0",
+                        "nio": "NIO_UDP",
+                        "port_number": 0
+                    },
+                    {
+                        "adapter_number": 1,
+                        "id": 74,
+                        "name": "Ethernet1/1",
+                        "port_number": 1
+                    },
+                    {
+                        "adapter_number": 1,
+                        "id": 75,
+                        "name": "Ethernet1/2",
+                        "port_number": 2
+                    },
+                    {
+                        "adapter_number": 1,
+                        "description": "connected to IOU4 on port Ethernet1/3",
+                        "id": 76,
+                        "link_id": 16,
+                        "name": "Ethernet1/3",
+                        "nio": "NIO_UDP",
+                        "port_number": 3
+                    },
+                    {
+                        "adapter_number": 2,
+                        "id": 77,
+                        "name": "Serial2/0",
+                        "port_number": 0
+                    },
+                    {
+                        "adapter_number": 2,
+                        "id": 78,
+                        "name": "Serial2/1",
+                        "port_number": 1
+                    },
+                    {
+                        "adapter_number": 2,
+                        "id": 79,
+                        "name": "Serial2/2",
+                        "port_number": 2
+                    },
+                    {
+                        "adapter_number": 2,
+                        "id": 80,
+                        "name": "Serial2/3",
+                        "port_number": 3
+                    },
+                    {
+                        "adapter_number": 3,
+                        "id": 81,
+                        "name": "Serial3/0",
+                        "port_number": 0
+                    },
+                    {
+                        "adapter_number": 3,
+                        "id": 82,
+                        "name": "Serial3/1",
+                        "port_number": 1
+                    },
+                    {
+                        "adapter_number": 3,
+                        "id": 83,
+                        "name": "Serial3/2",
+                        "port_number": 2
+                    },
+                    {
+                        "adapter_number": 3,
+                        "id": 84,
+                        "name": "Serial3/3",
+                        "port_number": 3
+                    }
+                ],
+                "properties": {
+                    "console": 5000,
+                    "ethernet_adapters": 2,
+                    "l1_keepalives": false,
+                    "md5sum": "50d1c5aaf1976e4622daf9eaa2632212",
+                    "name": "IOU1",
+                    "nvram": 128,
+                    "path": "i86bi-linux-l3-adventerprisek9-15.4.2T.bin",
+                    "ram": 256,
+                    "serial_adapters": 2,
+                    "startup_config": "startup-config.cfg",
+                    "use_default_iou_values": true
+                },
+                "server_id": 2,
+                "type": "IOUDevice",
+                "vm_id": "af2b01ed-6a3f-4c6b-99b2-494ed79671c2",
+                "x": -237.5,
+                "y": -208.5
+            },
+            {
+                "description": "IOU device",
+                "id": 13,
+                "label": {
+                    "color": "#ff000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "IOU2",
+                    "x": 6.5,
+                    "y": -25.0
+                },
+                "ports": [
+                    {
+                        "adapter_number": 0,
+                        "description": "connected to IOU1 on port Ethernet0/0",
+                        "id": 85,
+                        "link_id": 1,
+                        "name": "Ethernet0/0",
+                        "nio": "NIO_UDP",
+                        "port_number": 0
+                    },
+                    {
+                        "adapter_number": 0,
+                        "description": "connected to IOU1 on port Ethernet0/1",
+                        "id": 86,
+                        "link_id": 2,
+                        "name": "Ethernet0/1",
+                        "nio": "NIO_UDP",
+                        "port_number": 1
+                    },
+                    {
+                        "adapter_number": 0,
+                        "description": "connected to IOU4 on port Ethernet0/2",
+                        "id": 87,
+                        "link_id": 11,
+                        "name": "Ethernet0/2",
+                        "nio": "NIO_UDP",
+                        "port_number": 2
+                    },
+                    {
+                        "adapter_number": 0,
+                        "description": "connected to IOU4 on port Ethernet0/3",
+                        "id": 88,
+                        "link_id": 12,
+                        "name": "Ethernet0/3",
+                        "nio": "NIO_UDP",
+                        "port_number": 3
+                    },
+                    {
+                        "adapter_number": 1,
+                        "description": "connected to IOU3 on port Ethernet1/0",
+                        "id": 89,
+                        "link_id": 5,
+                        "name": "Ethernet1/0",
+                        "nio": "NIO_UDP",
+                        "port_number": 0
+                    },
+                    {
+                        "adapter_number": 1,
+                        "description": "connected to IOU3 on port Ethernet1/1",
+                        "id": 90,
+                        "link_id": 6,
+                        "name": "Ethernet1/1",
+                        "nio": "NIO_UDP",
+                        "port_number": 1
+                    },
+                    {
+                        "adapter_number": 1,
+                        "id": 91,
+                        "name": "Ethernet1/2",
+                        "port_number": 2
+                    },
+                    {
+                        "adapter_number": 1,
+                        "id": 92,
+                        "name": "Ethernet1/3",
+                        "port_number": 3
+                    },
+                    {
+                        "adapter_number": 2,
+                        "id": 93,
+                        "name": "Serial2/0",
+                        "port_number": 0
+                    },
+                    {
+                        "adapter_number": 2,
+                        "id": 94,
+                        "name": "Serial2/1",
+                        "port_number": 1
+                    },
+                    {
+                        "adapter_number": 2,
+                        "id": 95,
+                        "name": "Serial2/2",
+                        "port_number": 2
+                    },
+                    {
+                        "adapter_number": 2,
+                        "id": 96,
+                        "name": "Serial2/3",
+                        "port_number": 3
+                    },
+                    {
+                        "adapter_number": 3,
+                        "id": 97,
+                        "name": "Serial3/0",
+                        "port_number": 0
+                    },
+                    {
+                        "adapter_number": 3,
+                        "id": 98,
+                        "name": "Serial3/1",
+                        "port_number": 1
+                    },
+                    {
+                        "adapter_number": 3,
+                        "id": 99,
+                        "name": "Serial3/2",
+                        "port_number": 2
+                    },
+                    {
+                        "adapter_number": 3,
+                        "id": 100,
+                        "name": "Serial3/3",
+                        "port_number": 3
+                    }
+                ],
+                "properties": {
+                    "console": 5001,
+                    "ethernet_adapters": 2,
+                    "l1_keepalives": false,
+                    "md5sum": "50d1c5aaf1976e4622daf9eaa2632212",
+                    "name": "IOU2",
+                    "nvram": 128,
+                    "path": "i86bi-linux-l3-adventerprisek9-15.4.2T.bin",
+                    "ram": 256,
+                    "serial_adapters": 2,
+                    "startup_config": "startup-config.cfg",
+                    "use_default_iou_values": true
+                },
+                "server_id": 2,
+                "type": "IOUDevice",
+                "vm_id": "c3af1df8-5533-48e4-86d5-71a6c2de203c",
+                "x": 259.5,
+                "y": -211.5
+            },
+            {
+                "description": "IOU device",
+                "id": 14,
+                "label": {
+                    "color": "#ff000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "IOU3",
+                    "x": 6.5,
+                    "y": -25.0
+                },
+                "ports": [
+                    {
+                        "adapter_number": 0,
+                        "description": "connected to IOU4 on port Ethernet0/0",
+                        "id": 101,
+                        "link_id": 9,
+                        "name": "Ethernet0/0",
+                        "nio": "NIO_UDP",
+                        "port_number": 0
+                    },
+                    {
+                        "adapter_number": 0,
+                        "description": "connected to IOU4 on port Ethernet0/1",
+                        "id": 102,
+                        "link_id": 10,
+                        "name": "Ethernet0/1",
+                        "nio": "NIO_UDP",
+                        "port_number": 1
+                    },
+                    {
+                        "adapter_number": 0,
+                        "description": "connected to IOU1 on port Ethernet0/2",
+                        "id": 103,
+                        "link_id": 3,
+                        "name": "Ethernet0/2",
+                        "nio": "NIO_UDP",
+                        "port_number": 2
+                    },
+                    {
+                        "adapter_number": 0,
+                        "description": "connected to IOU1 on port Ethernet0/3",
+                        "id": 104,
+                        "link_id": 4,
+                        "name": "Ethernet0/3",
+                        "nio": "NIO_UDP",
+                        "port_number": 3
+                    },
+                    {
+                        "adapter_number": 1,
+                        "description": "connected to IOU2 on port Ethernet1/0",
+                        "id": 105,
+                        "link_id": 5,
+                        "name": "Ethernet1/0",
+                        "nio": "NIO_UDP",
+                        "port_number": 0
+                    },
+                    {
+                        "adapter_number": 1,
+                        "description": "connected to IOU2 on port Ethernet1/1",
+                        "id": 106,
+                        "link_id": 6,
+                        "name": "Ethernet1/1",
+                        "nio": "NIO_UDP",
+                        "port_number": 1
+                    },
+                    {
+                        "adapter_number": 1,
+                        "description": "connected to PC6 on port Ethernet0",
+                        "id": 107,
+                        "link_id": 8,
+                        "name": "Ethernet1/2",
+                        "nio": "NIO_UDP",
+                        "port_number": 2
+                    },
+                    {
+                        "adapter_number": 1,
+                        "description": "connected to PC5 on port Ethernet0",
+                        "id": 108,
+                        "link_id": 7,
+                        "name": "Ethernet1/3",
+                        "nio": "NIO_UDP",
+                        "port_number": 3
+                    },
+                    {
+                        "adapter_number": 2,
+                        "id": 109,
+                        "name": "Serial2/0",
+                        "port_number": 0
+                    },
+                    {
+                        "adapter_number": 2,
+                        "id": 110,
+                        "name": "Serial2/1",
+                        "port_number": 1
+                    },
+                    {
+                        "adapter_number": 2,
+                        "id": 111,
+                        "name": "Serial2/2",
+                        "port_number": 2
+                    },
+                    {
+                        "adapter_number": 2,
+                        "id": 112,
+                        "name": "Serial2/3",
+                        "port_number": 3
+                    },
+                    {
+                        "adapter_number": 3,
+                        "id": 113,
+                        "name": "Serial3/0",
+                        "port_number": 0
+                    },
+                    {
+                        "adapter_number": 3,
+                        "id": 114,
+                        "name": "Serial3/1",
+                        "port_number": 1
+                    },
+                    {
+                        "adapter_number": 3,
+                        "id": 115,
+                        "name": "Serial3/2",
+                        "port_number": 2
+                    },
+                    {
+                        "adapter_number": 3,
+                        "id": 116,
+                        "name": "Serial3/3",
+                        "port_number": 3
+                    }
+                ],
+                "properties": {
+                    "console": 5002,
+                    "ethernet_adapters": 2,
+                    "l1_keepalives": false,
+                    "md5sum": "50d1c5aaf1976e4622daf9eaa2632212",
+                    "name": "IOU3",
+                    "nvram": 128,
+                    "path": "i86bi-linux-l3-adventerprisek9-15.4.2T.bin",
+                    "ram": 256,
+                    "serial_adapters": 2,
+                    "startup_config": "startup-config.cfg",
+                    "use_default_iou_values": true
+                },
+                "server_id": 2,
+                "type": "IOUDevice",
+                "vm_id": "0faa0f36-3a56-4c4a-932d-d0a8a8a5fc8a",
+                "x": -235.5,
+                "y": 42.5
+            },
+            {
+                "description": "IOU device",
+                "id": 15,
+                "label": {
+                    "color": "#ff000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "IOU4",
+                    "x": 6.5,
+                    "y": -25.0
+                },
+                "ports": [
+                    {
+                        "adapter_number": 0,
+                        "description": "connected to IOU3 on port Ethernet0/0",
+                        "id": 117,
+                        "link_id": 9,
+                        "name": "Ethernet0/0",
+                        "nio": "NIO_UDP",
+                        "port_number": 0
+                    },
+                    {
+                        "adapter_number": 0,
+                        "description": "connected to IOU3 on port Ethernet0/1",
+                        "id": 118,
+                        "link_id": 10,
+                        "name": "Ethernet0/1",
+                        "nio": "NIO_UDP",
+                        "port_number": 1
+                    },
+                    {
+                        "adapter_number": 0,
+                        "description": "connected to IOU2 on port Ethernet0/2",
+                        "id": 119,
+                        "link_id": 11,
+                        "name": "Ethernet0/2",
+                        "nio": "NIO_UDP",
+                        "port_number": 2
+                    },
+                    {
+                        "adapter_number": 0,
+                        "description": "connected to IOU2 on port Ethernet0/3",
+                        "id": 120,
+                        "link_id": 12,
+                        "name": "Ethernet0/3",
+                        "nio": "NIO_UDP",
+                        "port_number": 3
+                    },
+                    {
+                        "adapter_number": 1,
+                        "description": "connected to PC7 on port Ethernet0",
+                        "id": 121,
+                        "link_id": 13,
+                        "name": "Ethernet1/0",
+                        "nio": "NIO_UDP",
+                        "port_number": 0
+                    },
+                    {
+                        "adapter_number": 1,
+                        "description": "connected to PC8 on port Ethernet0",
+                        "id": 122,
+                        "link_id": 14,
+                        "name": "Ethernet1/1",
+                        "nio": "NIO_UDP",
+                        "port_number": 1
+                    },
+                    {
+                        "adapter_number": 1,
+                        "description": "connected to IOU1 on port Ethernet1/0",
+                        "id": 123,
+                        "link_id": 15,
+                        "name": "Ethernet1/2",
+                        "nio": "NIO_UDP",
+                        "port_number": 2
+                    },
+                    {
+                        "adapter_number": 1,
+                        "description": "connected to IOU1 on port Ethernet1/3",
+                        "id": 124,
+                        "link_id": 16,
+                        "name": "Ethernet1/3",
+                        "nio": "NIO_UDP",
+                        "port_number": 3
+                    },
+                    {
+                        "adapter_number": 2,
+                        "id": 125,
+                        "name": "Serial2/0",
+                        "port_number": 0
+                    },
+                    {
+                        "adapter_number": 2,
+                        "id": 126,
+                        "name": "Serial2/1",
+                        "port_number": 1
+                    },
+                    {
+                        "adapter_number": 2,
+                        "id": 127,
+                        "name": "Serial2/2",
+                        "port_number": 2
+                    },
+                    {
+                        "adapter_number": 2,
+                        "id": 128,
+                        "name": "Serial2/3",
+                        "port_number": 3
+                    },
+                    {
+                        "adapter_number": 3,
+                        "id": 129,
+                        "name": "Serial3/0",
+                        "port_number": 0
+                    },
+                    {
+                        "adapter_number": 3,
+                        "id": 130,
+                        "name": "Serial3/1",
+                        "port_number": 1
+                    },
+                    {
+                        "adapter_number": 3,
+                        "id": 131,
+                        "name": "Serial3/2",
+                        "port_number": 2
+                    },
+                    {
+                        "adapter_number": 3,
+                        "id": 132,
+                        "name": "Serial3/3",
+                        "port_number": 3
+                    }
+                ],
+                "properties": {
+                    "console": 5003,
+                    "ethernet_adapters": 2,
+                    "l1_keepalives": false,
+                    "md5sum": "50d1c5aaf1976e4622daf9eaa2632212",
+                    "name": "IOU4",
+                    "nvram": 128,
+                    "path": "i86bi-linux-l3-adventerprisek9-15.4.2T.bin",
+                    "ram": 256,
+                    "serial_adapters": 2,
+                    "startup_config": "startup-config.cfg",
+                    "use_default_iou_values": true
+                },
+                "server_id": 2,
+                "type": "IOUDevice",
+                "vm_id": "4d7afd42-18e9-4a67-8da5-1f3fa9ebc7ca",
+                "x": 266.5,
+                "y": 62.5
+            }
+        ],
+        "notes": [
+            {
+                "color": "#ff000000",
+                "font": "MS Shell Dlg 2,18,-1,5,75,0,0,0,0,0",
+                "text": "Static Etherchannel",
+                "x": -76.0,
+                "y": -259.0
+            },
+            {
+                "color": "#ff000000",
+                "font": "MS Shell Dlg 2,18,-1,5,75,0,0,0,0,0",
+                "text": "LACP Etherchannel",
+                "x": -449.0,
+                "y": -76.0
+            },
+            {
+                "color": "#ff000000",
+                "font": "MS Shell Dlg 2,18,-1,5,75,0,0,0,0,0",
+                "text": "PAgP Etherchannel",
+                "x": 310.0,
+                "y": -56.0
+            },
+            {
+                "color": "#ffff0000",
+                "font": "MS Shell Dlg 2,10,-1,5,75,0,0,0,0,0",
+                "text": "(Channel-Group 1)",
+                "x": -25.0,
+                "y": -211.0
+            },
+            {
+                "color": "#ffff0000",
+                "font": "MS Shell Dlg 2,10,-1,5,75,0,0,0,0,0",
+                "text": "(Channel-Group 2)",
+                "x": -121.0,
+                "y": -112.0
+            },
+            {
+                "color": "#ffff0000",
+                "font": "MS Shell Dlg 2,10,-1,5,75,0,0,0,0,0",
+                "text": "(Channel-Group 3)",
+                "x": 57.0,
+                "y": -106.0
+            },
+            {
+                "color": "#ffff0000",
+                "font": "MS Shell Dlg 2,10,-1,5,75,0,0,0,0,0",
+                "text": "(Channel-Group 4)",
+                "x": -341.0,
+                "y": -32.0
+            },
+            {
+                "color": "#ffff0000",
+                "font": "MS Shell Dlg 2,10,-1,5,75,0,0,0,0,0",
+                "text": "(Channel-Group 5)",
+                "x": 292.0,
+                "y": -23.0
+            }
+        ],
+        "servers": [
+            {
+                "host": "192.168.42.1",
+                "id": 1,
+                "local": true,
+                "port": 3080,
+                "protocol": "http",
+                "vm": false
+            },
+            {
+                "host": "192.168.42.128",
+                "id": 2,
+                "local": false,
+                "port": 3080,
+                "protocol": "http",
+                "user": "",
+                "vm": true
+            }
+        ]
+    },
+    "type": "topology",
+    "version": "1.5.2"
+}

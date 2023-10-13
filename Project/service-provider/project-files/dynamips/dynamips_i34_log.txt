@@ -1,0 +1,36 @@
+May 16 01:45:10.093 HYPERVISOR: Release 0.2.14-x86/Windows (tag 2014092320)
+May 16 01:45:10.093 HYPERVISOR: Started on IP = 192.168.81.1, TCP port = 57868.
+May 16 01:45:10.312 HYPERVISOR: exec_cmd: hypervisor version 
+May 16 01:45:10.343 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\HP\GNS3\projects\LAB de Projet\lab configuration complet\service-provider\project-files\dynamips 
+May 16 01:45:10.702 GENERAL: working_dir=C:\Users\HP\GNS3\projects\LAB de Projet\lab configuration complet\service-provider\project-files\dynamips
+May 16 01:45:10.718 HYPERVISOR: exec_cmd: vm create R-MESRS 2 c2691 
+May 16 01:45:10.734 VM: VM R-MESRS created.
+May 16 01:45:10.765 HYPERVISOR: exec_cmd: vm set_con_tcp_port R-MESRS 5001 
+May 16 01:45:10.812 HYPERVISOR: exec_cmd: c2691 get_mac_addr R-MESRS 
+May 16 01:45:10.843 HYPERVISOR: exec_cmd: c2691 set_mac_addr R-MESRS c002.1094.0000 
+May 16 01:45:10.874 HYPERVISOR: exec_cmd: vm set_ram R-MESRS 192 
+May 16 01:45:10.890 HYPERVISOR: exec_cmd: vm set_exec_area R-MESRS 64 
+May 16 01:45:10.921 HYPERVISOR: exec_cmd: vm set_ios R-MESRS C:/Users/HP/GNS3/images/IOS/c2691-entservicesk9-mz.124-13b.image 
+May 16 01:45:10.937 HYPERVISOR: exec_cmd: vm slot_add_binding R-MESRS 0 16 WIC-2T 
+May 16 01:45:10.952 HYPERVISOR: exec_cmd: vm set_nvram R-MESRS 256 
+May 16 01:45:10.984 HYPERVISOR: exec_cmd: vm set_disk0 R-MESRS 0 
+May 16 01:45:10.999 HYPERVISOR: exec_cmd: vm get_status R-MESRS 
+May 16 01:45:11.031 HYPERVISOR: exec_cmd: vm set_idle_pc R-MESRS 0x6114a604 
+May 16 01:45:11.062 HYPERVISOR: exec_cmd: vm set_config R-MESRS configs/i2_startup-config.cfg 
+May 16 01:45:11.109 HYPERVISOR: exec_cmd: vm set_config R-MESRS configs/i2_startup-config.cfg configs/i2_private-config.cfg 
+May 16 01:45:11.453 HYPERVISOR: exec_cmd: nio create_udp udp-288cd176-af96-4c34-8e62-1935cfab94c0 10009 192.168.81.1 10010 
+May 16 01:45:11.484 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R-MESRS 0 16 udp-288cd176-af96-4c34-8e62-1935cfab94c0 
+May 16 01:45:11.515 HYPERVISOR: exec_cmd: vm get_status R-MESRS 
+May 16 01:45:11.562 HYPERVISOR: exec_cmd: nio create_udp udp-a6f92586-4ef0-4c6b-8e8b-942d01080df8 10011 192.168.81.1 10012 
+May 16 01:45:11.593 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R-MESRS 0 0 udp-a6f92586-4ef0-4c6b-8e8b-942d01080df8 
+May 16 01:45:11.624 HYPERVISOR: exec_cmd: vm get_status R-MESRS 
+May 16 01:45:11.656 HYPERVISOR: exec_cmd: nio create_udp udp-3ce2f3d8-03b6-4122-909a-1d523e11216b 10013 192.168.81.1 10014 
+May 16 01:45:11.671 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R-MESRS 0 17 udp-3ce2f3d8-03b6-4122-909a-1d523e11216b 
+May 16 01:45:11.687 HYPERVISOR: exec_cmd: vm get_status R-MESRS 
+May 16 01:48:31.600 HYPERVISOR: exec_cmd: vm get_status R-MESRS 
+May 16 01:48:31.616 HYPERVISOR: exec_cmd: vm extract_config R-MESRS 
+May 16 01:48:31.632 HYPERVISOR: exec_cmd: vm delete R-MESRS 
+May 16 01:48:31.632 VM: VM R-MESRS destroyed.
+May 16 01:48:31.647 HYPERVISOR: exec_cmd: hypervisor stop 
+May 16 01:48:31.882 HYPERVISOR: Stopped.
+May 16 01:48:31.882 GENERAL: reset done.
